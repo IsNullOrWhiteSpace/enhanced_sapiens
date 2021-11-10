@@ -1,0 +1,35 @@
+name: Rust
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Install lld
+      run: sudo apt-get update && sudo apt-get install -y lld wget unzip
+    - uses: dtolnay/rust-toolchain@stable
+      with:
+        toolchain: nightly
+    - name: Install protoc 
+      run: sudo apt-get update && sudo apt-get install -y protobuf-compiler
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Build
+      run: cargo build --workspace
+    - name: 'Create env file'
+      run: |
+        echo "${{ secrets.ENV_FILE }}" > .env
+    - name: Test (dependabot)
+      if: github.actor == 'dependabot[bot]'
+      run: cargo test --workspace --features disable-test-dependabot
+    - name: Test
+      if: 
