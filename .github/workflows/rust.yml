@@ -32,4 +32,39 @@ jobs:
       if: github.actor == 'dependabot[bot]'
       run: cargo test --workspace --features disable-test-dependabot
     - name: Test
-      if: 
+      if: github.actor != 'dependabot[bot]'
+      run: cargo test --workspace
+
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: dtolnay/rust-toolchain@stable
+      with:
+        toolchain: nightly
+        components: clippy
+    - name: Install protoc
+      run: sudo apt-get update && sudo apt-get install -y protobuf-compiler
+    - name: Checkout
+      uses: actions/checkout@v3    
+    - name: Fmt
+      run: cargo fmt --all -- --check
+    - name: Check
+      run: cargo check --all-targets --all-features --workspace
+    - name: Clippy
+      run: cargo clippy --all-targets --all-features --workspace -- -D warnings
+
+  devcontainer:
+    name: Devcontainer build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps: 
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: C
