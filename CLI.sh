@@ -1,8 +1,9 @@
+
 #!/usr/bin/env bash
 
 set -e
 
-IMAGE_NAME="sapiens_bot"
+IMAGE_NAME="sapiens_cli"
 
 test -e .env || (echo "Please create a .env file with the required environment variables" && exit 1)
 
