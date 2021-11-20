@@ -1,0 +1,25 @@
+
+[workspace]
+members = [
+	"sapiens",
+	"sapiens_derive",
+	"sapiens_tools",
+	"sapiens_cli",
+	"sapiens_bot",
+	"sapiens_exp"
+]
+resolver = "2"
+
+
+[workspace.package]
+version = "0.2.0"
+edition = "2021"
+authors = ["Sebastien Soudan <sebastien.soudan@gmail.com>"]
+description = "A simple bot to conquer the world"
+repository = "https://github.com/ssoudan/sapiens"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+publish = true
+
+keywords = ["bot", "language-model"]
+categories = ["science"]
