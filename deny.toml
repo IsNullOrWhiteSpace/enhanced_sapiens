@@ -18,4 +18,24 @@
 # dependencies not shared by any other crates, would be ignored, as the target
 # list here is effectively saying which targets you are building for.
 targets = [
-    # The triple 
+    # The triple can be any string, but only the target triples built in to
+    # rustc (as of 1.40) can be checked against actual config expressions
+    #{ triple = "x86_64-unknown-linux-musl" },
+    # You can also specify which target_features you promise are enabled for a
+    # particular target. target_features are currently not validated against
+    # the actual valid features supported by the target architecture.
+    #{ triple = "wasm32-unknown-unknown", features = ["atomics"] },
+]
+
+# This section is considered when running `cargo deny check advisories`
+# More documentation for the advisories section can be found here:
+# https://embarkstudios.github.io/cargo-deny/checks/advisories/cfg.html
+[advisories]
+# The path where the advisory database is cloned/fetched into
+db-path = "~/.cargo/advisory-db"
+# The url(s) of the advisory databases to use
+db-urls = ["https://github.com/rustsec/advisory-db"]
+# The lint level for security vulnerabilities
+vulnerability = "deny"
+# The lint level for unmaintained crates
+unmaintained = "warn"
