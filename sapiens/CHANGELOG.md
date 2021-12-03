@@ -75,4 +75,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    ---
    updated-dependencies:
    - dependency-name: tracing
-     dependency-type:
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-bfdd7f1e8acba3e70fbc2a4a0d4b1357b9a72b5f/> bump async-trait from 0.1.73 to 0.1.74
+   Bumps [async-trait](https://github.com/dtolnay/async-trait) from 0.1.73 to 0.1.74.
+   - [Release notes](https://github.com/dtolnay/async-trait/releases)
+   - [Commits](https://github.com/dtolnay/async-trait/compare/0.1.73...0.1.74)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-trait
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-363ada63e62bc6faccb5fd11f82a40d87bc40315/> bump tiktoken-rs from 0.5.4 to 0.5.5
+   Bumps [tiktoken-rs](https://github.com/zurawiki/tiktoken-rs) from 0.5.4 to 0.5.5.
+   - [Release notes](https://github.com/zurawiki/tiktoken-rs/releases)
+   - [Commits](https://github.com/zurawiki/tiktoken-rs/compare/v0.5.4...v0.5.5)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tiktoken-rs
+     dependency-type: direct:production
+     update-type: version-upd
