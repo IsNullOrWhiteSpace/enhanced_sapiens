@@ -139,4 +139,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    Bumps [gcp-vertex-ai-generative-language](https://github.com/ssoudan/gcp-vertex-ai-generative-ai) from 0.1.1 to 0.1.2.
    - [Release notes](https://github.com/ssoudan/gcp-vertex-ai-generative-ai/releases)
    - [Changelog](https://github.com/ssoudan/gcp-vertex-ai-generative-ai/blob/main/CHANGELOG.md)
-   - [Commits](https://github.com/ssoudan/gcp-vertex-ai-generative-ai/compare/gcp-vertex-ai-gener
+   - [Commits](https://github.com/ssoudan/gcp-vertex-ai-generative-ai/compare/gcp-vertex-ai-generative-language-v0.1.1...gcp-vertex-ai-generative-language-v0.1.2)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: gcp-vertex-ai-generative-language
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-011f5c3c0fc87e81394783002f05c08a721dc4c5/> bump insta from 1.33.0 to 1.34.0
+   Bumps [insta](https://github.com/mitsuhiko/insta) from 1.33.0 to 1.34.0.
+   - [Changelog](https://github.com/mitsuhiko/insta/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/mitsuhiko/insta/compare/1.33.0...1.34.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: insta
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-4f0a515be6603252df2b22b11eebf1613ea18faa/> bump regex from 1.9.6 to 1.10.0
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.6 to 1.10.0.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Com
