@@ -185,4 +185,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    Bumps [tokenizers](https://github.com/huggingface/tokenizers) from 0.14.0 to 0.14.1.
    - [Release notes](https://github.com/huggingface/tokenizers/releases)
    - [Changelog](https://github.com/huggingface/tokenizers/blob/main/RELEASE.md)
-   - [Commits](https://github.com/huggingface/tokenizers/compare/v0.1
+   - [Commits](https://github.com/huggingface/tokenizers/compare/v0.14.0...v0.14.1)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tokenizers
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-d89bd0419382dbf6df44bd06fb1d016d2033277f/> bump regex from 1.9.5 to 1.9.6
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.5 to 1.9.6.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.9.5...1.9.6)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-0874b5ae4bccc345230749ccc6f2ef2335393713/> bump clap from 4.4.5 to 4.4.6
+   Bumps [clap](https://github.com/clap-rs/clap) from 4.4.5 to 4.4.6.
+   - [Release notes](https://github.com/clap-rs/clap/releases)
+   - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/clap-rs/c
