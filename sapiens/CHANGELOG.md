@@ -209,4 +209,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    Bumps [clap](https://github.com/clap-rs/clap) from 4.4.5 to 4.4.6.
    - [Release notes](https://github.com/clap-rs/clap/releases)
    - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
-   - [Commits](https://github.com/clap-rs/c
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.4.5...v4.4.6)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-0128ce26a9e0b0a57a0a236173b6a46ef28cdda0/> bump insta from 1.32.0 to 1.33.0
+   Bumps [insta](https://github.com/mitsuhiko/insta) from 1.32.0 to 1.33.0.
+   - [Changelog](https://github.com/mitsuhiko/insta/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/mitsuhiko/insta/compare/1.32.0...1.33.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: insta
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-0ad5b228a9901e523f4629c2b1ff8bb499050fda/> bump thiserror from 1.0.48 to 1.0.49
+   Bumps [thiserror](https://github.com/dtolnay/thiserror) from 1.0.48 to 1.0.49.
+   - [Release notes](https://github.com/dtolnay/thiserror/releases)
+   - [Commits](https://github.com/dtolnay/thiserror/compare/1.0.48...1.0.49)
+   
+   ---
+   updated-d
