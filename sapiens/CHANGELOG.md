@@ -331,4 +331,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      update-type: version-update:semver-patch
    ...
  - <csr-id-bf46b302328e2647af47d5d6346a15720150ac8c/> updated
- - <cs
+ - <csr-id-048b526e0a3c319c00ee85a2dedc4503a35bb7e3/> bump regex from 1.9.4 to 1.9.5
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.4 to 1.9.5.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.9.4...1.9.5)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-e15bb173fd7b97059e600923659c1d1792e8a1af/> bump thiserror from 1.0.47 to 1.0.48
+   Bumps [thiserror](https://github.com/dtolnay/thiserror) from 1.0.47 to 1.0.48.
+   - [Release notes](https://github.com/dtolnay/thiserror/releases)
+   - [Commits](https://github.com/dtolnay/thiserror/compare/1.0.47...1.0.48)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: thiserror
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-912f1d0ac504ff4
