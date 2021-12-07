@@ -376,4 +376,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    updated-dependencies:
    - dependency-name: clap
      dependency-type: direct:production
-     update-type: version-update:semver-m
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-0682b515312db092eb5e918761467e9c1c3e1de9/> bump regex from 1.9.3 to 1.9.4
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.3 to 1.9.4.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.9.3...1.9.4)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-cbcc4dabc86f197e6acfe8b50787cda1cc9ae1c5/> bump serde from 1.0.183 to 1.0.188
+   Bumps [serde](https://github.com/serde-rs/serde) from 1.0.183 to 1.0.188.
+   - [Release notes](https://github.com/serde-rs/serde/releases)
+   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.183...v1.0.188)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-78
