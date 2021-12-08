@@ -425,4 +425,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      update-type: version-update:semver-patch
    ...
  - <csr-id-a8ba3bb6739282837fab1e45f96a371c13de68cc/> bump async-openai from 0.13.0 to 0.13.1
-   Bumps [async-op
+   Bumps [async-openai](https://github.com/64bit/async-openai) from 0.13.0 to 0.13.1.
+   - [Release notes](https://github.com/64bit/async-openai/releases)
+   - [Commits](https://github.com/64bit/async-openai/compare/async-openai-v0.13.0...async-openai-v0.13.1)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-openai
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-3dc377ff267829d9a452f3807bafdb2d3d4b9d47/> bump thiserror from 1.0.46 to 1.0.47
+   Bumps [thiserror](https://github.com/dtolnay/thiserror) from 1.0.46 to 1.0.47.
+   - [Release notes](https://github.com/dtolnay/thiserror/releases)
+   - [Commits](https://github.com/dtolnay/thiserror/compare/1.0.46...1.0.47)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: thiserror
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-8343a4dd8d9dc3e6cb4c447f7f4b0b2594fb91bb/> update
+ - <csr-id-550130b6be1bc9fbe876f10308e9c0dbe03dcd0e/> update
+ - <csr-id-e1ac0333325dd3035760659f3026770d87d
