@@ -472,4 +472,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      update-type: version-update:semver-patch
    ...
  - <csr-id-ef3d1dcea2a9e84e0f664c91ce828214b0fc1462/> bump regex from 1.9.1 to 1.9.3
-   Bumps [regex](ht
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.1 to 1.9.3.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.9.1...1.9.3)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-61a7ae9a1ef4e33468c9bd846e8a4d5bfff081d5/> bump serde_yaml from 0.9.22 to 0.9.25
+   Bumps [serde_yaml](https://github.com/dtolnay/serde-yaml) from 0.9.22 to 0.9.25.
+   - [Release notes](https://github.com/dtolnay/serde-yaml/releases)
+   - [Commits](https://github.com/dtolnay/serde-yaml/compare/0.9.22...0.9.25)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde_yaml
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-7db919188ef13a808db5b374f3343bf6a1b2b34c/> bump async-openai from 0.12.1 to 0.12.2
+   Bumps [async-openai](https://github.com/64bit/async-openai) from 0.12.1 to 0.12
