@@ -495,4 +495,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      update-type: version-update:semver-patch
    ...
  - <csr-id-7db919188ef13a808db5b374f3343bf6a1b2b34c/> bump async-openai from 0.12.1 to 0.12.2
-   Bumps [async-openai](https://github.com/64bit/async-openai) from 0.12.1 to 0.12
+   Bumps [async-openai](https://github.com/64bit/async-openai) from 0.12.1 to 0.12.2.
+   - [Release notes](https://github.com/64bit/async-openai/releases)
+   - [Commits](https://github.com/64bit/async-openai/compare/async-openai-v0.12.1...async-openai-v0.12.2)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-openai
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-21d0a6a13bbb7cfdd6bd3d223e083a10044e9360/> bump thiserror from 1.0.43 to 1.0.44
+   Bumps [thiserror](https://github.com/dtolnay/thiserror) from 1.0.43 to 1.0.44.
+   - [Release notes](https://github.com/dtolnay/thiserror/releases)
+   - [Commits](https://github.com/dtolnay/thiserror/compare/1.0.43...1.0.44)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: thiserror
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-c19e63b86012b4daef662b28793f4f5c97c05e2f/> bump insta from 1.30.0 to 1.31.0
+   Bumps [insta](https://github.com/mitsuhiko/insta) from 1.30.0 to 1.31.0.
+   - [Changelog](https://github.com/mitsuhiko/insta/blob/maste
