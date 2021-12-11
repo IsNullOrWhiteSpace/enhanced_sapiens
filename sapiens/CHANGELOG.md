@@ -542,4 +542,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - <csr-id-47feb622f7319c2633d82d40e03f0a637f43fc2a/> bump serde from 1.0.167 to 1.0.168
    Bumps [serde](https://github.com/serde-rs/serde) from 1.0.167 to 1.0.168.
    - [Release notes](https://github.com/serde-rs/serde/releases)
-   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.167...v1.0.1
+   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.167...v1.0.168)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-6de0d4598272610a16d56550131b45297f909f7c/> bump serde from 1.0.166 to 1.0.167
+   Bumps [serde](https://github.com/serde-rs/serde) from 1.0.166 to 1.0.167.
+   - [Release notes](https://github.com/serde-rs/serde/releases)
+   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.166...v1.0.167)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-bd450b3f377e29b787a51f5dae22bda5ac4bcd58/> bump thiserror from 1.0.41 to 1.0.43
+   Bumps [thiserror](https://github.com/dtolnay/thiserror) from 1.0.41 to 1.0.43.
+   - [Release notes](https://github.com/dtolnay/thiserror/releases)
+   - [Commits](https://github.com/dtolnay/thiserror/compare/1.0.41...1.0.43)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: thiserror
+     dependency-type: direct:production
+     update-type: version-update:sem
