@@ -594,4 +594,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    updated-dependencies:
    - dependency-name: regex
      dependency-type: direct:production
-     update-type: version-update:s
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-069ec4a52ff73e59a75a8044a5a720bd9bf66b94/> bump async-trait from 0.1.70 to 0.1.71
+   Bumps [async-trait](https://github.com/dtolnay/async-trait) from 0.1.70 to 0.1.71.
+   - [Release notes](https://github.com/dtolnay/async-trait/releases)
+   - [Commits](https://github.com/dtolnay/async-trait/compare/0.1.70...0.1.71)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-trait
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-2c05c13de3b8a7aabd9c9c610095a413b6d0ed8d/> bump clap from 4.3.10 to 4.3.11
+   Bumps [clap](https://github.com/clap-rs/clap) from 4.3.10 to 4.3.11.
+   - [Release notes](https://github.com/clap-rs/clap/releases)
+   - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.3.10...v4.3.11)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-8d338cbabb605ea02584b52f489594f
