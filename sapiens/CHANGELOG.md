@@ -642,4 +642,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      update-type: version-update:semver-patch
    ...
  - <csr-id-8b2b9c96ee25d65c97a9f26bcbd5d3a213c048f2/> update
- - <csr-id-bb770c7990a9b366074735be1d78a5fcf503b549/> u
+ - <csr-id-bb770c7990a9b366074735be1d78a5fcf503b549/> update
+ - <csr-id-1b997684bcbbd596a064e925b5280660d4aac22c/> bump tokio from 1.29.0 to 1.29.1
+   Bumps [tokio](https://github.com/tokio-rs/tokio) from 1.29.0 to 1.29.1.
+   - [Release notes](https://github.com/tokio-rs/tokio/releases)
+   - [Commits](https://github.com/tokio-rs/tokio/compare/tokio-1.29.0...tokio-1.29.1)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tokio
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-b3fbcb0ba8e1626a5bba50510234b3679576d1c7/> bump clap from 4.3.8 to 4.3.9
+   Bumps [clap](https://github.com/clap-rs/clap) from 4.3.8 to 4.3.9.
+   - [Release notes](https://github.com/clap-rs/clap/releases)
+   - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.3.8...v4.3.9)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-67223b1add580a31301d516c0
