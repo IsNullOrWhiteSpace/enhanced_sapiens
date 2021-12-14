@@ -713,4 +713,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      update-type: version-update:semver-minor
    ...
  - <csr-id-8d10a825e89aeab4dff0b1b928d1aff663e801c8/> bump tiktoken-rs from 0.4.3 to 0.4.4
-   Bumps [tiktoken-rs](https://github.com/zurawiki/tiktoken-rs)
+   Bumps [tiktoken-rs](https://github.com/zurawiki/tiktoken-rs) from 0.4.3 to 0.4.4.
+   - [Release notes](https://github.com/zurawiki/tiktoken-rs/releases)
+   - [Commits](https://github.com/zurawiki/tiktoken-rs/compare/v0.4.3...v0.4.4)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tiktoken-rs
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-94e120bbc02537233ded8c7bd58968b1c7e0cdb2/> update
+
+### Bug Fixes
+
+ - <csr-id-e4dde233ac5397554768eaa796c2de828830a1ad/> todo!()...
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 143 commits contributed to the release over the course of 141 calendar days.
+ - 146 days passed between releases.
+ - 73 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.10.1 ([`5386129`](https://github.com/ssoudan/sapiens/commit/5386129ab2d592fef37125d5b3ebf
