@@ -745,4 +745,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <details><summary>view details</summary>
 
  * **Uncategorized**
-    - Release sapiens v0.10.1 ([`5386129`](https://github.com/ssoudan/sapiens/commit/5386129ab2d592fef37125d5b3ebf
+    - Release sapiens v0.10.1 ([`5386129`](https://github.com/ssoudan/sapiens/commit/5386129ab2d592fef37125d5b3ebf63ec20c99fd))
+    - Merge pull request #176 from ssoudan/config ([`7839cc5`](https://github.com/ssoudan/sapiens/commit/7839cc5e0d0e52af9d00b6b855b9843542a74356))
+    - Updated ([`1883f0f`](https://github.com/ssoudan/sapiens/commit/1883f0f56c247c2e9a4a21688883b73f9c9a9862))
+    - Updated to async-openai 0.16.1 ([`304215a`](https://github.com/ssoudan/sapiens/commit/304215abc34b67c5b311facd3f797739f08c0ccb))
+    - Merge pull request #173 from ssoudan/dependabot/cargo/serde_yaml-0.9.27 ([`1e5b356`](https://github.com/ssoudan/sapiens/commit/1e5b3561d3a373b50f2ae749064bf5ea9bdde1ad))
+    - Bump serde_yaml from 0.9.25 to 0.9.27 ([`b8a70d5`](https://github.com/ssoudan/sapiens/commit/b8a70d54adf8d0c98fcce8caa3c271a2a5a0576c))
+    - Merge pull request #172 from ssoudan/dependabot/cargo/serde-1.0.190 ([`e9be917`](https://github.com/ssoudan/sapiens/commit/e9be917bbedf967c33a92a178f493673f8694ebf))
+    - Bump serde from 1.0.189 to 1.0.190 ([`b2ab948`](https://github.com/ssoudan/sapiens/commit/b2ab9489a6ac
