@@ -752,4 +752,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Merge pull request #173 from ssoudan/dependabot/cargo/serde_yaml-0.9.27 ([`1e5b356`](https://github.com/ssoudan/sapiens/commit/1e5b3561d3a373b50f2ae749064bf5ea9bdde1ad))
     - Bump serde_yaml from 0.9.25 to 0.9.27 ([`b8a70d5`](https://github.com/ssoudan/sapiens/commit/b8a70d54adf8d0c98fcce8caa3c271a2a5a0576c))
     - Merge pull request #172 from ssoudan/dependabot/cargo/serde-1.0.190 ([`e9be917`](https://github.com/ssoudan/sapiens/commit/e9be917bbedf967c33a92a178f493673f8694ebf))
-    - Bump serde from 1.0.189 to 1.0.190 ([`b2ab948`](https://github.com/ssoudan/sapiens/commit/b2ab9489a6ac
+    - Bump serde from 1.0.189 to 1.0.190 ([`b2ab948`](https://github.com/ssoudan/sapiens/commit/b2ab9489a6ac0f8cdf8b7b8afeef9ed86b1f910a))
+    - Merge pull request #170 from ssoudan/dependabot/cargo/clap-4.4.7 ([`8abc616`](https://github.com/ssoudan/sapiens/commit/8abc616d683f38c93642aa2304259f23e1ca7553))
+    - Bump clap from 4.4.6 to 4.4.7 ([`22bafb4`](https://github.com/ssoudan/sapiens/commit/22bafb4732052341653c1600895c2006bf7c88b7))
+    - Merge pull request #169 from ssoudan/dependabot/cargo/tiktoken-rs-0.5.6 ([`6bc7881`](https://github.com/ssoudan/sapiens/commit/6bc7881a4564d816db5c1f5658694811cd7d5ef1))
+    - Bump tiktoken-rs from 0.5.5 to 0.5.6 ([`1934524`](https://github.com/ssoudan/sapiens/commit/1934524cc1765cd1d8e7ad51836fc0adf774ad2a))
+    - Merge pull request #168 from ssoudan/dependabot/cargo/thiserror-1.0.50 ([`13614c2`](https://github.com/ssoudan/sapiens/commit/13614c255dcbe144e8ced62134f7352e5ecf054f))
+    - Bump thiserror from 1.0.49 to 1.0.50 ([`4fb61ab`](https://github.com/ssoudan/sapiens/commit/4fb61ab19203a5c2721d5fcd55be57ba1e54321c))
+    - Merge pull request #167 from ssoudan/dependabot/cargo/tracing-0.1.40 ([`69603f9`](h
