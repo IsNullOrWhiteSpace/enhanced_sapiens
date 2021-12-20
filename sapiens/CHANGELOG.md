@@ -765,4 +765,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Bump async-trait from 0.1.73 to 0.1.74 ([`bfdd7f1`](https://github.com/ssoudan/sapiens/commit/bfdd7f1e8acba3e70fbc2a4a0d4b1357b9a72b5f))
     - Merge pull request #163 from ssoudan/dependabot/cargo/regex-1.10.2 ([`7e2bc3c`](https://github.com/ssoudan/sapiens/commit/7e2bc3cf1186f1e671ac1973af81289247681fe4))
     - Merge pull request #165 from ssoudan/dependabot/cargo/tiktoken-rs-0.5.5 ([`4ab5075`](https://github.com/ssoudan/sapiens/commit/4ab5075dbf3227bc9c43c64151dfcd30878a1ee7))
-    - Merge pull request #164 from ssoudan/dependabot/cargo/tracing-0.1.39 ([`75abf09`](https://github.com/ssoudan/sapiens/commit/75abf09822fe609c9e307db6012
+    - Merge pull request #164 from ssoudan/dependabot/cargo/tracing-0.1.39 ([`75abf09`](https://github.com/ssoudan/sapiens/commit/75abf09822fe609c9e307db6012cac948ff78981))
+    - Bump tiktoken-rs from 0.5.4 to 0.5.5 ([`363ada6`](https://github.com/ssoudan/sapiens/commit/363ada63e62bc6faccb5fd11f82a40d87bc40315))
+    - Bump tracing from 0.1.37 to 0.1.39 ([`1a1664f`](https://github.com/ssoudan/sapiens/commit/1a1664fdcd3e53bb140280aeadd0e6cff266e30a))
+    - Bump regex from 1.10.0 to 1.10.2 ([`124dc7a`](https://github.com/ssoudan/sapiens/commit/124dc7a9e0b9c4b45526d667cefe9dc2f8be9166))
+    - Merge pull request #162 from ssoudan/dependabot/cargo/serde-1.0.189 ([`8f516d5`](https://github.com/ssoudan/sapiens/commit/8f516d5afed0740f1f315e1c581f7815905425d6))
+    - Bump serde from 1.0.188 to 1.0.189 ([`ba11b4c`](https://github.com/ssoudan/sapiens/commit/ba11b4ca9e2b218315db1e19c1699571a4b34f77))
+    - Merge pull request #161 from ssoudan/dependabot/cargo/gcp-vertex-ai-generative-language-0.1.2 ([`0228ab3`](https://github.com/ssoudan/sapiens/commit/0228ab3fa62bb0ed9c47d22044a274157221d4a1))
+    - ... ([`eadb63a`](https://github.com/ssoudan/sapiens/commit/eadb63ada319611d7a083e9caa6cefb97e
