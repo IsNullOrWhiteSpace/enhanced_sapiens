@@ -793,4 +793,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Bump thiserror from 1.0.48 to 1.0.49 ([`0ad5b22`](https://github.com/ssoudan/sapiens/commit/0ad5b228a9901e523f4629c2b1ff8bb499050fda))
     - Bump clap from 4.4.4 to 4.4.5 ([`6869ba7`](https://github.com/ssoudan/sapiens/commit/6869ba7854d3f39de6cec5bbf28c6ea31e64180d))
     - Merge pull request #147 from ssoudan/dependabot/cargo/async-openai-0.14.3 ([`70cc057`](https://github.com/ssoudan/sapiens/commit/70cc057e0ad53d34ffb3d76654bf3ca8902abb7f))
-    - Bump async-openai from 0.14.2 to 0.14.3 ([`7fb2
+    - Bump async-openai from 0.14.2 to 0.14.3 ([`7fb2e28`](https://github.com/ssoudan/sapiens/commit/7fb2e28a366af3db41598339e4a160287a0c4115))
+    - Merge pull request #146 from ssoudan/dependabot/cargo/insta-1.32.0 ([`481b9ce`](https://github.com/ssoudan/sapiens/commit/481b9ce9c810138eab09e6b6aa163ce12b135ed4))
+    - Bump insta from 1.31.0 to 1.32.0 ([`5d6e571`](https://github.com/ssoudan/sapiens/commit/5d6e571ad7141d0c1a243479f7af36c34a8ab341))
+    - Merge pull request #144 from ssoudan/dependabot/cargo/clap-4.4.4 ([`c05e0b1`](https://github.com/ssoudan/sapiens/commit/c05e0b1dc7ed230acb4ef809034c4bb27a40ed4c))
+    - Merge pull request #145 from ssoudan/dependabot/cargo/tiktoken-rs-0.5.4 ([`6c380be`](https://github.com/ssoudan/sapiens/commit/6c380be471050e7f04a5d2ab5e2906cd641bf458))
+    - Bump tiktoken-rs from 0.5.3 to 0.5.4 ([`f472e2c`](https://github.com/ssoudan/sapiens/commit/f472e2caa881dcbc296352f8c16261086e15e8cb))
+    - Bump clap from 4.4.3 to 4.4.4 ([`34ef606`](https://github.com/ssoudan/sapiens/commit/34ef6061d013c218c98b59150a33a6042b6c8415))
+    - Merge pull request #141 from ssouda
