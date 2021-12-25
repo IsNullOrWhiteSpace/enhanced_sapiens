@@ -779,4 +779,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Bump insta from 1.33.0 to 1.34.0 ([`011f5c3`](https://github.com/ssoudan/sapiens/commit/011f5c3c0fc87e81394783002f05c08a721dc4c5))
     - Bump regex from 1.9.6 to 1.10.0 ([`4f0a515`](https://github.com/ssoudan/sapiens/commit/4f0a515be6603252df2b22b11eebf1613ea18faa))
     - Merge pull request #157 from ssoudan/dependabot/cargo/tokio-1.33.0 ([`a597d03`](https://github.com/ssoudan/sapiens/commit/a597d038240c6e01edc02eeba1edd38958bb8782))
-    - Bump tokio from 1.32.0 to 1.33.0 ([`ca4f980`](https://github.com/ssoudan/
+    - Bump tokio from 1.32.0 to 1.33.0 ([`ca4f980`](https://github.com/ssoudan/sapiens/commit/ca4f9807ac32d2822d2ed3ba21604433851a2872))
+    - Merge pull request #156 from ssoudan/dependabot/cargo/tokenizers-0.14.1 ([`1b26cbe`](https://github.com/ssoudan/sapiens/commit/1b26cbe8c23155a98982b788cdb563f3a58a26f9))
+    - Bump tokenizers from 0.14.0 to 0.14.1 ([`1c9a6ce`](https://github.com/ssoudan/sapiens/commit/1c9a6ce93736082c3cbb9bda206af3d6c08598ab))
+    - Merge pull request #152 from ssoudan/dependabot/cargo/regex-1.9.6 ([`be08adc`](https://github.com/ssoudan/sapiens/commit/be08adc81ae48ba186285fd9dd431ad2713d8704))
+    - Bump regex from 1.9.5 to 1.9.6 ([`d89bd04`](https://github.com/ssoudan/sapiens/commit/d89bd0419382dbf6df44bd06fb1d016d2033277f))
+    - Merge pull request #151 from ssoudan/dependabot/cargo/clap-4.4.6 ([`9cb708b`](https://github.com/ssoudan/sapiens/commit/9cb708b394d40febe55175d3fea77622b698c861))
+    - Bump clap from 4.4.5 to 4.4.6 ([`0874b5a`](https://github.com/ssoudan/sapiens/commit/0874b5ae4bccc345230749ccc6f2ef2335393713))
+    - Merge pull request #150 from ssoudan/dependabot/cargo/insta-1.33.0 ([`463fd33`](https://
