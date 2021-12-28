@@ -800,4 +800,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Merge pull request #145 from ssoudan/dependabot/cargo/tiktoken-rs-0.5.4 ([`6c380be`](https://github.com/ssoudan/sapiens/commit/6c380be471050e7f04a5d2ab5e2906cd641bf458))
     - Bump tiktoken-rs from 0.5.3 to 0.5.4 ([`f472e2c`](https://github.com/ssoudan/sapiens/commit/f472e2caa881dcbc296352f8c16261086e15e8cb))
     - Bump clap from 4.4.3 to 4.4.4 ([`34ef606`](https://github.com/ssoudan/sapiens/commit/34ef6061d013c218c98b59150a33a6042b6c8415))
-    - Merge pull request #141 from ssouda
+    - Merge pull request #141 from ssoudan/dependabot/cargo/async-openai-0.14.2 ([`bba1b07`](https://github.com/ssoudan/sapiens/commit/bba1b07b7463c71c5cbd5a0db669f375c2bc9756))
+    - Bump async-openai from 0.14.1 to 0.14.2 ([`7afffc2`](https://github.com/ssoudan/sapiens/commit/7afffc2c09344a32e1c0a38589769eb34622c8a6))
+    - Merge pull request #138 from ssoudan/dependabot/cargo/clap-4.4.3 ([`dbafa2b`](https://github.com/ssoudan/sapiens/commit/dbafa2b5afd9f9f99613c74f3e67dcaa224ac8b1))
+    - Bump clap from 4.4.2 to 4.4.3 ([`b9dfcd7`](https://github.com/ssoudan/sapiens/commit/b9dfcd7d44b7736f02789a7878c5e3d485b1ca89))
+    - Merge pull request #136 from ssoudan/dependabot/cargo/async-openai-0.14.1 ([`cb17918`](https://github.com/ssoudan/sapiens/commit/cb17918a21476b24f9197669b17bd0c5dc304abd))
+    - Bump async-openai from 0.14.0 to 0.14.1 ([`7224d73`](https://github.com/ssoudan/sapiens/commit/7224d731f569995afc72f611e53bfaf047b54a02))
+    - Merge pull request #134 from ssoudan/fixes ([`702c05c`](https://github.com/ssoudan/sapiens/commit/702c05c590efcc50598935a99
