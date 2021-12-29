@@ -821,4 +821,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Bump clap from 4.3.23 to 4.4.1 ([`115c996`](https://github.com/ssoudan/sapiens/commit/115c996cfce7fe87f708a91f093a8dabb28456a7))
     - Bump regex from 1.9.3 to 1.9.4 ([`0682b51`](https://github.com/ssoudan/sapiens/commit/0682b515312db092eb5e918761467e9c1c3e1de9))
     - Bump serde from 1.0.183 to 1.0.188 ([`cbcc4da`](https://github.com/ssoudan/sapiens/commit/cbcc4dabc86f197e6acfe8b50787cda1cc9ae1c5))
-    - Merge pull request 
+    - Merge pull request #113 from ssoudan/dependabot/cargo/tokio-1.32.0 ([`fb9234f`](https://github.com/ssoudan/sapiens/commit/fb9234fc7781d1e82eb83769dd997684d8610ece))
+    - Bump tokio from 1.31.0 to 1.32.0 ([`78a1156`](https://github.com/ssoudan/sapiens/commit/78a1156d0427bd0b730cc48fc4f3b56b03a2b241))
+    - Merge pull request #110 from ssoudan/dependabot/cargo/thiserror-1.0.47 ([`9bcbc44`](https://github.com/ssoudan/sapiens/commit/9bcbc44354afcfd0959b3dc507f26b5fd8fa55bd))
+    - Merge pull request #114 from ssoudan/dependabot/cargo/async-openai-0.13.1 ([`cdfb15c`](https://github.com/ssoudan/sapiens/commit/cdfb15c678009459c87ddd35effcb99507490545))
+    - Merge pull request #115 from ssoudan/dependabot/cargo/clap-4.3.23 ([`c5ba81f`](https://github.com/ssoudan/sapiens/commit/c5ba81f4740dcd6aa8fdabf822609d0c83ec9039))
+    - Bump clap from 4.3.21 to 4.3.23 ([`9fbcc14`](https://github.com/ssoudan/sapiens/commit/9fbcc14cfe4a41ceec31c89351ea040ce7131cae))
+    - Bump async-openai from 0.13.0 to 0.13.1 ([`a8ba3bb`](https://github.com/ssoudan/sapiens/commit/a8ba3bb6739282837fab1e45f96a371c13de68cc))
+    - 
