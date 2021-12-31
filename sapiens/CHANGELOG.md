@@ -835,4 +835,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Update ([`550130b`](https://github.com/ssoudan/sapiens/commit/550130b6be1bc9fbe876f10308e9c0dbe03dcd0e))
     - Merge pull request #101 from ssoudan/dependabot/cargo/clap-4.3.21 ([`547aa23`](https://github.com/ssoudan/sapiens/commit/547aa237eb29ae907297df9f74ad29456a91a387))
     - Merge pull request #103 from ssoudan/dependabot/cargo/tokio-1.30.0 ([`676d9df`](https://github.com/ssoudan/sapiens/commit/676d9df815fe19a5f6490cf15d7f6ecf1c7ce09f))
-    - Bump tok
+    - Bump tokio from 1.29.1 to 1.30.0 ([`e1ac033`](https://github.com/ssoudan/sapiens/commit/e1ac0333325dd3035760659f3026770d87d32ff5))
+    - Bump clap from 4.3.19 to 4.3.21 ([`6a808e6`](https://github.com/ssoudan/sapiens/commit/6a808e6cdca6cf5590129047edb44cc7b2556fe9))
+    - Merge pull request #96 from ssoudan/dependabot/cargo/regex-1.9.3 ([`8255cb4`](https://github.com/ssoudan/sapiens/commit/8255cb4214156c117e195dd64e8065f93438213a))
+    - Bump regex from 1.9.1 to 1.9.3 ([`ef3d1dc`](https://github.com/ssoudan/sapiens/commit/ef3d1dcea2a9e84e0f664c91ce828214b0fc1462))
+    - Merge pull request #90 from ssoudan/dependabot/cargo/insta-1.31.0 ([`3cf0903`](https://github.com/ssoudan/sapiens/commit/3cf09032982b9a32887bba633eac5d320f61eed9))
+    - Merge pull request #97 from ssoudan/dependabot/cargo/thiserror-1.0.44 ([`0a20636`](https://github.com/ssoudan/sapiens/commit/0a206367fb7bfcce0d78a8a3c2c83758e4bd5c4c))
+    - Merge pull request #98 from ssoudan/dependabot/cargo/async-openai-0.12.2 ([`aacae37`](https://github.com/ssoudan/sapiens/commit/aacae377778e119f987acb83ebfaa66f9a57fda0))
+    - M
