@@ -849,4 +849,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Bump insta from 1.30.0 to 1.31.0 ([`c19e63b`](https://github.com/ssoudan/sapiens/commit/c19e63b86012b4daef662b28793f4f5c97c05e2f))
     - Merge pull request #94 from ssoudan/dependabot/cargo/clap-4.3.19 ([`ef96d79`](https://github.com/ssoudan/sapiens/commit/ef96d795cde5e8821c59b7330462bc42db8eefe6))
     - Bump clap from 4.3.11 to 4.3.19 ([`92ed134`](https://github.com/ssoudan/sapiens/commit/92ed13422d4b45aceaf2065c8639af4e689dbaaf))
-    - Merge pull request #81 from ssoudan/dependabot/cargo
+    - Merge pull request #81 from ssoudan/dependabot/cargo/serde-1.0.168 ([`c747405`](https://github.com/ssoudan/sapiens/commit/c74740579d43bd57ea8a098180592a4d3e37b875))
+    - Bump serde from 1.0.167 to 1.0.168 ([`47feb62`](https://github.com/ssoudan/sapiens/commit/47feb622f7319c2633d82d40e03f0a637f43fc2a))
+    - Merge pull request #78 from ssoudan/dependabot/cargo/regex-1.9.1 ([`a6e94da`](https://github.com/ssoudan/sapiens/commit/a6e94daa5a89692aa1c9b2fe04dd0c76b34c69d6))
+    - Merge pull request #80 from ssoudan/dependabot/cargo/serde-1.0.167 ([`b15610b`](https://github.com/ssoudan/sapiens/commit/b15610b1a4cc3dba7b3149f26b39ed8093bbca25))
+    - Merge pull request #79 from ssoudan/dependabot/cargo/thiserror-1.0.43 ([`3bab52e`](https://github.com/ssoudan/sapiens/commit/3bab52ee59c67cd66b112d8a9c25d9cdddf77ceb))
+    - Bump serde from 1.0.166 to 1.0.167 ([`6de0d45`](https://github.com/ssoudan/sapiens/commit/6de0d4598272610a16d56550131b45297f909f7c))
+    - Bump thiserror from 1.0.41 to 1.0.43 ([`bd450b3`](https://github.com/ssoudan/sapiens/commit/bd450b3f377e29b787a51f5dae22bda5ac4bcd58))
+    - Bump regex from 1.9.0 to 1.9.1
