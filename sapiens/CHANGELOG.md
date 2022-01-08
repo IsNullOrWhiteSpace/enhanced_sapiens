@@ -869,4 +869,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Bump async-trait from 0.1.69 to 0.1.70 ([`076765c`](https://github.com/ssoudan/sapiens/commit/076765c66d526705df407c844aa1638b6ac0c563))
     - Merge pull request #70 from ssoudan/updates ([`d0058f5`](https://github.com/ssoudan/sapiens/commit/d0058f5cbcfbce889a132a7beeea356c30d75513))
     - Update ([`8b2b9c9`](https://github.com/ssoudan/sapiens/commit/8b2b9c96ee25d65c97a9f26bcbd5d3a213c048f2))
-    - Update ([`bb770c7`](https://github.com/ssoudan/sapiens/commit/bb770c7990a9b36607473
+    - Update ([`bb770c7`](https://github.com/ssoudan/sapiens/commit/bb770c7990a9b366074735be1d78a5fcf503b549))
+    - Merge pull request #65 from ssoudan/dependabot/cargo/tokio-1.29.1 ([`4e484ac`](https://github.com/ssoudan/sapiens/commit/4e484acdd04f034ae5cd489b29589fdf982a757c))
+    - Bump tokio from 1.29.0 to 1.29.1 ([`1b99768`](https://github.com/ssoudan/sapiens/commit/1b997684bcbbd596a064e925b5280660d4aac22c))
+    - Merge pull request #62 from ssoudan/dependabot/cargo/clap-4.3.9 ([`d3d3aa0`](https://github.com/ssoudan/sapiens/commit/d3d3aa0665886c3049461361ede2bae8616d93cf))
+    - Merge pull request #61 from ssoudan/dependabot/cargo/tokio-1.29.0 ([`5ef0f26`](https://github.com/ssoudan/sapiens/commit/5ef0f2628d723fd36c7840a08b294732d9f248ea))
+    - Bump clap from 4.3.8 to 4.3.9 ([`b3fbcb0`](https://github.com/ssoudan/sapiens/commit/b3fbcb0ba8e1626a5bba50510234b3679576d1c7))
+    - Bump tokio from 1.28.2 to 1.29.0 ([`67223b1`](https://github.com/ssoudan/sapiens/commit/67223b1add580a31301d516c05a4ddfc92359647))
+    - Merge pull request #59 from ssoudan/updates ([`2aabab4`](https://github.com/ssoudan/sapiens/commit/2aabab4f96631f9af86e7a190
