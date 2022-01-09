@@ -883,4 +883,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Bump serde_yaml from 0.9.21 to 0.9.22 ([`1386f51`](https://github.com/ssoudan/sapiens/commit/1386f511fd429e185142203a8d406534737ede46))
     - Bump clap from 4.3.4 to 4.3.8 ([`a5a7db1`](https://github.com/ssoudan/sapiens/commit/a5a7db19bd59b4d08fc6eefed68053017946bfcf))
     - Merge pull request #52 from ssoudan/dependabot/cargo/insta-1.30.0 ([`74ab448`](https://github.com/ssoudan/sapiens/commit/74ab4485e47c2d45e83e4865fbce2b7ce7f0a8e8))
-    - Merge pull request #50 from ssoudan/dependabot/cargo/tiktoken-rs-0.4.4 ([`c171476`](ht
+    - Merge pull request #50 from ssoudan/dependabot/cargo/tiktoken-rs-0.4.4 ([`c171476`](https://github.com/ssoudan/sapiens/commit/c1714767afb4c9051a20bc31e0fadf5913eff469))
+    - Bump insta from 1.29.0 to 1.30.0 ([`febeb6a`](https://github.com/ssoudan/sapiens/commit/febeb6ae02da73ce3f69dfe7005acf8fbdbf0402))
+    - Bump tiktoken-rs from 0.4.3 to 0.4.4 ([`8d10a82`](https://github.com/ssoudan/sapiens/commit/8d10a825e89aeab4dff0b1b928d1aff663e801c8))
+    - Merge pull request #47 from ssoudan/update ([`5a45eae`](https://github.com/ssoudan/sapiens/commit/5a45eae1353974306040fc5dc41feccf15721332))
+    - Update ([`94e120b`](https://github.com/ssoudan/sapiens/commit/94e120bbc02537233ded8c7bd58968b1c7e0cdb2))
+</details>
+
+## 0.10.1 (2023-06-14)
+
+<csr-id-f4b88c4520574c841b055edd71c329a8195c7173/>
+<csr-id-1f40bf57a197557d1abbde5f9885f86c56c5f153/>
+<csr-id-6afdb0be21326df8b1cfffef6d2b46ae287e000e/>
+<csr-id-a47f6e484e511cf128577cd4970edb64c677490b/>
+<csr-id-c86f3a4611290797ad3f8c3cfa162fee0c5f1b79/>
+<csr-id-1883f0f56c247c2e9a4a21688883b73f9c9a9862/>
+<csr-id-304215abc34b67c5b311facd3f797739f08c0ccb/>
+<csr-id-b8a70d54adf8d0c98fcce8caa
