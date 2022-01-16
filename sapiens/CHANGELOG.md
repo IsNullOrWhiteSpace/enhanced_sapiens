@@ -1008,4 +1008,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    ...
  - <csr-id-a47f6e484e511cf128577cd4970edb64c677490b/> bump regex from 1.8.3 to 1.8.4
    Bumps [regex](https://github.com/rust-lang/regex) from 1.8.3 to 1.8.4.
-   - [Release notes](https:
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.8.3...1.8.4)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-c86f3a4611290797ad3f8c3cfa162fee0c5f1b79/> bump regex from 1.8.2 to 1.8.3
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.8.2 to 1.8.3.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.8.2...1.8.3)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+
+### Bug Fixes
+
+ - <csr-id-e4dde233ac5397554768eaa796c2de828830a1ad/> todo!()...
+
+### Chore
+
+ - <csr-id-1883f0f56c247c2e9a4a21688883b73f9c9a9862/> updated
+ - <csr-id-304215abc34b67c5b311facd3f797
