@@ -1038,4 +1038,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Chore
 
  - <csr-id-1883f0f56c247c2e9a4a21688883b73f9c9a9862/> updated
- - <csr-id-304215abc34b67c5b311facd3f797
+ - <csr-id-304215abc34b67c5b311facd3f797739f08c0ccb/> updated to async-openai 0.16.1
+ - <csr-id-b8a70d54adf8d0c98fcce8caa3c271a2a5a0576c/> bump serde_yaml from 0.9.25 to 0.9.27
+   Bumps [serde_yaml](https://github.com/dtolnay/serde-yaml) from 0.9.25 to 0.9.27.
+   - [Release notes](https://github.com/dtolnay/serde-yaml/releases)
+   - [Commits](https://github.com/dtolnay/serde-yaml/compare/0.9.25...0.9.27)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde_yaml
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-b2ab9489a6ac0f8cdf8b7b8afeef9ed86b1f910a/> bump serde from 1.0.189 to 1.0.190
+   Bumps [serde](https://github.com/serde-rs/serde) from 1.0.189 to 1.0.190.
+   - [Release notes](https://github.com/serde-rs/serde/releases)
+   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.189...v1.0.190)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-22bafb4732052341653c1600895c2006bf7c88b7/> bump clap from 4.4.6 to 4.4.7
+   Bumps [clap](https://github.com/clap-rs/clap) from 4.
