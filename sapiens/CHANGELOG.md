@@ -1062,4 +1062,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      update-type: version-update:semver-patch
    ...
  - <csr-id-22bafb4732052341653c1600895c2006bf7c88b7/> bump clap from 4.4.6 to 4.4.7
-   Bumps [clap](https://github.com/clap-rs/clap) from 4.
+   Bumps [clap](https://github.com/clap-rs/clap) from 4.4.6 to 4.4.7.
+   - [Release notes](https://github.com/clap-rs/clap/releases)
+   - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.4.6...v4.4.7)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-1934524cc1765cd1d8e7ad51836fc0adf774ad2a/> bump tiktoken-rs from 0.5.5 to 0.5.6
+   Bumps [tiktoken-rs](https://github.com/zurawiki/tiktoken-rs) from 0.5.5 to 0.5.6.
+   - [Release notes](https://github.com/zurawiki/tiktoken-rs/releases)
+   - [Commits](https://github.com/zurawiki/tiktoken-rs/compare/v0.5.5...v0.5.6)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tiktoken-rs
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-4fb61ab19203a5c2721d5fcd55be57ba1e54321c/> bump thiserror from 1.0.49 to 1.0.50
+   Bumps [thiserror](https://github.com/dtolnay/thiserror) from 1.0
