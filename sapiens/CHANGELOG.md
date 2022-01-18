@@ -1156,4 +1156,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    - [Release notes](https://github.com/serde-rs/serde/releases)
    - [Commits](https://github.com/serde-rs/serde/compare/v1.0.188...v1.0.189)
    
-  
+   ---
+   updated-dependencies:
+   - dependency-name: serde
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-eadb63ada319611d7a083e9caa6cefb97edfada4/> ...
+ - <csr-id-0b81a2a66d0536b7a8741cdc236fca0c9ef9cd03/> bump gcp-vertex-ai-generative-language from 0.1.1 to 0.1.2
+   Bumps [gcp-vertex-ai-generative-language](https://github.com/ssoudan/gcp-vertex-ai-generative-ai) from 0.1.1 to 0.1.2.
+   - [Release notes](https://github.com/ssoudan/gcp-vertex-ai-generative-ai/releases)
+   - [Changelog](https://github.com/ssoudan/gcp-vertex-ai-generative-ai/blob/main/CHANGELOG.md)
+   - [Commits](https://github.com/ssoudan/gcp-vertex-ai-generative-ai/compare/gcp-vertex-ai-generative-language-v0.1.1...gcp-vertex-ai-generative-language-v0.1.2)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: gcp-vertex-ai-generative-language
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-011f5c3c0fc87e8139478300
