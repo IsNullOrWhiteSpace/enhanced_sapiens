@@ -1131,4 +1131,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - <csr-id-1a1664fdcd3e53bb140280aeadd0e6cff266e30a/> bump tracing from 0.1.37 to 0.1.39
    Bumps [tracing](https://github.com/tokio-rs/tracing) from 0.1.37 to 0.1.39.
    - [Release notes](https://github.com/tokio-rs/tracing/releases)
-   - [Commits](https://github.com/tokio-rs/tracing/compare/tracing-0.1.37..
+   - [Commits](https://github.com/tokio-rs/tracing/compare/tracing-0.1.37...tracing-0.1.39)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tracing
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-124dc7a9e0b9c4b45526d667cefe9dc2f8be9166/> bump regex from 1.10.0 to 1.10.2
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.10.0 to 1.10.2.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.10.0...1.10.2)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-ba11b4ca9e2b218315db1e19c1699571a4b34f77/> bump serde from 1.0.188 to 1.0.189
+   Bumps [serde](https://github.com/serde-rs/serde) from 1.0.188 to 1.0.189.
+   - [Release notes](https://github.com/serde-rs/serde/releases)
+   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.188...v1.0.189)
+   
+  
