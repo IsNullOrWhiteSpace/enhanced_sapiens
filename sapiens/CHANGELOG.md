@@ -1339,4 +1339,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    Bumps [clap](https://github.com/clap-rs/clap) from 4.4.2 to 4.4.3.
    - [Release notes](https://github.com/clap-rs/clap/releases)
    - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
-   - [Commits](https://github.com/clap-rs/clap/compare/v4.4.2...v4.4.
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.4.2...v4.4.3)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-7224d731f569995afc72f611e53bfaf047b54a02/> bump async-openai from 0.14.0 to 0.14.1
+   Bumps [async-openai](https://github.com/64bit/async-openai) from 0.14.0 to 0.14.1.
+   - [Release notes](https://github.com/64bit/async-openai/releases)
+   - [Commits](https://github.com/64bit/async-openai/compare/async-openai-v0.14.0...async-openai-v0.14.1)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-openai
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-bf46b302328e2647af47d5d6346a15720150ac8c/> updated
+ - <csr-id-048b526e0a3c319c00ee85a2dedc4503a35bb7e3/> bump regex from 1.9.4 to 1.9.5
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.4 to 1.9.5.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/
