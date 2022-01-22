@@ -1316,4 +1316,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    Bumps [clap](https://github.com/clap-rs/clap) from 4.4.3 to 4.4.4.
    - [Release notes](https://github.com/clap-rs/clap/releases)
    - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
-   - [Commits](https://github.com/clap-rs
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.4.3...v4.4.4)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-7afffc2c09344a32e1c0a38589769eb34622c8a6/> bump async-openai from 0.14.1 to 0.14.2
+   Bumps [async-openai](https://github.com/64bit/async-openai) from 0.14.1 to 0.14.2.
+   - [Release notes](https://github.com/64bit/async-openai/releases)
+   - [Commits](https://github.com/64bit/async-openai/compare/async-openai-v0.14.1...async-openai-v0.14.2)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-openai
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-b9dfcd7d44b7736f02789a7878c5e3d485b1ca89/> bump clap from 4.4.2 to 4.4.3
+   Bumps [clap](https://github.com/clap-rs/clap) from 4.4.2 to 4.4.3.
+   - [Release notes](https://github.com/clap-rs/clap/releases)
+   - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.4.2...v4.4.
