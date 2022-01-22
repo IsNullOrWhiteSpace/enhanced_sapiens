@@ -1270,4 +1270,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - <csr-id-6869ba7854d3f39de6cec5bbf28c6ea31e64180d/> bump clap from 4.4.4 to 4.4.5
    Bumps [clap](https://github.com/clap-rs/clap) from 4.4.4 to 4.4.5.
    - [Release notes](https://github.com/clap-rs/clap/releases)
-   - [Changelog](https://github.com/clap-rs/cla
+   - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.4.4...v4.4.5)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-7fb2e28a366af3db41598339e4a160287a0c4115/> bump async-openai from 0.14.2 to 0.14.3
+   Bumps [async-openai](https://github.com/64bit/async-openai) from 0.14.2 to 0.14.3.
+   - [Release notes](https://github.com/64bit/async-openai/releases)
+   - [Commits](https://github.com/64bit/async-openai/compare/async-openai-v0.14.2...async-openai-v0.14.3)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-openai
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-5d6e571ad7141d0c1a243479f7af36c34a8ab341/> bump insta from 1.31.0 to 1.32.0
+   Bumps [insta](https://github.com/mitsuhiko/insta) from 1.31.0 to 1.32.0.
+   - [Changelog](https://github.com/mitsuhiko/insta/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/mi
