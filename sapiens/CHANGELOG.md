@@ -1386,4 +1386,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    Bumps [clap](https://github.com/clap-rs/clap) from 4.4.1 to 4.4.2.
    - [Release notes](https://github.com/clap-rs/clap/releases)
    - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
-   - [Commit
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.4.1...v4.4.2)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-115c996cfce7fe87f708a91f093a8dabb28456a7/> bump clap from 4.3.23 to 4.4.1
+   Bumps [clap](https://github.com/clap-rs/clap) from 4.3.23 to 4.4.1.
+   - [Release notes](https://github.com/clap-rs/clap/releases)
+   - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.3.23...v4.4.1)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-0682b515312db092eb5e918761467e9c1c3e1de9/> bump regex from 1.9.3 to 1.9.4
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.3 to 1.9.4.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lan
