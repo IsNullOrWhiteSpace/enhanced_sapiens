@@ -1438,4 +1438,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    updated-dependencies:
    - dependency-name: tokio
      dependency-type: direct:production
-     update-
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-9fbcc14cfe4a41ceec31c89351ea040ce7131cae/> bump clap from 4.3.21 to 4.3.23
+   Bumps [clap](https://github.com/clap-rs/clap) from 4.3.21 to 4.3.23.
+   - [Release notes](https://github.com/clap-rs/clap/releases)
+   - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.3.21...v4.3.23)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-a8ba3bb6739282837fab1e45f96a371c13de68cc/> bump async-openai from 0.13.0 to 0.13.1
+   Bumps [async-openai](https://github.com/64bit/async-openai) from 0.13.0 to 0.13.1.
+   - [Release notes](https://github.com/64bit/async-openai/releases)
+   - [Commits](https://github.com/64bit/async-openai/compare/async-openai-v0.13.0...async-openai-v0.13.1)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-openai
+     dependency-type: direct:production
+     update-type: version
