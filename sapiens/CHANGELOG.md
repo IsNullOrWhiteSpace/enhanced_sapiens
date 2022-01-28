@@ -1485,4 +1485,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    updated-dependencies:
    - dependency-name: tokio
      dependency-type: direct:production
-     update-type: 
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-6a808e6cdca6cf5590129047edb44cc7b2556fe9/> bump clap from 4.3.19 to 4.3.21
+   Bumps [clap](https://github.com/clap-rs/clap) from 4.3.19 to 4.3.21.
+   - [Release notes](https://github.com/clap-rs/clap/releases)
+   - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.3.19...v4.3.21)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-ef3d1dcea2a9e84e0f664c91ce828214b0fc1462/> bump regex from 1.9.1 to 1.9.3
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.1 to 1.9.3.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.9.1...1.9.3)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+ 
