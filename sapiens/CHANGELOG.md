@@ -1555,4 +1555,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      dependency-type: direct:production
      update-type: version-update:semver-minor
    ...
- - <csr-id-92ed13422d4b45aceaf2065c
+ - <csr-id-92ed13422d4b45aceaf2065c8639af4e689dbaaf/> bump clap from 4.3.11 to 4.3.19
+   Bumps [clap](https://github.com/clap-rs/clap) from 4.3.11 to 4.3.19.
+   - [Release notes](https://github.com/clap-rs/clap/releases)
+   - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.3.11...v4.3.19)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-47feb622f7319c2633d82d40e03f0a637f43fc2a/> bump serde from 1.0.167 to 1.0.168
+   Bumps [serde](https://github.com/serde-rs/serde) from 1.0.167 to 1.0.168.
+   - [Release notes](https://github.com/serde-rs/serde/releases)
+   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.167...v1.0.168)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-6de0d4598272610a16d56550131b45297f909f7c/> bump serde from 1.0.166 to 1.0.167
+   Bumps [serde](https://github.com/serde-rs/serde) from 1.0.166 
