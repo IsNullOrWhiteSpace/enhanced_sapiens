@@ -1603,4 +1603,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - <csr-id-c56638d29beb3c6f30ea0427b6b9bfbab19f07da/> bump regex from 1.9.0 to 1.9.1
    Bumps [regex](https://github.com/rust-lang/regex) from 1.9.0 to 1.9.1.
    - [Release notes](https://github.com/rust-lang/regex/releases)
-   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.9.0...1.9.1)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-5b8508ee83b7fc23b3d036e3354499deac548825/> bump regex from 1.8.4 to 1.9.0
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.8.4 to 1.9.0.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.8.4...1.9.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-069ec4a52ff73e59a75a8044a5a720bd9bf66b94/> bump async-trait from 0.1.70 to 0.1.71
+   Bumps [async-trait](https://github.com/dtolnay/async-trait) from 0.1.70 to 0.1.71.
+   - [Release notes](https://github.com/dtolnay/async-trait/releases)
+   - [C
