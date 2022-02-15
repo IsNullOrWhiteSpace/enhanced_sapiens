@@ -1702,4 +1702,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    ---
    updated-dependencies:
    - dependency-name: tokio
-     d
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-ed8c1aa007496324f0d9fc5f404ed61ee833bd76/> update
+ - <csr-id-1386f511fd429e185142203a8d406534737ede46/> bump serde_yaml from 0.9.21 to 0.9.22
+   Bumps [serde_yaml](https://github.com/dtolnay/serde-yaml) from 0.9.21 to 0.9.22.
+   - [Release notes](https://github.com/dtolnay/serde-yaml/releases)
+   - [Commits](https://github.com/dtolnay/serde-yaml/compare/0.9.21...0.9.22)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde_yaml
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-a5a7db19bd59b4d08fc6eefed68053017946bfcf/> bump clap from 4.3.4 to 4.3.8
+   Bumps [clap](https://github.com/clap-rs/clap) from 4.3.4 to 4.3.8.
+   - [Release notes](https://github.com/clap-rs/clap/releases)
+   - [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/clap-rs/clap/compare/v4.3.4...v4.3.8)
+   
+   ---
+   updated-dependencies:
+   - dependen
