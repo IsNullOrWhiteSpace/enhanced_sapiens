@@ -1776,4 +1776,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Release sapiens v0.10.1, sapiens_derive v0.4.3, sapiens_tools v0.10.1, sapiens_cli v0.9.1, sapiens_exp v0.8.1 ([`2a30e78`](https://github.com/ssoudan/sapiens/commit/2a30e7875a2c05761dd7ffdfb158f1949b4cb58f))
     - Merge pull request #43 from ssoudan/upd ([`c8d2e5a`](https://github.com/ssoudan/sapiens/commit/c8d2e5ad69f7bed6cbd6d64dfa62a3d0c864c885))
     - Gpt-3.5-turbo-0613 and more ([`6d1524a`](https://github.com/ssoudan/sapiens/commit/6d1524acbca7362b4eda081612a43005abc888cb))
-    - Merge pull reques
+    - Merge pull request #39 from ssoudan/dependabot/cargo/serde-1.0.164 ([`e17e076`](https://github.com/ssoudan/sapiens/commit/e17e0766911c0ffab4df5c8b8d7213ea05275da7))
+    - Merge pull request #33 from ssoudan/dependabot/cargo/tokio-1.28.2 ([`80ca726`](https://github.com/ssoudan/sapiens/commit/80ca726a909cc08a6ef60d1668ebecdac7693700))
+    - Bump serde from 1.0.163 to 1.0.164 ([`f4b88c4`](https://github.com/ssoudan/sapiens/commit/f4b88c4520574c841b055edd71c329a8195c7173))
+    - Bump tokio from 1.28.1 to 1.28.2 ([`1f40bf5`](https://github.com/ssoudan/sapiens/commit/1f40bf57a197557d1abbde5f9885f86c56c5f153))
+    - Merge pull request #36 from ssoudan/dependabot/cargo/regex-1.8.4 ([`a045486`](https://github.com/ssoudan/sapiens/commit/a045486c2a81e13ed0f41f129dfd21dd2ade015f))
+    - Merge pull request #38 from ssoudan/dependabot/cargo/clap-4.3.2 ([`1837ad5`](https://github.com/ssoudan/sapiens/commit/1837ad57c934c212da6596a9e77f3da4ddc9332f))
+    - Bump clap from 4.3.0 to 4.3.2 ([`6afdb0b`](https://github.com/ssoudan/sapiens/commit/6afdb0be21326df8b1cfffef6d2b46ae28
