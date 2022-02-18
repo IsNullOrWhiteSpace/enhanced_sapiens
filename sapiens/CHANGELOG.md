@@ -1750,4 +1750,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    - dependency-name: tiktoken-rs
      dependency-type: direct:production
      update-type: version-update:semver-patch
-   .
+   ...
+ - <csr-id-94e120bbc02537233ded8c7bd58968b1c7e0cdb2/> update
+
+### New Features
+
+ - <csr-id-6d1524acbca7362b4eda081612a43005abc888cb/> gpt-3.5-turbo-0613 and more
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 13 commits contributed to the release over the course of 20 calendar days.
+ - 21 days passed between releases.
+ - 6 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.10.1, sapiens_derive v0.4.3, sapiens_tools v0.10.1, sapiens_cli v0.9.1, sapiens_exp v0.8.1 ([`2a30e78`](https://github.com/ssoudan/sapiens/commit/2a30e7875a2c05761dd7ffdfb158f1949b4cb58f))
+    - Merge pull request #43 from ssoudan/upd ([`c8d2e5a`](https://github.com/ssoudan/sapiens/commit/c8d2e5ad69f7bed6cbd6d64dfa62a3d0c864c885))
+    - Gpt-3.5-turbo-0613 and more ([`6d1524a`](https://github.com/ssoudan/sapiens/commit/6d1524acbca7362b4eda081612a43005abc888cb))
+    - Merge pull reques
