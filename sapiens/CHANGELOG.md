@@ -1725,4 +1725,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    
    ---
    updated-dependencies:
-   - dependen
+   - dependency-name: clap
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-febeb6ae02da73ce3f69dfe7005acf8fbdbf0402/> bump insta from 1.29.0 to 1.30.0
+   Bumps [insta](https://github.com/mitsuhiko/insta) from 1.29.0 to 1.30.0.
+   - [Changelog](https://github.com/mitsuhiko/insta/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/mitsuhiko/insta/compare/1.29.0...1.30.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: insta
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-8d10a825e89aeab4dff0b1b928d1aff663e801c8/> bump tiktoken-rs from 0.4.3 to 0.4.4
+   Bumps [tiktoken-rs](https://github.com/zurawiki/tiktoken-rs) from 0.4.3 to 0.4.4.
+   - [Release notes](https://github.com/zurawiki/tiktoken-rs/releases)
+   - [Commits](https://github.com/zurawiki/tiktoken-rs/compare/v0.4.3...v0.4.4)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tiktoken-rs
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   .
