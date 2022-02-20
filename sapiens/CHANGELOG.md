@@ -1806,4 +1806,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
  - <csr-id-bd1fe193772897b80211e0123ca0bfc4902a33d8/> multi-step OODA chain
  - <csr-id-53c7d7ddf901709715543e76f780a8f39e334625/> multi-step OODA chain
- - <csr-id-102a2
+ - <csr-id-102a2f9d1bc2e81af2745c7cdc42b6db0f428ccb/> more flexible definition of chains
+ - <csr-id-67ea659fcc5ca60a4372014ff5af8aa2b00d7dfa/> examples are pairs of entries
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 10 commits contributed to the release over the course of 5 calendar days.
+ - 5 days passed between releases.
+ - 8 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.10.0, sapiens_tools v0.10.0, sapiens_bot v0.8.0, sapiens_cli v0.9.0, sapiens_exp v0.8.0, safety bump 4 crates ([`02f36bb`](https://github.com/ssoudan/sapiens/commit/02f36bbc35df5138c07fd1322030bb1bfeb01eb3))
+    - Merge pull request #25 from ssoudan/more_steps ([`cb9a704`](https://github.com/ssoudan/sapiens/commit/cb9a70490ced60abd5bb12d2559d40464f3a3213))
+    - More readable console outputs ([`6ad490a`](https://github.com/ssoudan/sapiens/commit/6ad490ab669568e1af013b5464ceca3e922da175))
+    - Multi-step OODA c
