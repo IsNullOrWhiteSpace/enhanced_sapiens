@@ -1828,4 +1828,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Release sapiens v0.10.0, sapiens_tools v0.10.0, sapiens_bot v0.8.0, sapiens_cli v0.9.0, sapiens_exp v0.8.0, safety bump 4 crates ([`02f36bb`](https://github.com/ssoudan/sapiens/commit/02f36bbc35df5138c07fd1322030bb1bfeb01eb3))
     - Merge pull request #25 from ssoudan/more_steps ([`cb9a704`](https://github.com/ssoudan/sapiens/commit/cb9a70490ced60abd5bb12d2559d40464f3a3213))
     - More readable console outputs ([`6ad490a`](https://github.com/ssoudan/sapiens/commit/6ad490ab669568e1af013b5464ceca3e922da175))
-    - Multi-step OODA c
+    - Multi-step OODA chain ([`bd1fe19`](https://github.com/ssoudan/sapiens/commit/bd1fe193772897b80211e0123ca0bfc4902a33d8))
+    - Multi-step OODA chain ([`53c7d7d`](https://github.com/ssoudan/sapiens/commit/53c7d7ddf901709715543e76f780a8f39e334625))
+    - Update ([`bf9a7b5`](https://github.com/ssoudan/sapiens/commit/bf9a7b53c0d3095c083fe553a18227a52d2d6a1f))
+    - Token consumption ([`22e3c7a`](https://github.com/ssoudan/sapiens/commit/22e3c7a25050fa820a0d368ba323ae0e218dfa46))
+    - More flexible definition of chains ([`102a2f9`](https://github.com/ssoudan/sapiens/commit/102a2f9d1bc2e81af2745c7cdc42b6db0f428ccb))
+    - Renaming ([`6adde83`](https://github.com/ssoudan/sapiens/commit/6adde83ce517e9aabe67d4d59587492fb765db1f))
+    - Examples are pairs of entries ([`67ea659`](https://github.com/ssoudan/sapiens/commit/67ea659fcc5ca60a4372014ff5af8aa2b00d7dfa))
+</details>
+
+## 0.9.0 (2023-05-17)
+
+<csr-id-099c611a319519c44b62274627e35b01746ce37e/>
+
+### Chore
+
+ - <csr-id-099c611a319519c44b62274627
