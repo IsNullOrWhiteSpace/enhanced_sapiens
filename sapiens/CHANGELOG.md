@@ -1878,3 +1878,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <details><summary>view details</summary>
 
+ * **Uncategorized**
+    - Release sapiens v0.9.0, sapiens_tools v0.9.0, sapiens_bot v0.7.0, sapiens_cli v0.8.0, sapiens_exp v0.7.0, safety bump 4 crates ([`a6639bd`](https://github.com/ssoudan/sapiens/commit/a6639bd1fc913081d653662be98d15672be6d140))
+    - Merge pull request #24 from ssoudan/more_steps ([`e28fdf3`](https://github.com/ssoudan/sapiens/commit/e28fdf388d24fbf084b15314e922bdf6bc386479))
+    - Support for Palm chat-bison-001 ([`14eb667`](https://github.com/ssoudan/sapiens/commit/14eb667de00ddb53c5162dca550d8a0d35f094e4))
+    - Making room for GCP's generative models ([`69247eb`](https://github.com/ssoudan/sapiens/commit/69247eb1c4e73d10db3a6611cdab33485971af7b))
+    - Merge pull request #19 from ssoudan/dependabot/cargo/serde-1.0.163 ([`d6497e5`](https://github.com/ssoudan/sapiens/commit/d6497e564aa66cfa80500b8f91bc5e0b4447f689))
+    - Bump serde from 1.0.162 to 1.0.163 ([`099c611`](https://github.com/ssoudan/sapiens/commit/099c611a319519c44b62274627e35b01746ce37e))
+</details>
+
+## 0.8.0 (2023-05-11)
+
+<csr-id-37fe5c57cb17dabf56fa61e8dcad8c558584
