@@ -1843,4 +1843,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Chore
 
- - <csr-id-099c611a319519c44b62274627
+ - <csr-id-099c611a319519c44b62274627e35b01746ce37e/> bump serde from 1.0.162 to 1.0.163
+   Bumps [serde](https://github.com/serde-rs/serde) from 1.0.162 to 1.0.163.
+   - [Release notes](https://github.com/serde-rs/serde/releases)
+   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.162...v1.0.163)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+
+### New Features
+
+ - <csr-id-69247eb1c4e73d10db3a6611cdab33485971af7b/> making room for GCP's generative models
+
+### New Features (BREAKING)
+
+ - <csr-id-14eb667de00ddb53c5162dca550d8a0d35f094e4/> support for Palm chat-bison-001
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 6 commits contributed to the release over the course of 6 calendar days.
+ - 6 days passed between releases.
+ - 3 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
