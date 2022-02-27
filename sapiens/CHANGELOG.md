@@ -1889,4 +1889,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.8.0 (2023-05-11)
 
-<csr-id-37fe5c57cb17dabf56fa61e8dcad8c558584
+<csr-id-37fe5c57cb17dabf56fa61e8dcad8c5585846750/>
+<csr-id-c46990fe7b630ecc1e2698da5c168508da47fe34/>
+<csr-id-25661955e8aba7f9dee4a16e046c621c5ffd3fca/>
+<csr-id-46bd185de682284de78347616171a69a488447fb/>
+
+### Chore
+
+ - <csr-id-37fe5c57cb17dabf56fa61e8dcad8c5585846750/> update
+ - <csr-id-c46990fe7b630ecc1e2698da5c168508da47fe34/> renaming of fields to match the new visible names (`tool_name`, `parameters`)
+ - <csr-id-25661955e8aba7f9dee4a16e046c621c5ffd3fca/> badges, docs.rs links, ...
+
+### New Features
+
+ - <csr-id-eed2b7c58b25e2edff0b69919fbe265cfd75459f/> support for Vicuna 7B 1.1 and 13B 1.1- not too impressive at this point
+
+### Bug Fixes
+
+ - <csr-id-ebcbbe452c9ae4b19be21c4a80115d294c005737/> WIP test
+
+### Chore (BREAKING)
+
+ - <csr-id-46bd185de682284de78347616171a69a488447fb/> moved the LM to a single place
+
+### New Features (BREAKING)
+
+ - <csr-id-11139249489bd920003a4c10b2d3c8cecbaaaa84/> collect initial prompt in the traces as well - so we can build a proper dataset from them later on
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 9 commits contri
