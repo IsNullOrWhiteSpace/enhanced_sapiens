@@ -1936,4 +1936,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Update ([`37fe5c5`](https://github.com/ssoudan/sapiens/commit/37fe5c57cb17dabf56fa61e8dcad8c5585846750))
     - Merge pull request #16 from ssoudan/decoupling ([`981d4d4`](https://github.com/ssoudan/sapiens/commit/981d4d4e1e6b625e17d7dcc2fc94e0709e11267c))
     - Support for Vicuna 7B 1.1 and 13B 1.1- not too impressive at this point ([`eed2b7c`](https://github.com/ssoudan/sapiens/commit/eed2b7c58b25e2edff0b69919fbe265cfd75459f))
-    - WIP test ([`ebcbbe
+    - WIP test ([`ebcbbe4`](https://github.com/ssoudan/sapiens/commit/ebcbbe452c9ae4b19be21c4a80115d294c005737))
+    - Collect initial prompt in the traces as well - so we can build a proper dataset from them later on ([`1113924`](https://github.com/ssoudan/sapiens/commit/11139249489bd920003a4c10b2d3c8cecbaaaa84))
+    - Renaming of fields to match the new visible names (`tool_name`, `parameters`) ([`c46990f`](https://github.com/ssoudan/sapiens/commit/c46990fe7b630ecc1e2698da5c168508da47fe34))
+    - Moved the LM to a single place ([`46bd185`](https://github.com/ssoudan/sapiens/commit/46bd185de682284de78347616171a69a488447fb))
+    - Badges, docs.rs links, ... ([`2566195`](https://github.com/ssoudan/sapiens/commit/25661955e8aba7f9dee4a16e046c621c5ffd3fca))
+</details>
+
+## 0.7.0 (2023-05-05)
+
+<csr-id-98826b19cd97872a032e955478ff2d3b9af8262c/>
+<csr-id-602398e18f475c32c5e66729c0cf93ba04124fb6/>
+<csr-id-acb2a6a46192a116b17cacb9301cba22a7b3e719/>
+<csr-id-8efe0a225520f14d2c3e0abc7ea8c99578146ca0/>
+
+### Chore
+
+ - <csr-id-98826b19cd97872a032
