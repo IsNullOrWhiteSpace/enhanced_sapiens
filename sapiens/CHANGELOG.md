@@ -1952,4 +1952,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Chore
 
- - <csr-id-98826b19cd97872a032
+ - <csr-id-98826b19cd97872a032e955478ff2d3b9af8262c/> updated
+ - <csr-id-602398e18f475c32c5e66729c0cf93ba04124fb6/> cleanup
+ - <csr-id-acb2a6a46192a116b17cacb9301cba22a7b3e719/> cleanup
+
+### Chore
+
+ - <csr-id-8efe0a225520f14d2c3e0abc7ea8c99578146ca0/> CHANGELOG
+
+### New Features
+
+ - <csr-id-e8ebd2ff31d6179b4a1fe6abaf5bf3d12dce97b7/> allow to point to another endpoint providing an 'OpenAI' API - lm-sys/FastChat for example.
+
+### Bug Fixes
+
+ - <csr-id-4720cf17870626b2578fa358849c0843302b99e9/> generate up to `min_token_for_completion` (from the Config).
+
+### New Features (BREAKING)
+
+ - <csr-id-2912f4ff80a8b87c9727d3e05eaae469f7a4fd94/> change in format to improve task completion rate
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 9 commits contributed to the release over the course of 1 calendar day.
+ - 2 days passed between releases.
+ - 7 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
