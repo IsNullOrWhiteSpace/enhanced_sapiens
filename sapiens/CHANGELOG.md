@@ -1995,4 +1995,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Cleanup ([`602398e`](https://github.com/ssoudan/sapiens/commit/602398e18f475c32c5e66729c0cf93ba04124fb6))
     - Cleanup ([`acb2a6a`](https://github.com/ssoudan/sapiens/commit/acb2a6a46192a116b17cacb9301cba22a7b3e719))
     - Change in format to improve task completion rate ([`2912f4f`](https://github.com/ssoudan/sapiens/commit/2912f4ff80a8b87c9727d3e05eaae469f7a4fd94))
-    - Generate up to `min_token_for_completion` (from the Config). ([`4720cf1`](https://github.com/s
+    - Generate up to `min_token_for_completion` (from the Config). ([`4720cf1`](https://github.com/ssoudan/sapiens/commit/4720cf17870626b2578fa358849c0843302b99e9))
+    - Allow to point to another endpoint providing an 'OpenAI' API - lm-sys/FastChat for example. ([`e8ebd2f`](https://github.com/ssoudan/sapiens/commit/e8ebd2ff31d6179b4a1fe6abaf5bf3d12dce97b7))
+</details>
+
+## 0.6.0 (2023-05-02)
+
+### New Features
+
+ - <csr-id-4626deb7308ec642d0e937fc3b96af494538a027/> store the current state in Trace Events
+ - <csr-id-41f16790e7e7e602f091ff003a7e4086e248c883/> jupter notebook to explore the records from sapiens_exp
+ - <csr-id-c6d00560865da9fff220eb0ae506a30672053a27/> added scenario_0
+ - <csr-id-0f106f4ee488d2622ded6ff77115608dd8f2b9eb/> scenario with generic tool
+ - <csr-id-a35ed6028cdc335a3f2fa0159d71d334d24427c7/> refactoring of the observer for Step
+   BREAKING CHANGES: API changed.
+ - <csr-id-7c98fcb78fe6b76ce8a65a60b0f481d3d942fe52/> sapiens_exp
+
+### New Features (BREAKING)
+
+ - <csr-id-04e83c2a214212d045ef5a890a72c3dc5ab61076/> Richer errors while invoking tools
+ - <csr-id-6c303444836
