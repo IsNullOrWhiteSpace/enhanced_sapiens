@@ -2035,4 +2035,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  * **Uncategorized**
     - Release sapiens v0.6.0, sapiens_derive v0.4.0, sapiens_tools v0.6.0, sapiens_bot v0.4.0, sapiens_cli v0.5.0, sapiens_exp v0.4.1, safety bump 4 crates ([`1b9dd43`](https://github.com/ssoudan/sapiens/commit/1b9dd43e9291f0aef2a83c1610cede57c897a56c))
     - Merge pull request #13 from ssoudan/getting_methodical ([`e0d97aa`](https://github.com/ssoudan/sapiens/commit/e0d97aae47b30bd97b37520a345c84b59523de9d))
-    - Store the current stat
+    - Store the current state in Trace Events ([`4626deb`](https://github.com/ssoudan/sapiens/commit/4626deb7308ec642d0e937fc3b96af494538a027))
+    - Richer errors while invoking tools ([`04e83c2`](https://github.com/ssoudan/sapiens/commit/04e83c2a214212d045ef5a890a72c3dc5ab61076))
+    - Wip ([`b6d2dd7`](https://github.com/ssoudan/sapiens/commit/b6d2dd71fa5ed2ff009bea6b1f3113e40f5ae4b3))
+    - Jupter notebook to explore the records from sapiens_exp ([`41f1679`](https://github.com/ssoudan/sapiens/commit/41f16790e7e7e602f091ff003a7e4086e248c883))
+    - Added scenario_0 ([`c6d0056`](https://github.com/ssoudan/sapiens/commit/c6d00560865da9fff220eb0ae506a30672053a27))
+    - Scenario with generic tool ([`0f106f4`](https://github.com/ssoudan/sapiens/commit/0f106f4ee488d2622ded6ff77115608dd8f2b9eb))
+    - Merge remote-tracking branch 'origin/main' into getting_methodical ([`69ed1e8`](https://github.com/ssoudan/sapiens/commit/69ed1e8c1919d40c5b2362eb4fd8376ae2786e05))
+    - Collect information in a serializable struct with all that matters ([`6c30344`](https
