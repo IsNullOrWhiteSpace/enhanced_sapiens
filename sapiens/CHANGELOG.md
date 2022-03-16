@@ -2096,4 +2096,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
-### Commi
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.4.1, sapiens_tools v0.4.1, sapiens_bot v0.2.3, sapiens_cli v0.3.1 ([`16160fc`](https://github.com/ssoudan/sapiens/commit/16160fc0d369b76a08ffcc1cd5085d7387178656))
+    - Merge pull request #9 from ssoudan/search ([`8976be2`](https://github.com/ssoudan/sapiens/commit/8976be2e7e056ed5a976a37a5723abc9f531d238))
+    - Search and logging/tracing ([`3c9e702`](https://github.com/ssoudan/sapiens/commit/3c9e702c2e0e1624882c83b66c42113bc99b3b5d))
+    - Search tool" ([`87ae158`](https://github.com/ssoudan/sapiens/commit/87ae158cc01d299f60a05577f9a20516cf65e6c2))
+</details>
+
+## 0.4.0 (2023-04-25)
+
+<csr-id-1a6b8972bab61215ebd95f74ebc46be4e63b98e7/>
+<csr-id-6e90dcd3947a192c62da6fddf4dcde0342365081/>
+<csr-id-35a6a992c57951ebe2a325d81d60c540053bcb94/>
+
+### Chore
+
+ - <csr-id-1a6b8972bab61215ebd95f74ebc46be4e63b98e7/> CHANGELOGs
+ - <csr-id-6e90dcd3947a192c62da6fddf4dcde0342365081/> CHANGELOG
+ - <csr-id-35a6a992c57
