@@ -2042,4 +2042,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Added scenario_0 ([`c6d0056`](https://github.com/ssoudan/sapiens/commit/c6d00560865da9fff220eb0ae506a30672053a27))
     - Scenario with generic tool ([`0f106f4`](https://github.com/ssoudan/sapiens/commit/0f106f4ee488d2622ded6ff77115608dd8f2b9eb))
     - Merge remote-tracking branch 'origin/main' into getting_methodical ([`69ed1e8`](https://github.com/ssoudan/sapiens/commit/69ed1e8c1919d40c5b2362eb4fd8376ae2786e05))
-    - Collect information in a serializable struct with all that matters ([`6c30344`](https
+    - Collect information in a serializable struct with all that matters ([`6c30344`](https://github.com/ssoudan/sapiens/commit/6c30344483671b542e73e13f51228407f37da63e))
+    - Collect execution traces ([`f93652f`](https://github.com/ssoudan/sapiens/commit/f93652f7c0886b47ce438a512bf2c13d978b3a6b))
+    - Refactoring of the observer for Step ([`a35ed60`](https://github.com/ssoudan/sapiens/commit/a35ed6028cdc335a3f2fa0159d71d334d24427c7))
+    - Sapiens_exp ([`7c98fcb`](https://github.com/ssoudan/sapiens/commit/7c98fcb78fe6b76ce8a65a60b0f481d3d942fe52))
+</details>
+
+## 0.5.0 (2023-04-27)
+
+<csr-id-8f039921a3bed1d976fd04c3d2ca6b99b1142411/>
+
+### Chore
+
+ - <csr-id-8f039921a3bed1d976fd04c3d2ca6b99b1142411/> cleanup
+
+### New Features (BREAKING)
+
+ - <csr-id-5d785d779955f5a4c2f54b1ff60e2262e85bfa05/> more flexible parsing
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 4 commits contributed to the release.
+ - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><
