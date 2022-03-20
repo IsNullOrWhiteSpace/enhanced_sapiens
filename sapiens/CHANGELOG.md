@@ -2119,4 +2119,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
  - <csr-id-1a6b8972bab61215ebd95f74ebc46be4e63b98e7/> CHANGELOGs
  - <csr-id-6e90dcd3947a192c62da6fddf4dcde0342365081/> CHANGELOG
- - <csr-id-35a6a992c57
+ - <csr-id-35a6a992c57951ebe2a325d81d60c540053bcb94/> update
+
+### New Features
+
+ - <csr-id-a08cd2093594b57d54ab5a85b0cd9a1ba83aac2c/> reduce initial prompt size
+ - <csr-id-23383eb67f19e8fdcff185709ca3a6d12b3000fa/> summarize tool
+
+### Bug Fixes (BREAKING)
+
+ - <csr-id-11de03cd0c11100c654eb171c1f0ac03e561661a/> renamed Arxiv tool
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 8 commits contributed to the release over the course of 1 calendar day.
+ - 1 day passed between releases.
+ - 6 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.4.0, sapiens_derive v0.3.1, sapiens_tools v0.4.0, sapiens_bot v0.2.2, sapiens_cli v0.3.0, safety bump 3 crates ([`0da51f4`](https://github.com/ssoudan/sapiens/commit/0da51f431c56f43088c651b0428c3f2fc6be11be))
+    - CHANGELOGs ([`1a6b897`](https://github.com/ssou
