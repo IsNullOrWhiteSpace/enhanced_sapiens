@@ -2161,4 +2161,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <csr-id-cc8115aed3e0723dbc3158317b7e62c94c6021de/>
 <csr-id-7ea6a11630303aefa30680b17f67d7f45ef08c15/>
 <csr-id-1a0bdf6c3525dfee29211feab7a9700c632a3195/>
-<csr-id-15c52d843721fa8426573d9f6bee2c019d2
+<csr-id-15c52d843721fa8426573d9f6bee2c019d2bd9bb/>
+<csr-id-b11b947d3b3699807c03c4500a8dc7a0e53d41d0/>
+
+### Chore
+
+ - <csr-id-cc8115aed3e0723dbc3158317b7e62c94c6021de/> deps updated
+ - <csr-id-7ea6a11630303aefa30680b17f67d7f45ef08c15/> deps updated
+ - <csr-id-1a0bdf6c3525dfee29211feab7a9700c632a3195/> API changes in deps
+
+### New Features
+
+ - <csr-id-8be8d0f3044a1bbfb5fdbc6fb6c7c8ec682f7114/> Discord bot
+ - <csr-id-774d5a6c2dbadf934166e2d7e5665b6cf2ac4280/> async TaskProgressUpdateHandler
+ - <csr-id-f416adf7af52b0a907a9db8419bcdaa5f2a77dc5/> basic integration with discord
+ - <csr-id-dee80b442c8035b4d2bf17a2683ff2c3c2a9a585/> basic integration with discord
+ - <csr-id-c4981fef8e0fa65a866ddff1582d6b4b39eae8c7/> prototype of a Discord bot
+ - <csr-id-d497429d749d9f62a36133e29d1063e8842bd7cf/> more detailed updates while working on a task
+
+### Bug Fixes
+
+ - <csr-id-c37e7ca813eaff1fe87b11736670024b81c5088d/> sorted tool descriptions (by name)
+ - <csr-id-c0604dc55545bb092bab88baa3138e7d4401f72d/> duplicate entry
+ - <csr-id-0ac757b5621dd659115c6f1650fbc7915162ce5c/> deps
+
+### Refactor
+
+ - <csr-id-15c52d843721fa8426573
