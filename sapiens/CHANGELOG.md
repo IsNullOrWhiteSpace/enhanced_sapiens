@@ -2222,4 +2222,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Deps updated ([`7ea6a11`](https://github.com/ssoudan/sapiens/commit/7ea6a11630303aefa30680b17f67d7f45ef08c15))
     - Async TaskProgressUpdateHandler ([`774d5a6`](https://github.com/ssoudan/sapiens/commit/774d5a6c2dbadf934166e2d7e5665b6cf2ac4280))
     - Basic integration with discord ([`f416adf`](https://github.com/ssoudan/sapiens/commit/f416adf7af52b0a907a9db8419bcdaa5f2a77dc5))
-    - Basic integration with discord ([`dee80b4`](https://g
+    - Basic integration with discord ([`dee80b4`](https://github.com/ssoudan/sapiens/commit/dee80b442c8035b4d2bf17a2683ff2c3c2a9a585))
+    - Deps ([`0ac757b`](https://github.com/ssoudan/sapiens/commit/0ac757b5621dd659115c6f1650fbc7915162ce5c))
+    - Prototype of a Discord bot ([`c4981fe`](https://github.com/ssoudan/sapiens/commit/c4981fef8e0fa65a866ddff1582d6b4b39eae8c7))
+    - Async api for Tools and in most places actually ([`772e8eb`](https://github.com/ssoudan/sapiens/commit/772e8eb4184efd0b305e460a31d719c237790098))
+    - More detailed updates while working on a task ([`d497429`](https://github.com/ssoudan/sapiens/commit/d497429d749d9f62a36133e29d1063e8842bd7cf))
+    - API changes in deps ([`1a0bdf6`](https://github.com/ssoudan/sapiens/commit/1a0bdf6c3525dfee29211feab7a9700c632a3195))
+    - Main loop to process model and tools outputs (part 2) ([`b11b947`](https://github.com/ssoudan/sapiens/commit/b11b947d3b3699807c03c4500a8dc7a0e53d41d0))
+    - Main loop to process model and tools outputs ([`15c52d8`](https://github.com/ssoudan/sapiens/commit/15c52d843721fa8426573d9f6bee2c019d2bd9bb))
+</details>
+
+## 0.2.2 (2023-04-20)
+
+Limit response size. Includ
