@@ -2266,4 +2266,20 @@ Limit response size. Include tool name in response.
 
  * **Uncategorized**
     - Release sapiens v0.2.2, sapiens_derive v0.2.2, sapiens_tools v0.2.2, sapiens_cli v0.2.2 ([`1d9981b`](https://github.com/ssoudan/sapiens/commit/1d9981bef2fe1b4f4441c28e11713470ff1b1f5d))
-    - Release sapiens v0.2.2, sapiens_deriv
+    - Release sapiens v0.2.2, sapiens_derive v0.2.2, sapiens_tools v0.2.2, sapiens_cli v0.2.2 ([`b72b47f`](https://github.com/ssoudan/sapiens/commit/b72b47f99c52d2d88dc3e2108917103707dc13ba))
+    - Changelog ([`1844702`](https://github.com/ssoudan/sapiens/commit/1844702fb1a2ffd5bb1ce4717e19c6675527738a))
+    - Increased max response size ([`55a0255`](https://github.com/ssoudan/sapiens/commit/55a0255535ef3ad10e1129de5a10d5ac377f8b30))
+    - ToolName with Action result. ([`ed70724`](https://github.com/ssoudan/sapiens/commit/ed70724e4133083e44c590cf2f74d27bdef65982))
+    - Error on too long response ([`a1eefed`](https://github.com/ssoudan/sapiens/commit/a1eefedbc23011994f9d7b06d9f5054db489a759))
+    - Toolbox assembly conditioned on Cargo features ([`9f251be`](https://github.com/ssoudan/sapiens/commit/9f251be6efefca6e9219321d4cd56802b6a5ec69))
+</details>
+
+## 0.2.1 (2023-04-19)
+
+- Added ProtoToolInvoke derive macro
+- Hue lights SetStatusTool
+- Updated deps to published crates
+
+### Documentation
+
+ - <csr-id-ba8709fa7f21a6d77739437a9f6540
