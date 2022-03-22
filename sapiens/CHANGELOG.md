@@ -2234,4 +2234,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.2.2 (2023-04-20)
 
-Limit response size. Includ
+Limit response size. Include tool name in response.
+
+### Documentation
+
+ - <csr-id-1844702fb1a2ffd5bb1ce4717e19c6675527738a/> Changelog
+
+### New Features
+
+ - <csr-id-ed70724e4133083e44c590cf2f74d27bdef65982/> ToolName with Action result.
+ - <csr-id-a1eefedbc23011994f9d7b06d9f5054db489a759/> error on too long response
+ - <csr-id-9f251be6efefca6e9219321d4cd56802b6a5ec69/> toolbox assembly conditioned on Cargo features
+
+### Bug Fixes
+
+ - <csr-id-55a0255535ef3ad10e1129de5a10d5ac377f8b30/> Increased max response size
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 7 commits contributed to the release.
+ - 5 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.2.2, sapiens_derive v0.2.2, sapiens_tools v0.2.2, sapiens_cli v0.2.2 ([`1d9981b`](https://github.com/ssoudan/sapiens/commit/1d9981bef2fe1b4f4441c28e11713470ff1b1f5d))
+    - Release sapiens v0.2.2, sapiens_deriv
