@@ -2282,4 +2282,26 @@ Limit response size. Include tool name in response.
 
 ### Documentation
 
- - <csr-id-ba8709fa7f21a6d77739437a9f6540
+ - <csr-id-ba8709fa7f21a6d77739437a9f65409016c6b364/> Changelog
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 10 commits contributed to the release.
+ - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.2.1 ([`6d011b1`](https://github.com/ssoudan/sapiens/commit/6d011b16157847923433b870a6d57d5ad1b73438))
+    - Changelog ([`ba8709f`](https://github.com/ssoudan/sapiens/commit/ba8709fa7f21a6d77739437a9f65409016c6b364))
+    - [changelog] ([`a36c535`](https://github.com/ssoudan/sapiens/commit/a36c5354033a5d4d59fa5765b3be85d92c0d5556))
+    - [deps] updated ([`e9d7a0e`](https://github.com/ssoudan/sapiens/commit/e9d7a0e59e122aa070b5ecb96e16bf53e73144af))
+    - [deps] updated ([`eaf3f18`](https://github.com/ssoudan/sapiens/commit/eaf3f18ac20ca49c1146a84e131e90b82a294d4c))
+    - [version] ([`43dd12d`](https://github.com/ssoudan/sapiens/commit/43dd12da54faaa1d580ff
