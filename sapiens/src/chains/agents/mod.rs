@@ -26,4 +26,26 @@ pub(crate) fn format_outcome(
 ) -> String {
     match outcome {
         Outcome::Success { result } => {
-          
+            let msg = task.action_success_prompt(
+                tool_name.clone().unwrap_or("unknown".to_string()),
+                *invocation_count,
+                result,
+            );
+
+            // if the response is too long, we add an error message to the chat
+            // history instead
+            const MAX_RESPONSE_CHAR: usize = 2048;
+            if msg.len() > MAX_RESPONSE_CHAR {
+                let msg = format!("The response is too long ({}B). Max allowed is {}B. Ask for a shorter response or use SandboxedPython Tool to process the response the data.",
+                                      msg.len(), MAX_RESPONSE_CHAR);
+                let e = ToolUseError::InvocationFailed(msg);
+                let msg = task
+                    .action_failed_prompt(tool_name.clone().unwrap_or("unknown".to_string()), &e);
+
+                format!("{}\n{}", msg, task.to_prompt())
+            } else {
+                format!("{}\n{}", msg, task.to_prompt())
+            }
+        }
+        Outcome::NoValidInvocationsFound { e } => {
+            let msg 
