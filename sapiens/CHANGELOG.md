@@ -2304,4 +2304,10 @@ Limit response size. Include tool name in response.
     - [changelog] ([`a36c535`](https://github.com/ssoudan/sapiens/commit/a36c5354033a5d4d59fa5765b3be85d92c0d5556))
     - [deps] updated ([`e9d7a0e`](https://github.com/ssoudan/sapiens/commit/e9d7a0e59e122aa070b5ecb96e16bf53e73144af))
     - [deps] updated ([`eaf3f18`](https://github.com/ssoudan/sapiens/commit/eaf3f18ac20ca49c1146a84e131e90b82a294d4c))
-    - [version] ([`43dd12d`](https://github.com/ssoudan/sapiens/commit/43dd12da54faaa1d580ff
+    - [version] ([`43dd12d`](https://github.com/ssoudan/sapiens/commit/43dd12da54faaa1d580ff1e9c793b828592572b1))
+    - [deps] ([`83b587d`](https://github.com/ssoudan/sapiens/commit/83b587dccea6e5ef2d9340f1a3ac125369945ae3))
+    - [+] cleanup ([`ff4d208`](https://github.com/ssoudan/sapiens/commit/ff4d208b951253b18c3faf5f76f99b891ff41c15))
+    - [+] cleanup ([`a53a608`](https://github.com/ssoudan/sapiens/commit/a53a6088db84fe99ad20e74905a59d0505d87feb))
+    - [+] renaming ([`f664941`](https://github.com/ssoudan/sapiens/commit/f664941f2aba36cd9bce7493a19d030d2945bd50))
+</details>
+
