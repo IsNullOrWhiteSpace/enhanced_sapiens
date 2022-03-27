@@ -40,4 +40,38 @@ const ORIENTER_RESPONSE_FORMAT: &str = r"
 You must use the following format for your response. Comments are in bold and should be removed from your response.
 ====================
 ## Orientation: 
-**Plan the intermediate objectives to answer complete the original task. 
+**Plan the intermediate objectives to answer complete the original task. Maintain a list of current objectives updated as you go.**
+- <...>
+```
+====================
+";
+
+const DECIDER_RESPONSE_FORMAT: &str = r"
+# Format of your response
+
+You must use the following format for your response. Comments are in bold and should be removed from your response.
+====================
+## Decision: 
+**Decide what to do first to answer the question. Why? How will you if it succeeds? How will you if it fails?**
+- <...>
+====================
+";
+
+const ACTOR_RESPONSE_FORMAT: &str = r"
+# Format of your response
+
+You must use the following format for your response. Comments are in bold and should be removed from your response.
+====================
+## The ONLY Action: 
+**Take a single Action consisting of exactly one pair of `tool_name` and `parameters`. Never give more than one YAML. **
+```yaml
+tool_name: <ToolName>
+parameters:
+    <...>  
+```
+We will take further action based on the response.
+====================
+
+Notes: 
+- Action has the following fields: `tool_name` and `parameters` ONLY.
+- `param
