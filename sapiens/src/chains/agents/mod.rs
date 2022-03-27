@@ -48,4 +48,17 @@ pub(crate) fn format_outcome(
             }
         }
         Outcome::NoValidInvocationsFound { e } => {
-            let msg 
+            let msg = task.invalid_action_prompt(e);
+            format!("{}\n{}", msg, task.to_prompt())
+        }
+        Outcome::NoInvocationsFound { e } => {
+            let msg = task.invalid_action_prompt(e);
+            format!("{}\n{}", msg, task.to_prompt())
+        }
+        Outcome::ToolUseError { e } => {
+            let msg =
+                task.action_failed_prompt(tool_name.clone().unwrap_or("unknown".to_string()), e);
+            format!("{}\n{}", msg, task.to_prompt())
+        }
+    }
+}
