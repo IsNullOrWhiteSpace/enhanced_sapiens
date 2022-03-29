@@ -74,4 +74,36 @@ We will take further action based on the response.
 
 Notes: 
 - Action has the following fields: `tool_name` and `parameters` ONLY.
-- `param
+- `parameters` uses the format specified for the Tool.
+- One Action at a time. No more. No less.
+";
+
+const OBSERVER_PROTO_INITIAL_RESPONSE: &str = r#"
+## Observations:
+- The given list to sort is [2, 3, 1, 4, 5].
+- I need to sort this list in ascending order.
+"#;
+
+const OBSERVER_PROTO_SECOND_INPUT: &str = r#"
+## Orientation:
+- SandboxedPython can be used to sort the list.
+- I need to provide only the `tool_name` and `parameters` fields for the SandboxedPython Tool.
+- I expect the response of the Action to contains the field `stdout` with the sorted list and `stderr` empty.
+- I need to use the Conclude Tool to terminate the task when I have the sorted list in plain text.
+## Decision:
+- We can use the sorted() function of Python to sort the list.
+## The ONLY Action:
+```yaml
+tool_name: SandboxedPython
+parameters:
+  code: |
+    lst = [2, 3, 1, 4, 5]
+    sorted_list = sorted(lst)
+    print(f"The sorted list is {sorted_list}")
+```
+We will take further action based on the response.
+# Action SandboxedPython response:
+```yaml
+stdout: |
+  The sorted list is [1, 2, 3, 4, 5]
+stderr: 
