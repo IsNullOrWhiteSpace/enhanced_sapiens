@@ -106,4 +106,39 @@ We will take further action based on the response.
 ```yaml
 stdout: |
   The sorted list is [1, 2, 3, 4, 5]
-stderr: 
+stderr: ''
+```
+"#;
+
+const OBSERVER_PROTO_SECOND_RESPONSE: &str = r"
+## Observations:
+- We needed to sort the list in ascending order.
+- We have the response of the Action.
+- We have the sorted list: [1, 2, 3, 4, 5].
+";
+
+const ORIENTER_PROTO_INITIAL_RESPONSE: &str = r#"
+## Orientation:
+- SandboxedPython can be used to sort the list.
+- I need to provide only the `tool_name` and `parameters` fields for the SandboxedPython Tool.
+- I expect the response of the Action to contains the field `stdout` with the sorted list and `stderr` empty.
+- I need to use the Conclude Tool to terminate the task when I have the sorted list in plain text.
+"#;
+
+const ORIENTER_PROTO_SECOND_INPUT: &str = r#"
+## Decision:
+- We can use the sorted() function of Python to sort the list.
+## The ONLY Action:
+```yaml
+tool_name: SandboxedPython
+parameters:
+  code: |
+    lst = [2, 3, 1, 4, 5]
+    sorted_list = sorted(lst)
+    print(f"The sorted list is {sorted_list}")
+```
+We will take further action based on the response.
+# Action SandboxedPython response:
+```yaml
+stdout: |
+  The s
