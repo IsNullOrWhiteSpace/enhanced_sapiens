@@ -141,4 +141,43 @@ We will take further action based on the response.
 # Action SandboxedPython response:
 ```yaml
 stdout: |
-  The s
+  The sorted list is [1, 2, 3, 4, 5]
+stderr: ''
+```
+## Observations:
+- We needed to sort the list in ascending order.
+- We have the response of the Action.
+- We have the sorted list: [1, 2, 3, 4, 5].
+"#;
+
+const ORIENTER_PROTO_SECOND_RESPONSE: &str = r"
+## Orientation:
+- I know the answer to the original question.
+- I need to provide the `tool_name` and `parameters` fields for the Conclude Tool.
+";
+
+const DECIDER_PROTO_INITIAL_RESPONSE: &str = r#"
+## Decision:
+- We can use the sorted() function of Python to sort the list.
+"#;
+
+const DECIDER_PROTO_SECOND_INPUT: &str = r#"
+## The ONLY Action:
+```yaml
+tool_name: SandboxedPython
+parameters:
+  code: |
+    lst = [2, 3, 1, 4, 5]
+    sorted_list = sorted(lst)
+    print(f"The sorted list is {sorted_list}")
+```
+We will take further action based on the response.
+# Action SandboxedPython response:
+```yaml
+stdout: |
+  The sorted list is [1, 2, 3, 4, 5]
+stderr: ''
+```
+## Observations:
+- We needed to sort the list in ascending order.
+- We have the response 
