@@ -218,4 +218,42 @@ stderr: ''
 - We have the sorted list: [1, 2, 3, 4, 5].
 ## Orientation:
 - I know the answer to the original question.
-- I need to provide the `tool_name` and `
+- I need to provide the `tool_name` and `parameters` fields for the Conclude Tool.
+## Decision:
+- Use the Conclude Tool to terminate the task with the sorted list.
+"#;
+
+const ACTOR_PROTO_SECOND_RESPONSE: &str = r"
+## The ONLY Action:
+```yaml
+tool_name: Conclude
+parameters:
+  original_question: |
+    Sort in ascending order: [2, 3, 1, 4, 5]
+  conclusion: |
+    The ascending sorted list is [1, 2, 3, 4, 5].
+```
+";
+
+enum AgentRole {
+    Observer { prompt_manager: prompt::Manager },
+    Orienter { prompt_manager: prompt::Manager },
+    Decider { prompt_manager: prompt::Manager },
+    Actor { prompt_manager: prompt::Manager },
+}
+
+impl Debug for AgentRole {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        match self {
+            AgentRole::Observer { .. } => write!(f, "Observer"),
+            AgentRole::Orienter { .. } => write!(f, "Orienter"),
+            AgentRole::Decider { .. } => write!(f, "Decider"),
+            AgentRole::Actor { .. } => write!(f, "Actor"),
+        }
+    }
+}
+
+impl AgentRole {
+    async fn convert_context_to_chat_history(
+        &self,
+        mut chat_
