@@ -283,4 +283,26 @@ impl AgentRole {
         // build the chat history from the context:
         // - group together Orientation, Decision, Action, ActionResult messages as a
         //   single chat entry from the User
-        // - Observation m
+        // - Observation messages become individual chat entries from the Assistant
+        let mut user_msg = vec![];
+        match self {
+            AgentRole::Observer { .. } => {
+                for m in &context.messages {
+                    match m {
+                        Message::Observation { content, .. } => {
+                            if !user_msg.is_empty() {
+                                // Add the user message to the chat history as a message from the
+                                // User
+                                chat_history
+                                    .add_chitchat(ChatEntry {
+                                        msg: user_msg.join("\n"),
+                                        role: Role::User,
+                                    })
+                                    .await;
+
+                                user_msg.clear();
+                            }
+
+                            // Add the observation to the chat history as a message from the
+                            // Observer
+                            chat
