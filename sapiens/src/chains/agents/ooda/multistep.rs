@@ -256,4 +256,31 @@ impl Debug for AgentRole {
 impl AgentRole {
     async fn convert_context_to_chat_history(
         &self,
-        mut chat_
+        mut chat_history: ChatHistory,
+        context: &Context,
+    ) -> Result<ChatHistory, Error> {
+        // build the examples
+        let examples = self.build_examples();
+
+        let prompt_manager = match self {
+            AgentRole::Observer { prompt_manager } => prompt_manager,
+            AgentRole::Orienter { prompt_manager } => prompt_manager,
+            AgentRole::Decider { prompt_manager } => prompt_manager,
+            AgentRole::Actor { prompt_manager } => prompt_manager,
+        };
+
+        // Add the prompts to the chat history
+        prompt_manager
+            .populate_chat_history(&mut chat_history, examples)
+            .await;
+
+        // Convert the context to a chat history
+        // - get the latest 'Task' from the context
+        let task = context.get_latest_task().unwrap();
+
+        let task = prompt_manager.build_task_prompt(&task);
+
+        // build the chat history from the context:
+        // - group together Orientation, Decision, Action, ActionResult messages as a
+        //   single chat entry from the User
+        // - Observation m
