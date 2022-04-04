@@ -305,4 +305,28 @@ impl AgentRole {
 
                             // Add the observation to the chat history as a message from the
                             // Observer
-                            chat
+                            chat_history
+                                .add_chitchat(ChatEntry {
+                                    msg: content.to_string(),
+                                    role: Role::Assistant,
+                                })
+                                .await;
+                        }
+                        Message::Orientation { content, .. } => {
+                            user_msg.push(content.clone());
+                        }
+                        Message::Decision { content, .. } => {
+                            user_msg.push(content.clone());
+                        }
+                        Message::Action { content, .. } => {
+                            user_msg.push(content.clone());
+                        }
+                        Message::ActionResult {
+                            invocation_count,
+                            tool_name,
+                            outcome,
+                            ..
+                        } => {
+                            let entry = format_outcome(&task, invocation_count, tool_name, outcome);
+
+      
