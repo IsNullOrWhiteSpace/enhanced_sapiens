@@ -329,4 +329,28 @@ impl AgentRole {
                         } => {
                             let entry = format_outcome(&task, invocation_count, tool_name, outcome);
 
-      
+                            user_msg.push(entry);
+                        }
+                        _ => {
+                            // Nothing
+                        }
+                    }
+                }
+            }
+
+            AgentRole::Orienter { .. } => {
+                for m in &context.messages {
+                    match m {
+                        Message::Observation { content, .. } => {
+                            user_msg.push(content.clone());
+                        }
+                        Message::Orientation { content, .. } => {
+                            if !user_msg.is_empty() {
+                                // Add the user message to the chat history as a message from the
+                                // User
+                                chat_history
+                                    .add_chitchat(ChatEntry {
+                                        msg: user_msg.join("\n"),
+                                        role: Role::User,
+                                    })
+              
