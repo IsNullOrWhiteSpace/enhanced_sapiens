@@ -353,4 +353,27 @@ impl AgentRole {
                                         msg: user_msg.join("\n"),
                                         role: Role::User,
                                     })
-              
+                                    .await;
+
+                                user_msg.clear();
+                            }
+
+                            // Add the observation to the chat history as a message from the
+                            // Observer
+                            chat_history
+                                .add_chitchat(ChatEntry {
+                                    msg: content.to_string(),
+                                    role: Role::Assistant,
+                                })
+                                .await;
+                        }
+                        Message::Decision { content, .. } => {
+                            user_msg.push(content.clone());
+                        }
+                        Message::Action { content, .. } => {
+                            user_msg.push(content.clone());
+                        }
+                        Message::ActionResult {
+                            invocation_count,
+                            tool_name,
+                            outcom
