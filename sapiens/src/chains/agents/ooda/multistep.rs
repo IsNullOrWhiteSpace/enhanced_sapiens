@@ -475,4 +475,38 @@ impl AgentRole {
                             invocation_count,
                             tool_name,
                             outcome,
-                       
+                            ..
+                        } => {
+                            let entry = format_outcome(&task, invocation_count, tool_name, outcome);
+
+                            user_msg.push(entry);
+                        }
+                        _ => {
+                            // Nothing
+                        }
+                    }
+                }
+            }
+        }
+
+        if !user_msg.is_empty() {
+            // Add the user message to the chat history as a message from the User
+            chat_history
+                .add_chitchat(ChatEntry {
+                    msg: user_msg.join("\n"),
+                    role: Role::User,
+                })
+                .await;
+        }
+
+        if chat_history.is_chitchat_empty() {
+            // Add the recurring prompts to the chat history
+            chat_history
+                .add_chitchat(ChatEntry {
+                    msg: task.to_prompt(),
+                    role: Role::User,
+                })
+                .await;
+        }
+
+        // prune the history if 
