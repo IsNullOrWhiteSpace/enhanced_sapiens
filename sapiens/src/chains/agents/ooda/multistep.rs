@@ -425,4 +425,30 @@ impl AgentRole {
                         Message::ActionResult {
                             invocation_count,
                             tool_name,
-      
+                            outcome,
+                            ..
+                        } => {
+                            let entry = format_outcome(&task, invocation_count, tool_name, outcome);
+
+                            user_msg.push(entry);
+                        }
+                        _ => {
+                            // Nothing
+                        }
+                    }
+                }
+            }
+            AgentRole::Actor { .. } => {
+                for m in &context.messages {
+                    match m {
+                        Message::Observation { content, .. } => {
+                            user_msg.push(content.clone());
+                        }
+                        Message::Orientation { content, .. } => {
+                            user_msg.push(content.clone());
+                        }
+                        Message::Decision { content, .. } => {
+                            user_msg.push(content.clone());
+                        }
+                        Message::Action { content, .. } => {
+                            if !user
