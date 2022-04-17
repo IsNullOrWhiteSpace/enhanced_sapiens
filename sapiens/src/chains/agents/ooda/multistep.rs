@@ -401,4 +401,28 @@ impl AgentRole {
                         Message::Decision { content, .. } => {
                             if !user_msg.is_empty() {
                                 // Add the user message to the chat history as a message from the
-                                // Us
+                                // User
+                                chat_history
+                                    .add_chitchat(ChatEntry {
+                                        msg: user_msg.join("\n"),
+                                        role: Role::User,
+                                    })
+                                    .await;
+
+                                user_msg.clear();
+                            }
+
+                            chat_history
+                                .add_chitchat(ChatEntry {
+                                    msg: content.to_string(),
+                                    role: Role::Assistant,
+                                })
+                                .await;
+                        }
+                        Message::Action { content, .. } => {
+                            user_msg.push(content.clone());
+                        }
+                        Message::ActionResult {
+                            invocation_count,
+                            tool_name,
+      
