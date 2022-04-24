@@ -509,4 +509,33 @@ impl AgentRole {
                 .await;
         }
 
-        // prune the history if 
+        // prune the history if needed
+        chat_history.purge().await?;
+
+        Ok(chat_history)
+    }
+
+    fn build_examples(&self) -> Vec<(String, String)> {
+        match self {
+            AgentRole::Observer { prompt_manager } => {
+                let warmup_task =
+                    prompt_manager.build_task_prompt("Sort in ascending order: [2, 3, 1, 4, 5]");
+
+                vec![
+                    (
+                        warmup_task.to_prompt(),
+                        OBSERVER_PROTO_INITIAL_RESPONSE.trim().to_string(),
+                    ),
+                    (
+                        (format!(
+                            "{}{}",
+                            OBSERVER_PROTO_SECOND_INPUT.trim(),
+                            warmup_task.to_prompt()
+                        ))
+                        .trim()
+                        .to_string(),
+                        OBSERVER_PROTO_SECOND_RESPONSE.trim().to_string(),
+                    ),
+                ]
+            }
+            AgentRole::Orienter 
