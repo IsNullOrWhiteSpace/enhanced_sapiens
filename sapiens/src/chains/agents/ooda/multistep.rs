@@ -538,4 +538,31 @@ impl AgentRole {
                     ),
                 ]
             }
-            AgentRole::Orienter 
+            AgentRole::Orienter { prompt_manager } => {
+                let warmup_task =
+                    prompt_manager.build_task_prompt("Sort in ascending order: [2, 3, 1, 4, 5]");
+
+                vec![
+                    (
+                        warmup_task.to_prompt(),
+                        ORIENTER_PROTO_INITIAL_RESPONSE.trim().to_string(),
+                    ),
+                    (
+                        (format!(
+                            "{}{}",
+                            ORIENTER_PROTO_SECOND_INPUT.trim(),
+                            warmup_task.to_prompt()
+                        ))
+                        .trim()
+                        .to_string(),
+                        ORIENTER_PROTO_SECOND_RESPONSE.trim().to_string(),
+                    ),
+                ]
+            }
+            AgentRole::Decider { prompt_manager } => {
+                let warmup_task =
+                    prompt_manager.build_task_prompt("Sort in ascending order: [2, 3, 1, 4, 5]");
+
+                vec![
+                    (
+                        warmup_task.to_prompt(
