@@ -633,3 +633,41 @@ impl Agent {
             OBSERVER_RESPONSE_FORMAT.to_string(),
         );
 
+        Self {
+            role: AgentRole::Observer { prompt_manager },
+            config,
+            observer,
+        }
+    }
+
+    /// Create a new [`Agent`] with the role of an orienter.
+    pub async fn new_orienter(
+        config: SapiensConfig,
+        toolbox: Toolbox,
+        observer: WeakRuntimeObserver,
+    ) -> Self {
+        let system_prompt =
+            "You are part of Sapiens agents and your role is to orient the other agents based on the observations."
+                .to_string();
+
+        let prompt = "What is your orientation?".to_string();
+
+        let prompt_manager = prompt::Manager::new(
+            toolbox,
+            system_prompt,
+            prompt,
+            PREFIX.to_string(),
+            TOOL_PREFIX.to_string(),
+            ORIENTER_RESPONSE_FORMAT.to_string(),
+        );
+
+        Self {
+            role: AgentRole::Orienter { prompt_manager },
+            config,
+            observer,
+        }
+    }
+
+    /// Create a new [`Agent`] with the role of a decider.
+    pub async fn new_decider(
+        config: Sapien
