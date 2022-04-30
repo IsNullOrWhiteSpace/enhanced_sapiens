@@ -593,4 +593,43 @@ impl AgentRole {
                         (format!(
                             "{}{}",
                             ACTOR_PROTO_SECOND_INPUT.trim(),
-          
+                            warmup_task.to_prompt()
+                        ))
+                        .trim()
+                        .to_string(),
+                        ACTOR_PROTO_SECOND_RESPONSE.trim().to_string(),
+                    ),
+                ]
+            }
+        }
+    }
+}
+
+/// An agent
+pub struct Agent {
+    role: AgentRole,
+    config: SapiensConfig,
+    observer: WeakRuntimeObserver,
+}
+
+impl Agent {
+    /// Create a new [`Agent`] with the role of an observer.
+    pub async fn new_observer(
+        config: SapiensConfig,
+        toolbox: Toolbox,
+        observer: WeakRuntimeObserver,
+    ) -> Self {
+        let system_prompt =
+            "You are part of Sapiens agents and your role is to observe and report.".to_string();
+
+        let prompt = "What are your observations?".to_string();
+
+        let prompt_manager = prompt::Manager::new(
+            toolbox,
+            system_prompt,
+            prompt,
+            PREFIX.to_string(),
+            TOOL_PREFIX.to_string(),
+            OBSERVER_RESPONSE_FORMAT.to_string(),
+        );
+
