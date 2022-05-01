@@ -670,4 +670,38 @@ impl Agent {
 
     /// Create a new [`Agent`] with the role of a decider.
     pub async fn new_decider(
-        config: Sapien
+        config: SapiensConfig,
+        toolbox: Toolbox,
+        observer: WeakRuntimeObserver,
+    ) -> Self {
+        let system_prompt =
+            "You are part of Sapiens agents and your role is to decide what need to be done based on the observations and guidance you got."
+                .to_string();
+
+        let prompt = "What is your decision?".to_string();
+
+        let prompt_manager = prompt::Manager::new(
+            toolbox,
+            system_prompt,
+            prompt,
+            PREFIX.to_string(),
+            TOOL_PREFIX.to_string(),
+            DECIDER_RESPONSE_FORMAT.to_string(),
+        );
+
+        Self {
+            role: AgentRole::Decider { prompt_manager },
+            config,
+            observer,
+        }
+    }
+
+    /// Create a new [`Agent`] with the role of an actor.
+    pub async fn new_actor(
+        config: SapiensConfig,
+        toolbox: Toolbox,
+        observer: WeakRuntimeObserver,
+    ) -> Self {
+        let system_prompt =
+            "You are part of Sapiens agents and your role is to act on the world as it has been decided."
+   
