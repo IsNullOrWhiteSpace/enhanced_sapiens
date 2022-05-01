@@ -743,4 +743,42 @@ impl chains::Agent for Agent {
     type Error = Error;
 
     async fn act(&self, context: &Context) -> Result<Message, Error> {
-        let
+        let chat_history = self.convert_context_to_chat_history(context).await?;
+
+        // Query the model
+        let input = chat_history.make_input();
+
+        debug!(
+            min_tokens = self.config.min_tokens_for_completion,
+            max_tokens = self.config.max_tokens,
+            role = ?self.role,
+            "Querying model with {} entries",
+            input.chat.len()
+        );
+
+        trace!("Querying model:\n{:#?}", input);
+
+        let res = self
+            .config
+            .model
+            .query(input, self.config.max_tokens)
+            .await?;
+
+        trace!("Got model response:\n{:#?}", res);
+
+        // Show the message from the assistant
+        if let Some(observer) = self.observer.upgrade() {
+            observer
+                .lock()
+                .await
+                .on_model_update(res.clone().into())
+                .await;
+        }
+
+        // Return the response as a message
+        match self.role {
+            AgentRole::Observer { .. } => Ok(Message::Observation {
+                content: res.msg,
+                usage: res.usage,
+            }),
+ 
