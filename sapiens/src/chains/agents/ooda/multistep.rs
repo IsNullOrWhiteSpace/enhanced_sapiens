@@ -704,4 +704,43 @@ impl Agent {
     ) -> Self {
         let system_prompt =
             "You are part of Sapiens agents and your role is to act on the world as it has been decided."
-   
+                .to_string();
+
+        let prompt = "What is your action?".to_string();
+
+        let prompt_manager = prompt::Manager::new(
+            toolbox,
+            system_prompt,
+            prompt,
+            PREFIX.to_string(),
+            TOOL_PREFIX.to_string(),
+            ACTOR_RESPONSE_FORMAT.to_string(),
+        );
+
+        Self {
+            role: AgentRole::Actor { prompt_manager },
+            config,
+            observer,
+        }
+    }
+
+    async fn convert_context_to_chat_history(
+        &self,
+        context: &Context,
+    ) -> Result<ChatHistory, Error> {
+        let max_token = self.config.model.context_size().await;
+
+        // Create a new chat history
+        let chat_history = ChatHistory::new(self.config.clone(), max_token);
+        self.role
+            .convert_context_to_chat_history(chat_history, context)
+            .await
+    }
+}
+
+#[async_trait::async_trait]
+impl chains::Agent for Agent {
+    type Error = Error;
+
+    async fn act(&self, context: &Context) -> Result<Message, Error> {
+        let
