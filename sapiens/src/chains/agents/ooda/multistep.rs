@@ -781,4 +781,39 @@ impl chains::Agent for Agent {
                 content: res.msg,
                 usage: res.usage,
             }),
- 
+            AgentRole::Orienter { .. } => Ok(Message::Orientation {
+                content: res.msg,
+                usage: res.usage,
+            }),
+            AgentRole::Decider { .. } => Ok(Message::Decision {
+                content: res.msg,
+                usage: res.usage,
+            }),
+            AgentRole::Actor { .. } => Ok(Message::Action {
+                content: res.msg,
+                usage: res.usage,
+            }),
+        }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use std::sync::Arc;
+
+    use indoc::indoc;
+    use insta::assert_debug_snapshot;
+
+    use super::*;
+    use crate::chains::Outcome;
+    use crate::void_observer;
+
+    #[tokio::test]
+    async fn observer_converts_context_to_chat_history() {
+        let context = build_dummy_context();
+
+        let toolbox = Toolbox::default();
+
+        let observer = void_observer();
+        let weak_observer = Arc::downgrade(&observer);
+        let agent = Agent::new_observer(Default::default(), toolbox, weak_observer).await;
