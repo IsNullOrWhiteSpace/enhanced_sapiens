@@ -817,3 +817,38 @@ mod tests {
         let observer = void_observer();
         let weak_observer = Arc::downgrade(&observer);
         let agent = Agent::new_observer(Default::default(), toolbox, weak_observer).await;
+
+        let chat_history = agent.convert_context_to_chat_history(&context).await;
+
+        assert_debug_snapshot!(chat_history);
+    }
+
+    #[tokio::test]
+    async fn orienter_converts_context_to_chat_history() {
+        let mut context = build_dummy_context();
+
+        context.add_message(Message::Observation {
+            content: indoc! {r#"
+            ## Observations:
+            - We needed to sort the list in ascending order.
+            - We have the response of the Action.
+            - We have the sorted list: [1, 2, 3, 4, 5].
+            "#
+            }
+            .trim()
+            .to_string(),
+            usage: None,
+        });
+
+        let toolbox = Toolbox::default();
+
+        let observer = void_observer();
+        let weak_observer = Arc::downgrade(&observer);
+        let agent = Agent::new_orienter(Default::default(), toolbox, weak_observer).await;
+
+        let chat_history = agent.convert_context_to_chat_history(&context).await;
+
+        assert_debug_snapshot!(chat_history);
+    }
+
+    #[toki
