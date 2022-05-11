@@ -884,4 +884,36 @@ mod tests {
 
         let observer = void_observer();
         let weak_observer = Arc::downgrade(&observer);
-        let agent = Agent::new_decider(Default::default(
+        let agent = Agent::new_decider(Default::default(), toolbox, weak_observer).await;
+
+        let chat_history = agent.convert_context_to_chat_history(&context).await;
+
+        assert_debug_snapshot!(chat_history);
+    }
+
+    #[tokio::test]
+    async fn actor_converts_context_to_chat_history() {
+        let mut context = build_dummy_context();
+
+        context.add_message(Message::Observation {
+            content: indoc! {r#"
+            ## Observations:
+            - We needed to sort the list in ascending order.
+            - We have the response of the Action.
+            - We have the sorted list: [1, 2, 3, 4, 5].
+            "#
+            }
+            .trim()
+            .to_string(),
+            usage: None,
+        });
+
+        context.add_message(Message::Orientation {
+            content: indoc! {r#"
+            ## Orientation:
+            - I know the answer to the original question.
+            - I need to provide the `tool_name` and `parameters` fields for the Conclude Tool.
+            "#
+            }
+            .trim()
+            .to_string(),
