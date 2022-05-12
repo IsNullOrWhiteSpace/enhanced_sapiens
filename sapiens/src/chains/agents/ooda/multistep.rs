@@ -951,4 +951,30 @@ mod tests {
 
         context.add_message(Message::Observation {
             content: indoc! {r#"
-            ## Obse
+            ## Observations:
+            - The given list to sort is [2, 3, 1, 4, 5].
+            - I need to sort this list in ascending order."#
+            }
+            .trim()
+            .to_string(),
+            usage: None,
+        });
+
+        context.add_message(Message::Orientation {
+            content: indoc! {r#"
+            ## Orientation:
+            - SandboxedPython can be used to sort the list.
+            - I need to provide only the `tool_name` and `parameters` fields for the SandboxedPython Tool.
+            - I expect the response of the Action to contains the field `stdout` with the sorted list and `stderr` empty.
+            - I need to use the Conclude Tool to terminate the task when I have the sorted list in plain text."#
+            }.trim().to_string(),
+            usage: None,
+        });
+
+        context.add_message(Message::Decision {
+            content: indoc! {r#"
+            ## Decision:
+            - We can use the sorted() function of Python to sort the list."#
+            }
+            .trim()
+       
