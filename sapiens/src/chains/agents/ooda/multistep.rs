@@ -917,3 +917,38 @@ mod tests {
             }
             .trim()
             .to_string(),
+            usage: None,
+        });
+
+        context.add_message(Message::Decision {
+            content: indoc! {r#"
+            ## Decision:
+            - Use the Conclude Tool to terminate the task with the sorted list.
+            "#
+            }
+            .trim()
+            .to_string(),
+            usage: None,
+        });
+
+        let toolbox = Toolbox::default();
+
+        let observer = void_observer();
+        let weak_observer = Arc::downgrade(&observer);
+        let agent = Agent::new_actor(Default::default(), toolbox, weak_observer).await;
+
+        let chat_history = agent.convert_context_to_chat_history(&context).await;
+
+        assert_debug_snapshot!(chat_history);
+    }
+
+    fn build_dummy_context() -> Context {
+        let mut context = Context::new();
+
+        context.add_message(Message::Task {
+            content: "Sort in ascending order: [2, 3, 1, 4, 5]".to_string(),
+        });
+
+        context.add_message(Message::Observation {
+            content: indoc! {r#"
+            ## Obse
