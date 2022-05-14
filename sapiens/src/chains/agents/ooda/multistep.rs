@@ -977,4 +977,36 @@ mod tests {
             - We can use the sorted() function of Python to sort the list."#
             }
             .trim()
-       
+            .to_string(),
+            usage: None,
+        });
+
+        context.add_message(Message::Action {
+            content: indoc! {r#"
+            ## The ONLY Action:
+            ```yaml
+            tool_name: SandboxedPython
+            parameters:
+              code: |
+                lst = [2, 3, 1, 4, 5]
+                sorted_list = sorted(lst)
+                print(f"The sorted list is {sorted_list}")
+            ```
+            That's it for now. We will take further action based on the response.            
+            "#
+            }
+            .trim()
+            .to_string(),
+            usage: None,
+        });
+
+        context.add_message(Message::ActionResult {
+            invocation_count: 1,
+            tool_name: Some("SandboxedPython".to_string()),
+            extracted_input: Some(
+                indoc! {r#"
+            tool_name: SandboxedPython
+            parameters:
+              code: |
+                lst = [2, 3, 1, 4, 5]
+                sorted_list = sorted(l
