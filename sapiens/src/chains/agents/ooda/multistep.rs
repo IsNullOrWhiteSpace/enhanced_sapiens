@@ -1009,4 +1009,22 @@ mod tests {
             parameters:
               code: |
                 lst = [2, 3, 1, 4, 5]
-                sorted_list = sorted(l
+                sorted_list = sorted(lst)
+                print(f"The sorted list is {sorted_list}")
+            "#}
+                .trim()
+                .to_string(),
+            ),
+            outcome: Outcome::Success {
+                result: indoc! {r#"
+                stdout: |
+                  The sorted list is [1, 2, 3, 4, 5]
+                stderr: ''
+                "#}
+                .trim()
+                .to_string(),
+            },
+        });
+        context
+    }
+}
