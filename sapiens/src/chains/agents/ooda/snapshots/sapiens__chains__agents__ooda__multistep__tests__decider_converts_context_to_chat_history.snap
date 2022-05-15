@@ -24,4 +24,29 @@ Ok(
             
             # Format of your response
             
-            You must use the following format for 
+            You must use the following format for your response. Comments are in bold and should be removed from your response.
+            ====================
+            ## Decision: 
+            **Decide what to do first to answer the question. Why? How will you if it succeeds? How will you if it fails?**
+            - <...>
+            ====================
+            
+            # The following are the ONLY Tools one can use for the Actions:
+            [],
+        ],
+        examples: [
+            (
+                [user]: # Your turn
+                Original question: Sort in ascending order: [2, 3, 1, 4, 5]
+                What is your decision?,
+                [assistant]: ## Decision:
+                - We can use the sorted() function of Python to sort the list.,
+            ),
+            (
+                [user]: ## The ONLY Action:
+                ```yaml
+                tool_name: SandboxedPython
+                parameters:
+                  code: |
+                    lst = [2, 3, 1, 4, 5]
+                    sorted
