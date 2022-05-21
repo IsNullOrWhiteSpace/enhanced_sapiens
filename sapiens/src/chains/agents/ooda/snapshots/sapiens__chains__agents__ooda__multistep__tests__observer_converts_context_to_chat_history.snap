@@ -1,3 +1,4 @@
+
 ---
 source: sapiens/src/chains/agents/ooda/multistep.rs
 expression: chat_history
@@ -12,7 +13,7 @@ Ok(
         },
         max_token: 4096,
         context: [
-            [system]: You are part of Sapiens agents and your role is to decide what need to be done based on the observations and guidance you got.,
+            [system]: You are part of Sapiens agents and your role is to observe and report.,
             [user]: You are part of a group of cooperating assistants named Sapiens. Use available tools to answer the question as best as you can.
             You will collectively proceed iteratively using an OODA loop. Don't overstep your role.
             
@@ -26,8 +27,8 @@ Ok(
             
             You must use the following format for your response. Comments are in bold and should be removed from your response.
             ====================
-            ## Decision: 
-            **Decide what to do first to answer the question. Why? How will you if it succeeds? How will you if it fails?**
+            ## Observations: 
+            **What do you know to be true? What do you you don't know? What are your sources? Note down important information for later.**
             - <...>
             ====================
             
@@ -38,12 +39,20 @@ Ok(
             (
                 [user]: # Your turn
                 Original question: Sort in ascending order: [2, 3, 1, 4, 5]
-                What is your decision?,
-                [assistant]: ## Decision:
-                - We can use the sorted() function of Python to sort the list.,
+                What are your observations?,
+                [assistant]: ## Observations:
+                - The given list to sort is [2, 3, 1, 4, 5].
+                - I need to sort this list in ascending order.,
             ),
             (
-                [user]: ## The ONLY Action:
+                [user]: ## Orientation:
+                - SandboxedPython can be used to sort the list.
+                - I need to provide only the `tool_name` and `parameters` fields for the SandboxedPython Tool.
+                - I expect the response of the Action to contains the field `stdout` with the sorted list and `stderr` empty.
+                - I need to use the Conclude Tool to terminate the task when I have the sorted list in plain text.
+                ## Decision:
+                - We can use the sorted() function of Python to sort the list.
+                ## The ONLY Action:
                 ```yaml
                 tool_name: SandboxedPython
                 parameters:
@@ -58,32 +67,27 @@ Ok(
                 stdout: |
                   The sorted list is [1, 2, 3, 4, 5]
                 stderr: ''
-                ```
-                ## Observations:
+                ```# Your turn
+                Original question: Sort in ascending order: [2, 3, 1, 4, 5]
+                What are your observations?,
+                [assistant]: ## Observations:
                 - We needed to sort the list in ascending order.
                 - We have the response of the Action.
-                - We have the sorted list: [1, 2, 3, 4, 5].
-                ## Orientation:
-                - I know the answer to the original question.
-                - I need to provide the `tool_name` and `parameters` fields for the Conclude Tool.# Your turn
-                Original question: Sort in ascending order: [2, 3, 1, 4, 5]
-                What is your decision?,
-                [assistant]: ## Decision:
-                - Use the Conclude Tool to terminate the task with the sorted list.,
+                - We have the sorted list: [1, 2, 3, 4, 5].,
             ),
         ],
         chitchat: [
-            [user]: ## Observations:
+            [assistant]: ## Observations:
             - The given list to sort is [2, 3, 1, 4, 5].
-            - I need to sort this list in ascending order.
-            ## Orientation:
+            - I need to sort this list in ascending order.,
+            [user]: ## Orientation:
             - SandboxedPython can be used to sort the list.
             - I need to provide only the `tool_name` and `parameters` fields for the SandboxedPython Tool.
             - I expect the response of the Action to contains the field `stdout` with the sorted list and `stderr` empty.
-            - I need to use the Conclude Tool to terminate the task when I have the sorted list in plain text.,
-            [assistant]: ## Decision:
-            - We can use the sorted() function of Python to sort the list.,
-            [user]: ## The ONLY Action:
+            - I need to use the Conclude Tool to terminate the task when I have the sorted list in plain text.
+            ## Decision:
+            - We can use the sorted() function of Python to sort the list.
+            ## The ONLY Action:
             ```yaml
             tool_name: SandboxedPython
             parameters:
@@ -100,14 +104,7 @@ Ok(
             stderr: ''```
             # Your turn
             Original question: Sort in ascending order: [2, 3, 1, 4, 5]
-            What is your decision?
-            ## Observations:
-            - We needed to sort the list in ascending order.
-            - We have the response of the Action.
-            - We have the sorted list: [1, 2, 3, 4, 5].
-            ## Orientation:
-            - I know the answer to the original question.
-            - I need to provide the `tool_name` and `parameters` fields for the Conclude Tool.,
+            What are your observations?,
         ],
     },
 )
