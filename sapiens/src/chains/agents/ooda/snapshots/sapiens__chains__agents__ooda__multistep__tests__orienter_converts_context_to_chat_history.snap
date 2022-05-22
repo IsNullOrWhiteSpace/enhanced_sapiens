@@ -4,4 +4,24 @@ expression: chat_history
 ---
 Ok(
     ChatHistory {
-     
+        config: Config {
+            max_steps: 10,
+            chain_type: SingleStepOODA,
+            min_tokens_for_completion: 256,
+            max_tokens: None,
+        },
+        max_token: 4096,
+        context: [
+            [system]: You are part of Sapiens agents and your role is to orient the other agents based on the observations.,
+            [user]: You are part of a group of cooperating assistants named Sapiens. Use available tools to answer the question as best as you can.
+            You will collectively proceed iteratively using an OODA loop. Don't overstep your role.
+            
+            - Action response will be provided. 
+            - Never produce the response of an Action. 
+            - Only use YAML for the Action.
+            - The loop will repeated until you have the answer to the original question. 
+            - No task is complete until the Conclude Tool is used to provide the answer. 
+            
+            # Format of your response
+            
+            You must use the following format for your response. Comments a
