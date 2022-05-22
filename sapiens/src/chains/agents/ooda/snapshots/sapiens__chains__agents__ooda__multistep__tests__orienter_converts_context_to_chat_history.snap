@@ -24,4 +24,26 @@ Ok(
             
             # Format of your response
             
-            You must use the following format for your response. Comments a
+            You must use the following format for your response. Comments are in bold and should be removed from your response.
+            ====================
+            ## Orientation: 
+            **Plan the intermediate objectives to answer complete the original task. Maintain a list of current objectives updated as you go.**
+            - <...>
+            ```
+            ====================
+            
+            # The following are the ONLY Tools one can use for the Actions:
+            [],
+        ],
+        examples: [
+            (
+                [user]: # Your turn
+                Original question: Sort in ascending order: [2, 3, 1, 4, 5]
+                What is your orientation?,
+                [assistant]: ## Orientation:
+                - SandboxedPython can be used to sort the list.
+                - I need to provide only the `tool_name` and `parameters` fields for the SandboxedPython Tool.
+                - I expect the response of the Action to contains the field `stdout` with the sorted list and `stderr` empty.
+                - I need to use the Conclude Tool to terminate the task when I have the sorted list in plain text.,
+            ),
+          
