@@ -67,4 +67,42 @@ pub enum Error {
 }
 
 /// Type of chain to use
-#[derive(Def
+#[derive(Default, Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+pub enum ChainType {
+    /// OODA single step chain
+    #[default]
+    SingleStepOODA,
+    /// OODA multi step chain
+    MultiStepOODA,
+}
+
+impl FromStr for ChainType {
+    type Err = String;
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        match s {
+            "single-step-ooda" => Ok(ChainType::SingleStepOODA),
+            "multi-step-ooda" => Ok(ChainType::MultiStepOODA),
+            _ => Err(format!("Unknown chain type: {}", s)),
+        }
+    }
+}
+
+#[cfg(feature = "clap")]
+impl clap::ValueEnum for ChainType {
+    fn value_variants<'a>() -> &'a [Self] {
+        &[ChainType::SingleStepOODA, ChainType::MultiStepOODA]
+    }
+
+    fn to_possible_value(&self) -> Option<PossibleValue> {
+        match self {
+            ChainType::SingleStepOODA => Some(PossibleValue::new("single-step-ooda")),
+            ChainType::MultiStepOODA => Some(PossibleValue::new("multi-step-ooda")),
+        }
+    }
+}
+
+/// Configuration for the bot
+#[derive(Clone)]
+pub struct SapiensConfig {
+    /// Th
