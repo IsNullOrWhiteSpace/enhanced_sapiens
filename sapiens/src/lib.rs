@@ -36,4 +36,35 @@ use std::sync::{Arc, Weak};
 
 use clap::builder::PossibleValue;
 use serde::{Deserialize, Serialize};
-use tokio::sync::Mu
+use tokio::sync::Mutex;
+
+use crate::chains::{Chain, Message, MultiStepOODAChain, SingleStepOODAChain};
+use crate::context::{ChatEntry, ContextDump};
+use crate::models::openai::OpenAI;
+use crate::models::{ModelRef, ModelResponse, Role, Usage};
+use crate::tools::invocation::InvocationError;
+use crate::tools::toolbox::{InvokeResult, Toolbox};
+use crate::tools::{TerminationMessage, ToolUseError};
+
+/// The error type for the bot
+#[derive(thiserror::Error, Debug)]
+pub enum Error {
+    /// Failed to add to the chat history
+    #[error("Failed to add to the chat history: {0}")]
+    ChatHistoryError(#[from] context::Error),
+    /// Model evaluation error
+    #[error("Model evaluation error: {0}")]
+    ModelEvaluationError(#[from] models::Error),
+    /// Reached the maximum number of steps
+    #[error("Maximal number of steps reached")]
+    MaxStepsReached,
+    /// The response is too long
+    #[error("The response is too long: {0}")]
+    ActionResponseTooLong(String),
+    /// Error in the chain
+    #[error("Chain error: {0}")]
+    ChainError(#[from] chains::Error),
+}
+
+/// Type of chain to use
+#[derive(Def
