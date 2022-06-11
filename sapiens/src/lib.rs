@@ -206,4 +206,40 @@ impl From<InvokeResult> for InvocationResultNotification {
                 extracted_input,
                 result,
             } => InvocationResultNotification::InvocationSuccess(InvocationSuccessNotification {
-                invocation_
+                invocation_count,
+                tool_name,
+                extracted_input,
+                result,
+            }),
+            InvokeResult::Error {
+                invocation_count,
+                tool_name,
+                extracted_input,
+                e,
+            } => InvocationResultNotification::InvocationFailure(InvocationFailureNotification {
+                invocation_count,
+                tool_name,
+                extracted_input,
+                e,
+            }),
+        }
+    }
+}
+
+/// Invocation success notification
+pub struct InvocationSuccessNotification {
+    /// The number of invocation blocks in the message
+    pub invocation_count: usize,
+    /// The tool name
+    pub tool_name: String,
+    /// The input that was extracted from the message and passed to `tool_name`
+    pub extracted_input: String,
+    /// The result
+    pub result: String,
+}
+
+/// Invocation failure notification
+pub struct InvocationFailureNotification {
+    /// Number of invocation  blocks in the message
+    pub invocation_count: usize,
+    /// The tool name
