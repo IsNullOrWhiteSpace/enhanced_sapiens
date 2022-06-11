@@ -243,3 +243,40 @@ pub struct InvocationFailureNotification {
     /// Number of invocation  blocks in the message
     pub invocation_count: usize,
     /// The tool name
+    pub tool_name: String,
+    /// The input that was extracted from the message and passed to `tool_name`
+    pub extracted_input: String,
+    /// The result
+    pub e: ToolUseError,
+}
+
+/// Invalid invocation notification
+pub struct InvalidInvocationNotification {
+    /// The result
+    pub e: InvocationError,
+    /// Number of invocation blocks in the message
+    pub invocation_count: usize,
+}
+
+/// Termination notification
+pub struct TerminationNotification {
+    /// The messages
+    pub messages: Vec<TerminationMessage>,
+}
+
+/// Observer for the step progresses
+#[async_trait::async_trait]
+pub trait RuntimeObserver: Send {
+    /// Called when the task is submitted
+    async fn on_task(&mut self, _task: &str) {}
+
+    /// Called on start
+    async fn on_start(&mut self, _context: ContextDump) {}
+
+    /// Called when the model returns something
+    async fn on_model_update(&mut self, _event: ModelNotification) {}
+
+    /// Called when the scheduler has selected a message
+    async fn on_message(&mut self, _event: MessageNotification) {}
+
+    /// C
