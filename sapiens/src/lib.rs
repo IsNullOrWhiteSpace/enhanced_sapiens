@@ -135,4 +135,47 @@ impl Default for SapiensConfig {
             max_steps: 10,
             chain_type: ChainType::SingleStepOODA,
             min_tokens_for_completion: 256,
-            max_to
+            max_tokens: None,
+        }
+    }
+}
+
+/// An update from the model
+#[derive(Debug, Clone)]
+pub struct ModelNotification {
+    /// The message from the model
+    pub chat_entry: ChatEntry,
+    /// The number of tokens used by the model
+    pub usage: Option<Usage>,
+}
+
+impl From<ModelResponse> for ModelNotification {
+    fn from(res: ModelResponse) -> Self {
+        Self {
+            chat_entry: ChatEntry {
+                role: Role::Assistant,
+                msg: res.msg,
+            },
+            usage: res.usage,
+        }
+    }
+}
+
+/// A message from a scheduler
+#[derive(Debug, Clone)]
+pub struct MessageNotification {
+    /// The message from the scheduler
+    pub message: Message,
+}
+
+impl From<Message> for MessageNotification {
+    fn from(message: Message) -> Self {
+        Self { message }
+    }
+}
+
+/// Notification of the result of a tool invocation
+pub enum InvocationResultNotification {
+    /// Invocation success notification
+    InvocationSuccess(InvocationSuccessNotification),
+    /// Invocation failu
