@@ -178,4 +178,32 @@ impl From<Message> for MessageNotification {
 pub enum InvocationResultNotification {
     /// Invocation success notification
     InvocationSuccess(InvocationSuccessNotification),
-    /// Invocation failu
+    /// Invocation failure notification
+    InvocationFailure(InvocationFailureNotification),
+    /// Invalid invocation notification
+    InvalidInvocation(InvalidInvocationNotification),
+}
+
+impl From<InvokeResult> for InvocationResultNotification {
+    fn from(res: InvokeResult) -> Self {
+        match res {
+            InvokeResult::NoInvocationsFound { e } => {
+                InvocationResultNotification::InvalidInvocation(InvalidInvocationNotification {
+                    e,
+                    invocation_count: 0,
+                })
+            }
+            InvokeResult::NoValidInvocationsFound {
+                e,
+                invocation_count,
+            } => InvocationResultNotification::InvalidInvocation(InvalidInvocationNotification {
+                e,
+                invocation_count,
+            }),
+            InvokeResult::Success {
+                invocation_count,
+                tool_name,
+                extracted_input,
+                result,
+            } => InvocationResultNotification::InvocationSuccess(InvocationSuccessNotification {
+                invocation_
