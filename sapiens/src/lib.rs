@@ -309,4 +309,43 @@ pub(crate) fn void_observer() -> StrongRuntimeObserver<VoidTaskProgressUpdateObs
 }
 
 #[async_trait::async_trait]
-impl RuntimeObserv
+impl RuntimeObserver for VoidTaskProgressUpdateObserver {}
+
+/// A step in the task
+pub struct Step {
+    task_chain: Box<dyn Chain>,
+    observer: WeakRuntimeObserver,
+}
+
+impl Step {
+    /// Run the task for a single step
+    async fn step(mut self) -> Result<TaskState, Error> {
+        let termination_messages = self.task_chain.step().await?;
+
+        // check if the task is done
+        if !termination_messages.is_empty() {
+            if let Some(observer) = self.observer.upgrade() {
+                observer
+                    .lock()
+                    .await
+                    .on_termination(TerminationNotification {
+                        messages: termination_messages.clone(),
+                    })
+                    .await;
+            }
+
+            return Ok(TaskState::Stop {
+                stop: Stop {
+                    termination_messages,
+                },
+            });
+        }
+
+        Ok(TaskState::Step { step: self })
+    }
+}
+
+/// The task is done
+pub struct Stop {
+    /// The termination messages
+    pub term
