@@ -348,4 +348,37 @@ impl Step {
 /// The task is done
 pub struct Stop {
     /// The termination messages
-    pub term
+    pub termination_messages: Vec<TerminationMessage>,
+}
+
+/// The state machine of a task
+pub enum TaskState {
+    /// The task is not done yet
+    Step {
+        /// The actual step task
+        step: Step,
+    },
+    /// The task is done
+    Stop {
+        /// the actual stopped task
+        stop: Stop,
+    },
+}
+
+impl TaskState {
+    /// Create a new [`TaskState`] for a `task`.
+    pub async fn new(config: SapiensConfig, toolbox: Toolbox, task: String) -> Result<Self, Error> {
+        let observer = wrap_observer(VoidTaskProgressUpdateObserver {});
+        let observer = Arc::downgrade(&observer);
+
+        TaskState::with_observer(config, toolbox, task, observer).await
+    }
+
+    /// Create a new [`TaskState`] for a `task`.
+    ///
+    /// The `observer` will be called when the task starts and when a step is
+    /// completed - either successfully or not. The `observer` will be called
+    /// with the latest chat history element. It is also called on error.
+    pub async fn with_observer(
+        config: SapiensConfig,
+        toolbo
