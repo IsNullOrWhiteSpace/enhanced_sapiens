@@ -279,4 +279,34 @@ pub trait RuntimeObserver: Send {
     /// Called when the scheduler has selected a message
     async fn on_message(&mut self, _event: MessageNotification) {}
 
-    /// C
+    /// Called when the tool invocation was successful
+    async fn on_invocation_result(&mut self, _event: InvocationResultNotification) {}
+
+    /// Called when the task is done
+    async fn on_termination(&mut self, _event: TerminationNotification) {}
+}
+
+/// Wrap an observer into the a [`StrongRuntimeObserver<O>`] = [`Arc<Mutex<O>>`]
+///
+/// Use [`Arc::downgrade`] to get a [`Weak<Mutex<dyn RuntimeObserver>>`] and
+/// pass it to [`run_to_the_end`] for example.
+pub fn wrap_observer<O: RuntimeObserver + 'static>(observer: O) -> StrongRuntimeObserver<O> {
+    Arc::new(Mutex::new(observer))
+}
+
+/// A strong reference to the observer
+pub type StrongRuntimeObserver<O> = Arc<Mutex<O>>;
+
+/// A weak reference to the observer
+pub type WeakRuntimeObserver = Weak<Mutex<dyn RuntimeObserver>>;
+
+/// A void observer
+pub struct VoidTaskProgressUpdateObserver;
+
+#[cfg(test)]
+pub(crate) fn void_observer() -> StrongRuntimeObserver<VoidTaskProgressUpdateObserver> {
+    wrap_observer(VoidTaskProgressUpdateObserver)
+}
+
+#[async_trait::async_trait]
+impl RuntimeObserv
