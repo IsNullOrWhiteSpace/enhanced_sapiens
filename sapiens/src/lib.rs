@@ -381,4 +381,34 @@ impl TaskState {
     /// with the latest chat history element. It is also called on error.
     pub async fn with_observer(
         config: SapiensConfig,
-        toolbo
+        toolbox: Toolbox,
+        task: String,
+        observer: WeakRuntimeObserver,
+    ) -> Result<Self, Error> {
+        if let Some(observer) = observer.upgrade() {
+            observer.lock().await.on_task(&task).await;
+        }
+
+        let task_chain = match config.chain_type {
+            ChainType::SingleStepOODA => {
+                let chain = SingleStepOODAChain::new(config, toolbox, observer.clone())
+                    .await?
+                    .with_task(task);
+                Box::new(chain) as Box<dyn Chain>
+            }
+            ChainType::MultiStepOODA => {
+                let chain = MultiStepOODAChain::new(config, toolbox, observer.clone())
+                    .await?
+                    .with_task(task);
+                Box::new(chain) as Box<dyn Chain>
+            }
+        };
+
+        // call the observer
+        if let Some(observer) = observer.upgrade() {
+            observer.lock().await.on_start(task_chain.dump()).await;
+        }
+
+        Ok(TaskState::Step {
+            step: Step {
+              
