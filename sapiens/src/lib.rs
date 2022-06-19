@@ -411,4 +411,43 @@ impl TaskState {
 
         Ok(TaskState::Step {
             step: Step {
-              
+                task_chain,
+                observer,
+            },
+        })
+    }
+
+    /// Run the task until it is done
+    pub async fn run(mut self) -> Result<Stop, Error> {
+        loop {
+            match self {
+                TaskState::Step { step } => {
+                    self = step.step().await?;
+                }
+                TaskState::Stop { stop } => {
+                    return Ok(stop);
+                }
+            }
+        }
+    }
+
+    /// Run the task for a single step
+    pub async fn step(self) -> Result<Self, Error> {
+        match self {
+            TaskState::Step { step } => step.step().await,
+            TaskState::Stop { stop } => Ok(TaskState::Stop { stop }),
+        }
+    }
+
+    /// is the task done?
+    pub fn is_done(&self) -> Option<Vec<TerminationMessage>> {
+        match self {
+            TaskState::Step { step: _ } => None,
+            TaskState::Stop { stop } => Some(stop.termination_messages.clone()),
+        }
+    }
+}
+
+/// Run until the task is done or the maximum number of steps is reached
+///
+/// See [`TaskStat
