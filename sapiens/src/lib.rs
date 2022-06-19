@@ -450,4 +450,18 @@ impl TaskState {
 
 /// Run until the task is done or the maximum number of steps is reached
 ///
-/// See [`TaskStat
+/// See [`TaskState::new`], [`TaskState::step`] and [`TaskState::run`] for
+/// more flexible ways to run a task
+#[tracing::instrument(skip(toolbox, observer, config))]
+pub async fn run_to_the_end(
+    config: SapiensConfig,
+    toolbox: Toolbox,
+    task: String,
+    observer: WeakRuntimeObserver,
+) -> Result<Vec<TerminationMessage>, Error> {
+    let task_state = TaskState::with_observer(config, toolbox, task, observer).await?;
+
+    let stop = task_state.run().await?;
+
+    Ok(stop.termination_messages)
+}
