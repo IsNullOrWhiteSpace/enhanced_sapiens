@@ -61,4 +61,42 @@ impl Display for Role {
     }
 }
 
-// FUTURE(ssoudan) support pure
+// FUTURE(ssoudan) support pure completion API
+// FUTURE(ssoudan) support ability to run multistep chains to come to response
+// FUTURE(ssoudan) support local llam.cpp models
+
+/// Something that can count the number of tokens in a chat entry
+#[async_trait::async_trait]
+pub trait ChatEntryTokenNumber {
+    /// Count the number of tokens in the chat entries
+    async fn num_tokens(&self, input: ChatInput) -> usize;
+
+    /// Get the context size
+    async fn context_size(&self) -> usize;
+}
+
+/// A chat input
+#[derive(Debug, Clone)]
+pub struct ChatInput {
+    /// The context
+    pub(crate) context: Vec<ChatEntry>,
+    /// The examples
+    pub(crate) examples: Vec<(ChatEntry, ChatEntry)>,
+    /// The chat history
+    pub(crate) chat: Vec<ChatEntry>,
+}
+
+/// A model
+#[async_trait::async_trait]
+pub trait Model: ChatEntryTokenNumber + Send + Sync {
+    /// Query the model
+    async fn query(
+        &self,
+        input: ChatInput,
+        max_tokens: Option<usize>,
+    ) -> Result<ModelResponse, Error>;
+}
+
+/// Response from a language model
+#[derive(Clone)]
+pub struct ModelRespon
