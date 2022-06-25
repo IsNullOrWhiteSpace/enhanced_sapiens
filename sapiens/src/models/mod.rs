@@ -99,4 +99,39 @@ pub trait Model: ChatEntryTokenNumber + Send + Sync {
 
 /// Response from a language model
 #[derive(Clone)]
-pub struct ModelRespon
+pub struct ModelResponse {
+    // TODO(ssoudan) support getting multiple candidates
+    /// The message
+    pub msg: String,
+    /// The usage
+    pub usage: Option<Usage>,
+    /// Finish reason
+    pub finish_reason: Option<String>,
+}
+
+impl Debug for ModelResponse {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        writeln!(f, "ModelResponse {{ ")?;
+        write!(f, "msg: \n{}, \n", &self.msg)?;
+        if let Some(usage) = &self.usage {
+            writeln!(f, "usage: {:#?}, ", usage)?;
+        }
+        if let Some(finish_reason) = &self.finish_reason {
+            writeln!(f, "finish_reason: {}, ", &finish_reason)?;
+        }
+        write!(f, "}}")
+    }
+}
+
+/// Token usage
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Usage {
+    /// The number of tokens used for the prompt
+    pub prompt_tokens: u32,
+    /// The number of tokens used for the completion
+    pub completion_tokens: u32,
+    /// The total number of tokens used
+    pub total_tokens: u32,
+}
+
+/// Supp
