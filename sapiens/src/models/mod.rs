@@ -134,4 +134,36 @@ pub struct Usage {
     pub total_tokens: u32,
 }
 
-/// Supp
+/// Supported models
+#[derive(Clone, Serialize, Deserialize, Default)]
+pub enum SupportedModel {
+    /// GPT 3.5 Turbo
+    #[default]
+    GPT3_5Turbo,
+    /// GPT 3.5 Turbo 0613
+    GPT3_5Turbo0613,
+    /// GPT 3.5 Turbo 16k
+    GPT3_5Turbo16k,
+    /// Vicuna 7B 1.1
+    Vicuna7B1_1,
+    /// Vicuna 13B 1.1
+    Vicuna13B1_1,
+    /// GCP "chat-bison-001"
+    ChatBison001,
+}
+
+impl Display for SupportedModel {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        match self {
+            SupportedModel::GPT3_5Turbo => write!(f, "gpt-3.5-turbo"),
+            SupportedModel::GPT3_5Turbo0613 => write!(f, "gpt-3.5-turbo-0613"),
+            SupportedModel::GPT3_5Turbo16k => write!(f, "gpt-3.5-turbo-16k"),
+            SupportedModel::Vicuna7B1_1 => write!(f, "vicuna-7b-1.1"),
+            SupportedModel::Vicuna13B1_1 => write!(f, "vicuna-13b-1.1"),
+            SupportedModel::ChatBison001 => write!(f, "chat-bison-001"),
+        }
+    }
+}
+
+impl Debug for SupportedModel {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Resul
