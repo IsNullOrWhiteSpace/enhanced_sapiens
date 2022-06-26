@@ -166,4 +166,33 @@ impl Display for SupportedModel {
 }
 
 impl Debug for SupportedModel {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Resul
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        match self {
+            SupportedModel::GPT3_5Turbo => write!(f, "gpt-3.5-turbo"),
+            SupportedModel::GPT3_5Turbo0613 => write!(f, "gpt-3.5-turbo-0613"),
+            SupportedModel::GPT3_5Turbo16k => write!(f, "gpt-3.5-turbo-16k"),
+            SupportedModel::Vicuna7B1_1 => write!(f, "vicuna-7b-1.1"),
+            SupportedModel::Vicuna13B1_1 => write!(f, "vicuna-13b-1.1"),
+            SupportedModel::ChatBison001 => write!(f, "chat-bison-001"),
+        }
+    }
+}
+
+impl FromStr for SupportedModel {
+    type Err = Error;
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        match s {
+            "gpt-3.5-turbo" => Ok(Self::GPT3_5Turbo),
+            "gpt-3.5-turbo-0613" => Ok(Self::GPT3_5Turbo0613),
+            "gpt-3.5-turbo-16k" => Ok(Self::GPT3_5Turbo16k),
+            "vicuna-7b-1.1" => Ok(Self::Vicuna7B1_1),
+            "vicuna-13b-1.1" => Ok(Self::Vicuna13B1_1),
+            "chat-bison-001" => Ok(Self::ChatBison001),
+            _ => Err(Error::ModelNotSupported(s.to_string())),
+        }
+    }
+}
+
+#[cfg(feature = "clap")]
+impl clap::ValueEnum for Suppo
