@@ -195,4 +195,28 @@ impl FromStr for SupportedModel {
 }
 
 #[cfg(feature = "clap")]
-impl clap::ValueEnum for Suppo
+impl clap::ValueEnum for SupportedModel {
+    fn value_variants<'a>() -> &'a [Self] {
+        &[
+            SupportedModel::GPT3_5Turbo,
+            SupportedModel::GPT3_5Turbo0613,
+            SupportedModel::GPT3_5Turbo16k,
+            SupportedModel::Vicuna7B1_1,
+            SupportedModel::Vicuna13B1_1,
+            SupportedModel::ChatBison001,
+        ]
+    }
+
+    fn to_possible_value(&self) -> Option<clap::builder::PossibleValue> {
+        match self {
+            SupportedModel::GPT3_5Turbo => Some(clap::builder::PossibleValue::new("gpt-3.5-turbo")),
+            SupportedModel::GPT3_5Turbo0613 => {
+                Some(clap::builder::PossibleValue::new("gpt-3.5-turbo-0613"))
+            }
+            SupportedModel::GPT3_5Turbo16k => {
+                Some(clap::builder::PossibleValue::new("gpt-3.5-turbo-16k"))
+            }
+            SupportedModel::Vicuna7B1_1 => Some(clap::builder::PossibleValue::new("vicuna-7b-1.1")),
+            SupportedModel::Vicuna13B1_1 => {
+                Some(clap::builder::PossibleValue::new("vicuna-13b-1.1"))
+         
