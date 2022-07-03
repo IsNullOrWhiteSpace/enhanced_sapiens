@@ -219,4 +219,10 @@ impl clap::ValueEnum for SupportedModel {
             SupportedModel::Vicuna7B1_1 => Some(clap::builder::PossibleValue::new("vicuna-7b-1.1")),
             SupportedModel::Vicuna13B1_1 => {
                 Some(clap::builder::PossibleValue::new("vicuna-13b-1.1"))
-         
+            }
+            SupportedModel::ChatBison001 => {
+                Some(clap::builder::PossibleValue::new("chat-bison-001"))
+            }
+        }
+    }
+}
