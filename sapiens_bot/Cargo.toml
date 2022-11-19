@@ -1,0 +1,6 @@
+[package]
+name = "sapiens_bot"
+version = "0.8.1"
+edition.workspace = true
+authors.workspace = true
+description = "The disc
