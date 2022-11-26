@@ -38,4 +38,31 @@ impl SapiensBot {
         let temperature = Some(0.);
 
         let model = match std::env::var("MODEL") {
-            Ok(e) => SupportedModel::from_str(
+            Ok(e) => SupportedModel::from_str(&e).expect("Invalid model"),
+            Err(e) => {
+                if e == VarError::NotPresent {
+                    warn!("MODEL not specified: defaulting to chat-bison-001.");
+                    SupportedModel::ChatBison001
+                } else {
+                    panic!("Invalid model: {}", e)
+                }
+            }
+        };
+
+        let model = match model {
+            SupportedModel::ChatBison001 => {
+                let google_api_key =
+                    std::env::var("GOOGLE_API_KEY").expect("GOOGLE_API_KEY is not set");
+
+                models::vertex_ai::build(google_api_key, temperature)
+                    .await
+                    .expect("Failed to build model")
+            }
+            _ => {
+                let api_key = std::env::var("OPENAI_API_KEY").ok();
+                let api_base = std::env::var("OPENAI_API_BASE").ok();
+
+                models::openai::build(model, api_key, api_base, temperature)
+                    .await
+                    .expect("Failed to build model")
+            
