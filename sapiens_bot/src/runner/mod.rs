@@ -65,4 +65,40 @@ impl SapiensBot {
                 models::openai::build(model, api_key, api_base, temperature)
                     .await
                     .expect("Failed to build model")
-            
+            }
+        };
+
+        let config = SapiensConfig {
+            model,
+            ..SapiensConfig::default()
+        };
+
+        Self { toolbox, config }
+    }
+
+    /// Start a new task
+    pub async fn start_task(
+        &mut self,
+        task: String,
+        observer: WeakRuntimeObserver,
+    ) -> Result<TaskState, Error>
+where {
+        TaskState::with_observer(self.config.clone(), self.toolbox.clone(), task, observer).await
+    }
+}
+
+/// Handler for task progress updates
+pub struct ProgressObserver {
+    /// Whether to show the warm-up prompt
+    pub show_warmup_prompt: bool,
+    pub job_tx: mpsc::Sender<JobUpdate>,
+    entry_format: Box<dyn ChatEntryFormatter + 'static + Send + Sync>,
+    message_format: Box<dyn MessageFormatter + 'static + Send + Sync>,
+}
+
+impl Debug for ProgressObserver {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        f.debug_struct("ProgressHandler")
+            .field("show_warmup_prompt", &self.show_warmup_prompt)
+            .field("job_tx", &"RefCell<mpsc::Sender<JobUpdate>>")
+ 
