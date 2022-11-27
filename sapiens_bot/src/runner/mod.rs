@@ -128,4 +128,34 @@ impl RuntimeObserver for ProgressObserver {
         }
     }
 
-    async fn on_model_update(&mut self, event: ModelNotificat
+    async fn on_model_update(&mut self, event: ModelNotification) {
+        let msg = self.entry_format.format(&event.chat_entry);
+        debug!(msg = ?event.chat_entry, "on_model_update");
+
+        let msgs = sanitize_msgs_for_discord(vec![msg]);
+        self.job_tx.send(JobUpdate::Vec(msgs)).await.unwrap();
+    }
+
+    async fn on_message(&mut self, _event: MessageNotification) {
+        // todo!()
+    }
+
+    async fn on_invocation_result(&mut self, event: InvocationResultNotification) {
+        match event {
+            InvocationResultNotification::InvocationSuccess(InvocationSuccessNotification {
+                result,
+                ..
+            }) => {
+                let msg = result;
+
+                let msgs = sanitize_msgs_for_discord(vec![msg]);
+
+                self.job_tx.send(JobUpdate::Vec(msgs)).await.unwrap();
+            }
+            InvocationResultNotification::InvocationFailure(InvocationFailureNotification {
+                e,
+                ..
+            }) => {
+                let msg = format!("*Error*: {}", e);
+
+                let msgs = sanitize_msgs_for_discord(vec![msg
