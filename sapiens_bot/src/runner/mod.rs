@@ -101,4 +101,31 @@ impl Debug for ProgressObserver {
         f.debug_struct("ProgressHandler")
             .field("show_warmup_prompt", &self.show_warmup_prompt)
             .field("job_tx", &"RefCell<mpsc::Sender<JobUpdate>>")
- 
+            // .field("entry_format", &"Box<dyn ChatEntryFormatter + 'static + Send>")
+            .finish()
+    }
+}
+
+#[async_trait::async_trait]
+impl RuntimeObserver for ProgressObserver {
+    async fn on_start(&mut self, context: ContextDump) {
+        let format = self.message_format.as_ref();
+        let msgs = context.format(format);
+        let last_msg = msgs.last();
+        debug!(last_msg = ?last_msg, "on_start");
+
+        if self.show_warmup_prompt {
+            let msgs = sanitize_msgs_for_discord(msgs);
+            self.job_tx.send(JobUpdate::Vec(msgs)).await.unwrap();
+        } else {
+            // Show only the last message
+            if let Some(last_msg) = last_msg {
+                let msgs = sanitize_msgs_for_discord(vec![last_msg.to_string()]);
+                self.job_tx.send(JobUpdate::Vec(msgs)).await.unwrap();
+            } else {
+                warn!("No messages to show - this should not happen");
+            }
+        }
+    }
+
+    async fn on_model_update(&mut self, event: ModelNotificat
