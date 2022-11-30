@@ -158,4 +158,57 @@ impl RuntimeObserver for ProgressObserver {
             }) => {
                 let msg = format!("*Error*: {}", e);
 
-                let msgs = sanitize_msgs_for_discord(vec![msg
+                let msgs = sanitize_msgs_for_discord(vec![msg]);
+
+                self.job_tx.send(JobUpdate::ToolError(msgs)).await.unwrap();
+            }
+            InvocationResultNotification::InvalidInvocation(InvalidInvocationNotification {
+                ..
+            }) => {}
+        }
+    }
+}
+
+/// A job update
+#[derive(Debug)]
+pub enum JobUpdate {
+    Completed(Vec<String>),
+    Vec(Vec<String>),
+    FailedToStart(Vec<String>),
+    ToolError(Vec<String>),
+    Over,
+}
+
+/// A job to run
+pub struct NewJob {
+    task: String,
+    tx: mpsc::Sender<JobUpdate>,
+    max_steps: usize,
+    show_warmup_prompt: bool,
+}
+
+impl NewJob {
+    /// Create a new job
+    pub fn new(
+        task: String,
+        max_steps: usize,
+        show_warmup_prompt: bool,
+        tx: mpsc::Sender<JobUpdate>,
+    ) -> Self {
+        Self {
+            task,
+            tx,
+            max_steps,
+            show_warmup_prompt,
+        }
+    }
+}
+
+pub struct Runner {
+    rx: mpsc::Receiver<NewJob>,
+    sapiens: SapiensBot,
+}
+
+impl Runner {
+    pub async fn new(rx: mpsc::Receiver<NewJob>) -> Self {
+        let sapiens = SapiensBot::new_
