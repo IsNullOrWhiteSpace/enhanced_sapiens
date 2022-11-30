@@ -211,4 +211,38 @@ pub struct Runner {
 
 impl Runner {
     pub async fn new(rx: mpsc::Receiver<NewJob>) -> Self {
-        let sapiens = SapiensBot::new_
+        let sapiens = SapiensBot::new_from_env().await;
+        Self { rx, sapiens }
+    }
+
+    pub async fn run(&mut self) {
+        while let Some(job) = self.rx.next().await {
+            let task = job.task.clone();
+            info!("Starting job: {}", task);
+
+            let mut tx = job.tx.clone();
+
+            let observer = ProgressObserver {
+                show_warmup_prompt: job.show_warmup_prompt,
+                job_tx: job.tx,
+                entry_format: Box::new(Formatter {}),
+                message_format: Box::new(Formatter {}),
+            };
+
+            let observer = wrap_observer(observer);
+
+            let w_observer = Arc::downgrade(&observer);
+
+            let max_steps = job.max_steps;
+
+            let mut current_step = 0;
+
+            match self.sapiens.start_task(job.task, w_observer).await {
+                Ok(step) => {
+                    let mut step = step;
+                    loop {
+                        match step.step().await {
+                            Ok(s @ TaskState::Step { .. }) => {
+                                step = s;
+                                // update is going to come through the handler
+                    
