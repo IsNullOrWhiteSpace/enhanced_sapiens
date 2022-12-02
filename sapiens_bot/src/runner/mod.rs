@@ -264,4 +264,32 @@ impl Runner {
                                 error!("Error while running task: {}", e);
 
                                 let msg = format!("Error: {}", e);
-                    
+                                let msgs = sanitize_msgs_for_discord(vec![msg]);
+
+                                tx.send(JobUpdate::FailedToStart(msgs)).await.unwrap();
+                                break;
+                            }
+                        }
+
+                        current_step += 1;
+
+                        if current_step >= max_steps {
+                            info!("Task aborted: {}", task);
+
+                            tx.send(JobUpdate::Over).await.unwrap();
+                            break;
+                        }
+                    }
+                }
+                Err(e) => {
+                    error!("Error while starting task: {}", e);
+                    let msg = format!("Error: {}", e);
+                    let msgs = sanitize_msgs_for_discord(vec![msg]);
+
+                    tx.send(JobUpdate::FailedToStart(msgs)).await.unwrap();
+                }
+            }
+        }
+        warn!("Runner stopped");
+    }
+}
