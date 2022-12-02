@@ -245,4 +245,23 @@ impl Runner {
                             Ok(s @ TaskState::Step { .. }) => {
                                 step = s;
                                 // update is going to come through the handler
+                                debug!("Step for: {}", task);
+                            }
+                            Ok(TaskState::Stop { stop }) => {
+                                info!("Task finished: {}", task);
+
+                                let messages = stop
+                                    .termination_messages.iter()
+                                    .flat_map(|m: &TerminationMessage| {
+                                        let msg = format!("# Termination message\n - original question: {}\n - conclusion: {}", m.original_question.trim(), m.conclusion.trim());
+                                        sanitize_msgs_for_discord(vec![msg])
+                                    }).collect();
+
+                                tx.send(JobUpdate::Completed(messages)).await.unwrap();
+                                break;
+                            }
+                            Err(e) => {
+                                error!("Error while running task: {}", e);
+
+                                let msg = format!("Error: {}", e);
                     
