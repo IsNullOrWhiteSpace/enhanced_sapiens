@@ -74,4 +74,27 @@ impl ToTokens for DeriveReceiver {
 
         // dbg!(fields);
         out.extend(quote! {
-  
+            impl #imp ProtoToolDescribe for #ident #ty #wher {
+                fn description(&self) -> ToolDescription {
+                    ToolDescription {
+                        name: #name.to_string(),
+                        description: #doc.to_string(),
+                        parameters: #input_ty::describe(),
+                        responses_content: #output_ty::describe(),
+                    }
+                }
+            }
+        })
+    }
+}
+
+/// The entry point for the `ProtoToolDescribe` derive macro expansion.
+pub fn expand_derive(input: &syn::DeriveInput) -> TokenStream {
+    let receiver = match DeriveReceiver::from_derive_input(input) {
+        Ok(parsed) => parsed,
+        Err(e) => return e.write_errors().into(),
+    };
+
+    let tokens = quote! { #receiver };
+    tokens.into()
+}
