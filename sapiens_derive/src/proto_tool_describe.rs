@@ -34,4 +34,44 @@ impl ToTokens for DeriveReceiver {
         let doc = attrs
             .iter()
             .filter(|attr| attr.path().is_ident("doc"))
-            .filter_map(|attr| match &
+            .filter_map(|attr| match &attr.meta {
+                syn::Meta::NameValue(syn::MetaNameValue {
+                    value:
+                        Expr::Lit(syn::ExprLit {
+                            lit: syn::Lit::Str(s),
+                            ..
+                        }),
+                    ..
+                }) => Some(s.value()),
+                _ => None,
+            })
+            .fold(String::new(), |mut acc, s| {
+                if !acc.is_empty() {
+                    acc.push('\n');
+                }
+                acc.push_str(s.trim());
+                acc
+            });
+
+        let doc = if doc.is_empty() {
+            panic!("Expected struct to have a doc string")
+        } else {
+            doc
+        };
+
+        let name = if let Some(name) = name {
+            name.clone()
+        } else {
+            ident.to_string()
+        };
+
+        // dbg!(input);
+
+        // dbg!(output);
+
+        let input_ty = &input.segments.last().unwrap().ident;
+        let output_ty = &output.segments.last().unwrap().ident;
+
+        // dbg!(fields);
+        out.extend(quote! {
+  
