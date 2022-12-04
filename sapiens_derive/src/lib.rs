@@ -33,4 +33,7 @@ pub fn derive_proto_tool_describe(input: TokenStream) -> TokenStream {
 
 /// The entry point for the `ProtoToolInvoke` derive macro.
 #[proc_macro_derive(ProtoToolInvoke, attributes(tool_invoke_typed))]
-pub fn derive_prot
+pub fn derive_proto_tool_invoke(input: TokenStream) -> TokenStream {
+    let input = syn::parse_macro_input!(input as DeriveInput);
+    proto_tool_invoke::expand_derive(&input)
+}
