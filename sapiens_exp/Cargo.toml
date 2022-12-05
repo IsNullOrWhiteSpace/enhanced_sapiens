@@ -1,0 +1,12 @@
+[package]
+name = "sapiens_exp"
+version= "0.8.2"
+edition.workspace = true
+authors.workspace = true
+description = "Experiments - Sapiens"
+repository.workspace = true
+license.workspace = true
+publish.workspace = true
+readme = "../README.md"
+keywords.workspace = true
+categorie
