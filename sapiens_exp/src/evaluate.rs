@@ -37,4 +37,48 @@ pub struct Trial {
     /// The configuration,
     config: Config,
     /// The Analysis of the run
- 
+    analysis: Analysis,
+    /// Date and time of the trial
+    date: String,
+}
+
+impl Trial {
+    /// Create a new trial
+    pub fn build(
+        config: Config,
+        task: String,
+        trace: Trace,
+        tool_stats: Stats,
+        reached_accepting_state: bool,
+        final_state_name: String,
+    ) -> Self {
+        let analysis = Self::analyze(
+            &trace,
+            tool_stats,
+            reached_accepting_state,
+            final_state_name,
+        );
+
+        Self {
+            trace,
+            task,
+            config,
+            analysis,
+            date: chrono::Utc::now().to_rfc3339(),
+        }
+    }
+
+    fn analyze(
+        trace: &Trace,
+        tool_stats: Stats,
+        reached_accepting_state: bool,
+        final_state_name: String,
+    ) -> Analysis {
+        let attempted_invocations = trace
+            .events
+            .iter()
+            .filter(|event| {
+                matches!(
+                    event.event,
+                    Event::ToolInvocationSucceeded { .. }
+                        | Event::ToolIn
