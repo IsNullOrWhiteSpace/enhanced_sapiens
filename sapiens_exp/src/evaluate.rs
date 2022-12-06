@@ -81,4 +81,36 @@ impl Trial {
                 matches!(
                     event.event,
                     Event::ToolInvocationSucceeded { .. }
-                        | Event::ToolIn
+                        | Event::ToolInvocationFailed { .. }
+                        | Event::InvalidInvocation { .. }
+                )
+            })
+            .count() as u32;
+
+        let successful_invocations = trace
+            .events
+            .iter()
+            .filter(|event| matches!(event.event, Event::ToolInvocationSucceeded { .. }))
+            .count() as u32;
+
+        let tokens = trace.events.iter().fold(Usage::default(), |acc, event| {
+            acc + event.event.tokens().unwrap_or_default()
+        });
+
+        let termination_message = trace.events.iter().find_map(|event| {
+            if let Event::End(CompletionStatus::Concluded { conclusion, .. }) = &event.event {
+                Some(conclusion.clone())
+            } else {
+                None
+            }
+        });
+
+        let completed = termination_message.is_some();
+
+        Analysis {
+            attempted_invocations,
+            successful_invocations,
+            tokens,
+            completed,
+            reached_accepting_state,
+          
