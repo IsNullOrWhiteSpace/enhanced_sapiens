@@ -113,4 +113,9 @@ impl Trial {
             tokens,
             completed,
             reached_accepting_state,
-          
+            final_state_name,
+            termination_message,
+            tool_stats,
+        }
+    }
+}
