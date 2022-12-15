@@ -215,3 +215,199 @@ pub struct TraceObserver {
     /// The trace
     trace: Trace,
     /// Temporary store for the input
+    /// of the tool invocation
+    tool_input: Option<ModelNotification>,
+    /// Termination event
+    termination: Option<TerminationNotification>,
+    /// Whether the trace is finalized
+    finalized: bool,
+    /// The shared state
+    state: Option<Arc<Mutex<dyn State>>>,
+}
+
+impl Debug for TraceObserver {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        f.debug_struct("TraceObserver")
+            // .field("trace", &self.trace)
+            // .field("tool_input", &self.tool_input)
+            // .field("termination_messages", &self.termination_messages)
+            .finish()
+    }
+}
+
+impl Default for TraceObserver {
+    fn default() -> Self {
+        Self {
+            trace: Trace { events: vec![] },
+            tool_input: None,
+            termination: None,
+            finalized: false,
+            state: None,
+        }
+    }
+}
+
+impl TraceObserver {
+    /// Create a new trace observer
+    pub fn new(shared_state: Arc<Mutex<dyn tools::State>>) -> Self {
+        Self {
+            trace: Trace { events: vec![] },
+            tool_input: None,
+            termination: None,
+            finalized: false,
+            state: Some(shared_state),
+        }
+    }
+
+    async fn get_state(&self) -> Option<String> {
+        if let Some(state) = self.state.as_ref() {
+            let guard = state.lock().await;
+
+            let state = guard.state();
+            info!("Current state: {}", state);
+            Some(state)
+        } else {
+            None
+        }
+    }
+
+    /// Get the trace
+    pub async fn trace(&mut self) -> Trace {
+        if self.finalized {
+            return self.trace.clone();
+        }
+
+        let state = self.get_state().await;
+
+        // Add the final event
+        match self.termination.take() {
+            Some(termination) => {
+                let conclusion = termination
+                    .messages
+                    .iter()
+                    .map(|msg| msg.conclusion.clone())
+                    .collect::<Vec<_>>()
+                    .join("\n");
+                self.trace.events.push(
+                    Event::End(CompletionStatus::Concluded { conclusion })
+                        .into_event_and_state(state),
+                );
+            }
+            None => {
+                self.trace.events.push(
+                    Event::End(CompletionStatus::MaxStepsReached).into_event_and_state(state),
+                );
+            }
+        }
+
+        self.trace.clone()
+    }
+}
+
+impl From<InvocationSuccessNotification> for Event {
+    fn from(notification: InvocationSuccessNotification) -> Self {
+        let InvocationSuccessNotification {
+            invocation_count,
+            tool_name,
+            extracted_input,
+            result,
+        } = notification;
+
+        Event::ToolInvocationSucceeded {
+            tool_name,
+            invocation_count,
+            extracted_input: to_lines(extracted_input),
+            result: to_lines(result),
+        }
+    }
+}
+
+impl From<InvocationFailureNotification> for Event {
+    fn from(notification: InvocationFailureNotification) -> Self {
+        let InvocationFailureNotification {
+            invocation_count,
+            tool_name,
+            extracted_input,
+            e,
+        } = notification;
+
+        Event::ToolInvocationFailed {
+            tool_name,
+            invocation_count,
+            extracted_input: to_lines(extracted_input),
+            error: to_lines(format!("{}", e)),
+        }
+    }
+}
+
+impl From<InvalidInvocationNotification> for Event {
+    fn from(notification: InvalidInvocationNotification) -> Self {
+        let InvalidInvocationNotification {
+            e,
+            invocation_count,
+        } = notification;
+
+        Event::InvalidInvocation {
+            invocation_count,
+            error: to_lines(format!("{}", e)),
+        }
+    }
+}
+
+impl From<MessageNotification> for Event {
+    fn from(notification: MessageNotification) -> Self {
+        Event::Message {
+            message: notification.message,
+        }
+    }
+}
+
+impl From<InvocationResultNotification> for Event {
+    fn from(notification: InvocationResultNotification) -> Self {
+        match notification {
+            InvocationResultNotification::InvocationSuccess(x) => x.into(),
+            InvocationResultNotification::InvocationFailure(x) => x.into(),
+            InvocationResultNotification::InvalidInvocation(x) => x.into(),
+        }
+    }
+}
+
+#[async_trait::async_trait]
+impl RuntimeObserver for TraceObserver {
+    async fn on_task(&mut self, task: &str) {
+        let state = self.get_state().await;
+
+        self.trace.events.push(
+            Event::Start {
+                task: task.to_string(),
+            }
+            .into_event_and_state(state),
+        );
+    }
+
+    async fn on_message(&mut self, event: MessageNotification) {
+        let state = self.get_state().await;
+
+        self.trace
+            .events
+            .push(Event::from(event).into_event_and_state(state));
+    }
+
+    async fn on_start(&mut self, _context: ContextDump) {}
+
+    async fn on_model_update(&mut self, model_update: ModelNotification) {
+        self.tool_input = Some(model_update);
+    }
+
+    async fn on_invocation_result(&mut self, event: InvocationResultNotification) {
+        let state = self.get_state().await;
+
+        self.trace
+            .events
+            .push(Event::from(event).into_event_and_state(state));
+    }
+
+    async fn on_termination(&mut self, event: TerminationNotification) {
+        self.termination = Some(event);
+    }
+}
