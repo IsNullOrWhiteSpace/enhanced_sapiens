@@ -42,4 +42,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    updated-dependencies:
    - dependency-name: serde
      dependency-type: direct:production
-     update-type: versio
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-4fb61ab19203a5c2721d5fcd55be57ba1e54321c/> bump thiserror from 1.0.49 to 1.0.50
+   Bumps [thiserror](https://github.com/dtolnay/thiserror) from 1.0.49 to 1.0.50.
+   - [Release notes](https://github.com/dtolnay/thiserror/releases)
+   - [Commits](https://github.com/dtolnay/thiserror/compare/1.0.49...1.0.50)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: thiserror
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-9b0e9db723ba74bd2a5a1f3e6e06aa179179102f/> bump tracing from 0.1.39 to 0.1.40
+   Bumps [tracing](https://github.com/tokio-rs/tracing) from 0.1.39 to 0.1.40.
+   - [Release notes](https://github.com/tokio-rs/tracing/releases)
+   - [Commits](https://github.com/tokio-rs/tracing/compare/tracing-0.1.39...tracing-0.1.40)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tracing
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-bfdd7f1e8acba3e70fbc2a4a0d4b1357b9a72b5f/> bump async-tr
