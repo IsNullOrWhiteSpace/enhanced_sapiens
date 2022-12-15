@@ -18,4 +18,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    
    ---
    updated-dependencies:
-   - dependency-name: serde_js
+   - dependency-name: serde_json
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-b8a70d54adf8d0c98fcce8caa3c271a2a5a0576c/> bump serde_yaml from 0.9.25 to 0.9.27
+   Bumps [serde_yaml](https://github.com/dtolnay/serde-yaml) from 0.9.25 to 0.9.27.
+   - [Release notes](https://github.com/dtolnay/serde-yaml/releases)
+   - [Commits](https://github.com/dtolnay/serde-yaml/compare/0.9.25...0.9.27)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde_yaml
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-b2ab9489a6ac0f8cdf8b7b8afeef9ed86b1f910a/> bump serde from 1.0.189 to 1.0.190
+   Bumps [serde](https://github.com/serde-rs/serde) from 1.0.189 to 1.0.190.
+   - [Release notes](https://github.com/serde-rs/serde/releases)
+   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.189...v1.0.190)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde
+     dependency-type: direct:production
+     update-type: versio
