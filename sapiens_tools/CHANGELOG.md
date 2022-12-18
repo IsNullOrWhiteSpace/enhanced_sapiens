@@ -66,4 +66,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      dependency-type: direct:production
      update-type: version-update:semver-patch
    ...
- - <csr-id-bfdd7f1e8acba3e70fbc2a4a0d4b1357b9a72b5f/> bump async-tr
+ - <csr-id-bfdd7f1e8acba3e70fbc2a4a0d4b1357b9a72b5f/> bump async-trait from 0.1.73 to 0.1.74
+   Bumps [async-trait](https://github.com/dtolnay/async-trait) from 0.1.73 to 0.1.74.
+   - [Release notes](https://github.com/dtolnay/async-trait/releases)
+   - [Commits](https://github.com/dtolnay/async-trait/compare/0.1.73...0.1.74)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-trait
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-1a1664fdcd3e53bb140280aeadd0e6cff266e30a/> bump tracing from 0.1.37 to 0.1.39
+   Bumps [tracing](https://github.com/tokio-rs/tracing) from 0.1.37 to 0.1.39.
+   - [Release notes](https://github.com/tokio-rs/tracing/releases)
+   - [Commits](https://github.com/tokio-rs/tracing/compare/tracing-0.1.37...tracing-0.1.39)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tracing
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-124dc7a9e0b9c4b45526d667cefe9dc2f8be9166/> bump regex from 1.10.0 to 1.10.2
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.10.0 to 1.10.2.
+   - [Release notes](https://
