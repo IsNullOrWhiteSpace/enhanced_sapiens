@@ -90,4 +90,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    ...
  - <csr-id-124dc7a9e0b9c4b45526d667cefe9dc2f8be9166/> bump regex from 1.10.0 to 1.10.2
    Bumps [regex](https://github.com/rust-lang/regex) from 1.10.0 to 1.10.2.
-   - [Release notes](https://
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.10.0...1.10.2)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-ba11b4ca9e2b218315db1e19c1699571a4b34f77/> bump serde from 1.0.188 to 1.0.189
+   Bumps [serde](https://github.com/serde-rs/serde) from 1.0.188 to 1.0.189.
+   - [Release notes](https://github.com/serde-rs/serde/releases)
+   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.188...v1.0.189)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-011f5c3c0fc87e81394783002f05c08a721dc4c5/> bump insta from 1.33.0 to 1.34.0
+   Bumps [insta](https://github.com/mitsuhiko/insta) from 1.33.0 to 1.34.0.
+   - [Changelog](https://github.com/mitsuhiko/insta/blob/master/CHANGELOG.md)
+   - 
