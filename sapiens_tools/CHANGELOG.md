@@ -114,4 +114,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - <csr-id-011f5c3c0fc87e81394783002f05c08a721dc4c5/> bump insta from 1.33.0 to 1.34.0
    Bumps [insta](https://github.com/mitsuhiko/insta) from 1.33.0 to 1.34.0.
    - [Changelog](https://github.com/mitsuhiko/insta/blob/master/CHANGELOG.md)
-   - 
+   - [Commits](https://github.com/mitsuhiko/insta/compare/1.33.0...1.34.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: insta
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-4f0a515be6603252df2b22b11eebf1613ea18faa/> bump regex from 1.9.6 to 1.10.0
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.6 to 1.10.0.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.9.6...1.10.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-ca4f9807ac32d2822d2ed3ba21604433851a2872/> bump tokio from 1.32.0 to 1.33.0
+   Bumps [tokio](https://github.com/tokio-rs/tokio) from 1.32.0 to 1.33.0.
+   - [Release notes](https://github.com/tokio-rs/tokio/releases)
+   - [Commits](https://g
