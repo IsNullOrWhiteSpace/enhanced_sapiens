@@ -188,4 +188,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    updated-dependencies:
    - dependency-name: async-openai
      dependency-type: direct:production
-     update-type: version-update:semver-patc
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-5d6e571ad7141d0c1a243479f7af36c34a8ab341/> bump insta from 1.31.0 to 1.32.0
+   Bumps [insta](https://github.com/mitsuhiko/insta) from 1.31.0 to 1.32.0.
+   - [Changelog](https://github.com/mitsuhiko/insta/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/mitsuhiko/insta/compare/1.31.0...1.32.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: insta
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-7afffc2c09344a32e1c0a38589769eb34622c8a6/> bump async-openai from 0.14.1 to 0.14.2
+   Bumps [async-openai](https://github.com/64bit/async-openai) from 0.14.1 to 0.14.2.
+   - [Release notes](https://github.com/64bit/async-openai/releases)
+   - [Commits](https://github.com/64bit/async-openai/compare/async-openai-v0.14.1...async-openai-v0.14.2)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-openai
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-d99657bf4c3af17a565c07f548aa56dcbf78da23/> bump serde_json from 1.0.106 to 1.0.107
+   B
