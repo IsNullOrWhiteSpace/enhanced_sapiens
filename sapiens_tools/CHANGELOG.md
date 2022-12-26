@@ -213,4 +213,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      update-type: version-update:semver-patch
    ...
  - <csr-id-d99657bf4c3af17a565c07f548aa56dcbf78da23/> bump serde_json from 1.0.106 to 1.0.107
-   B
+   Bumps [serde_json](https://github.com/serde-rs/json) from 1.0.106 to 1.0.107.
+   - [Release notes](https://github.com/serde-rs/json/releases)
+   - [Commits](https://github.com/serde-rs/json/compare/v1.0.106...v1.0.107)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde_json
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-7224d731f569995afc72f611e53bfaf047b54a02/> bump async-openai from 0.14.0 to 0.14.1
+   Bumps [async-openai](https://github.com/64bit/async-openai) from 0.14.0 to 0.14.1.
+   - [Release notes](https://github.com/64bit/async-openai/releases)
+   - [Commits](https://github.com/64bit/async-openai/compare/async-openai-v0.14.0...async-openai-v0.14.1)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-openai
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-c09b402c27bb7237d197ad2bae982fe42b97ade6/> bump serde_json from 1.0.105 to 1.0.106
+   Bumps [serde_json](ht
