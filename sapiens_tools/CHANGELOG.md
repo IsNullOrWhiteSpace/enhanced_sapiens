@@ -235,4 +235,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      update-type: version-update:semver-patch
    ...
  - <csr-id-c09b402c27bb7237d197ad2bae982fe42b97ade6/> bump serde_json from 1.0.105 to 1.0.106
-   Bumps [serde_json](ht
+   Bumps [serde_json](https://github.com/serde-rs/json) from 1.0.105 to 1.0.106.
+   - [Release notes](https://github.com/serde-rs/json/releases)
+   - [Commits](https://github.com/serde-rs/json/compare/v1.0.105...v1.0.106)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde_json
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-bf46b302328e2647af47d5d6346a15720150ac8c/> updated
+ - <csr-id-048b526e0a3c319c00ee85a2dedc4503a35bb7e3/> bump regex from 1.9.4 to 1.9.5
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.4 to 1.9.5.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.9.4...1.9.5)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-e15bb173fd7b97059e600923659c1d1792e8a1af/> bump thiserror from 1.0.47 to 1.0.48
+   Bumps [thiserror](https://git
