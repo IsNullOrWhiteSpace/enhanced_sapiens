@@ -283,4 +283,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    ...
  - <csr-id-cbcc4dabc86f197e6acfe8b50787cda1cc9ae1c5/> bump serde from 1.0.183 to 1.0.188
    Bumps [serde](https://github.com/serde-rs/serde) from 1.0.183 to 1.0.188.
-   - 
+   - [Release notes](https://github.com/serde-rs/serde/releases)
+   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.183...v1.0.188)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-78a1156d0427bd0b730cc48fc4f3b56b03a2b241/> bump tokio from 1.31.0 to 1.32.0
+   Bumps [tokio](https://github.com/tokio-rs/tokio) from 1.31.0 to 1.32.0.
+   - [Release notes](https://github.com/tokio-rs/tokio/releases)
+   - [Commits](https://github.com/tokio-rs/tokio/compare/tokio-1.31.0...tokio-1.32.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tokio
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-5ba958faf24d9302cf6bb91b5034f60577414243/> bump mediawiki from 0.2.10 to 0.2.11
+   Bumps [mediawiki](https://github.com/magnusmanske/mediawiki_rust) from 0.2.10 to 0.2.11.
+   - [Commits](https://github.com/magnusmanske/mediawiki_rust/commits)
+   
+   ---
+   updated-dependencies:
+   - dependency-
