@@ -331,4 +331,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    
    ---
    updated-dependencies:
-   - dependency-name: thise
+   - dependency-name: thiserror
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-8343a4dd8d9dc3e6cb4c447f7f4b0b2594fb91bb/> update
+ - <csr-id-550130b6be1bc9fbe876f10308e9c0dbe03dcd0e/> update
+ - <csr-id-e1ac0333325dd3035760659f3026770d87d32ff5/> bump tokio from 1.29.1 to 1.30.0
+   Bumps [tokio](https://github.com/tokio-rs/tokio) from 1.29.1 to 1.30.0.
+   - [Release notes](https://github.com/tokio-rs/tokio/releases)
+   - [Commits](https://github.com/tokio-rs/tokio/compare/tokio-1.29.1...tokio-1.30.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tokio
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-ef3d1dcea2a9e84e0f664c91ce828214b0fc1462/> bump regex from 1.9.1 to 1.9.3
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.1 to 1.9.3.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](htt
