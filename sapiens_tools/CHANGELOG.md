@@ -473,4 +473,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      update-type: version-update:semver-minor
    ...
  - <csr-id-0d074905a9f4c83507a4015c53771f1a4f2d5ce7/> bump serde_json from 1.0.99 to 1.0.100
-   Bumps [serde_json](https:
+   Bumps [serde_json](https://github.com/serde-rs/json) from 1.0.99 to 1.0.100.
+   - [Release notes](https://github.com/serde-rs/json/releases)
+   - [Commits](https://github.com/serde-rs/json/compare/v1.0.99...v1.0.100)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde_json
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-069ec4a52ff73e59a75a8044a5a720bd9bf66b94/> bump async-trait from 0.1.70 to 0.1.71
+   Bumps [async-trait](https://github.com/dtolnay/async-trait) from 0.1.70 to 0.1.71.
+   - [Release notes](https://github.com/dtolnay/async-trait/releases)
+   - [Commits](https://github.com/dtolnay/async-trait/compare/0.1.70...0.1.71)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-trait
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-8d338cbabb605ea02584b52f489594f2bda6abab/> bump thiserror from 1.0.40 to 1.0.41
+   Bumps [thiserror](https://github.com/dtolnay/thiserror) from 1.0.40 to 1.0.41.
+   - [Release notes](https
