@@ -496,4 +496,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    ...
  - <csr-id-8d338cbabb605ea02584b52f489594f2bda6abab/> bump thiserror from 1.0.40 to 1.0.41
    Bumps [thiserror](https://github.com/dtolnay/thiserror) from 1.0.40 to 1.0.41.
-   - [Release notes](https
+   - [Release notes](https://github.com/dtolnay/thiserror/releases)
+   - [Commits](https://github.com/dtolnay/thiserror/compare/1.0.40...1.0.41)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: thiserror
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-076765c66d526705df407c844aa1638b6ac0c563/> bump async-trait from 0.1.69 to 0.1.70
+   Bumps [async-trait](https://github.com/dtolnay/async-trait) from 0.1.69 to 0.1.70.
+   - [Release notes](https://github.com/dtolnay/async-trait/releases)
+   - [Commits](https://github.com/dtolnay/async-trait/compare/0.1.69...0.1.70)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: async-trait
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-8b2b9c96ee25d65c97a9f26bcbd5d3a213c048f2/> update
+ - <csr-id-bb770c7990a9b366074735be1d78a5fcf503b549/> update
+ - <csr-id-1b997684bcbbd596a064e925b5280660d4aac22c/> bump tokio from 1.29.0 to 1.29.1
+   Bumps [tokio](https://github.com/tokio-rs/to
