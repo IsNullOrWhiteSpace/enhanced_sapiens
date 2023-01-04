@@ -449,4 +449,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
      update-type: version-update:semver-patch
    ...
  - <csr-id-c56638d29beb3c6f30ea0427b6b9bfbab19f07da/> bump regex from 1.9.0 to 1.9.1
-   Bumps [regex](https://github.com/rust-lang/regex) from
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.9.0 to 1.9.1.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.9.0...1.9.1)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-5b8508ee83b7fc23b3d036e3354499deac548825/> bump regex from 1.8.4 to 1.9.0
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.8.4 to 1.9.0.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.8.4...1.9.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-0d074905a9f4c83507a4015c53771f1a4f2d5ce7/> bump serde_json from 1.0.99 to 1.0.100
+   Bumps [serde_json](https:
