@@ -519,4 +519,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - <csr-id-8b2b9c96ee25d65c97a9f26bcbd5d3a213c048f2/> update
  - <csr-id-bb770c7990a9b366074735be1d78a5fcf503b549/> update
  - <csr-id-1b997684bcbbd596a064e925b5280660d4aac22c/> bump tokio from 1.29.0 to 1.29.1
-   Bumps [tokio](https://github.com/tokio-rs/to
+   Bumps [tokio](https://github.com/tokio-rs/tokio) from 1.29.0 to 1.29.1.
+   - [Release notes](https://github.com/tokio-rs/tokio/releases)
+   - [Commits](https://github.com/tokio-rs/tokio/compare/tokio-1.29.0...tokio-1.29.1)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tokio
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-67223b1add580a31301d516c05a4ddfc92359647/> bump tokio from 1.28.2 to 1.29.0
+   Bumps [tokio](https://github.com/tokio-rs/tokio) from 1.28.2 to 1.29.0.
+   - [Release notes](https://github.com/tokio-rs/tokio/releases)
+   - [Commits](https://github.com/tokio-rs/tokio/compare/tokio-1.28.2...tokio-1.29.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: tokio
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-ed8c1aa007496324f0d9fc5f404ed61ee833bd76/> update
+ - <csr-id-1386f511fd429e185142203a8d406534737ede46/> bump serde_yaml from 0.9.21 to 0.9.22
+   Bumps [serde_yaml](https://github.com/dtolnay/serde-yaml) from 0.9.21 to 0.9.22.
+   - [Release notes](https://github.com/dto
