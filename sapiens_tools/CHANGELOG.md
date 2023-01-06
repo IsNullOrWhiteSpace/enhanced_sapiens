@@ -543,4 +543,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - <csr-id-ed8c1aa007496324f0d9fc5f404ed61ee833bd76/> update
  - <csr-id-1386f511fd429e185142203a8d406534737ede46/> bump serde_yaml from 0.9.21 to 0.9.22
    Bumps [serde_yaml](https://github.com/dtolnay/serde-yaml) from 0.9.21 to 0.9.22.
-   - [Release notes](https://github.com/dto
+   - [Release notes](https://github.com/dtolnay/serde-yaml/releases)
+   - [Commits](https://github.com/dtolnay/serde-yaml/compare/0.9.21...0.9.22)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde_yaml
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-d6eba796b80216df771667333065bb809f2f6c44/> bump serde_json from 1.0.97 to 1.0.99
+   Bumps [serde_json](https://github.com/serde-rs/json) from 1.0.97 to 1.0.99.
+   - [Release notes](https://github.com/serde-rs/json/releases)
+   - [Commits](https://github.com/serde-rs/json/compare/v1.0.97...v1.0.99)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde_json
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-febeb6ae02da73ce3f69dfe7005acf8fbdbf0402/> bump insta from 1.29.0 to 1.30.0
+   Bumps [insta](https://github.com/mitsuhiko/insta) from 1.29.0 to 1.30.0.
+   - [Changelog](https://github.com/mitsuhiko/insta/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/mitsuhiko
