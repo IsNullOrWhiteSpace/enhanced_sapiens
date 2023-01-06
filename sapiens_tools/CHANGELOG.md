@@ -566,4 +566,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - <csr-id-febeb6ae02da73ce3f69dfe7005acf8fbdbf0402/> bump insta from 1.29.0 to 1.30.0
    Bumps [insta](https://github.com/mitsuhiko/insta) from 1.29.0 to 1.30.0.
    - [Changelog](https://github.com/mitsuhiko/insta/blob/master/CHANGELOG.md)
-   - [Commits](https://github.com/mitsuhiko
+   - [Commits](https://github.com/mitsuhiko/insta/compare/1.29.0...1.30.0)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: insta
+     dependency-type: direct:production
+     update-type: version-update:semver-minor
+   ...
+ - <csr-id-94e120bbc02537233ded8c7bd58968b1c7e0cdb2/> update
+ - <csr-id-e77f188ab4eac0859423d4d7cbda7a59254841c0/> bump serde_json from 1.0.96 to 1.0.97
+   Bumps [serde_json](https://github.com/serde-rs/json) from 1.0.96 to 1.0.97.
+   - [Release notes](https://github.com/serde-rs/json/releases)
+   - [Commits](https://github.com/serde-rs/json/compare/v1.0.96...v1.0.97)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde_json
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+
+### Bug Fixes
+
+ - <csr-id-e4dde233ac5397554768eaa796c2de828830a1ad/> todo!()...
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 119 commits contributed to the release over the course of 145 calendar days.
+ - 146 days passed between releases.
+ - 61 commits were 
