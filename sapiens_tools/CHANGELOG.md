@@ -619,4 +619,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Merge pull request #168 from ssoudan/dependabot/cargo/thiserror-1.0.50 ([`13614c2`](https://github.com/ssoudan/sapiens/commit/13614c255dcbe144e8ced62134f7352e5ecf054f))
     - Bump thiserror from 1.0.49 to 1.0.50 ([`4fb61ab`](https://github.com/ssoudan/sapiens/commit/4fb61ab19203a5c2721d5fcd55be57ba1e54321c))
     - Merge pull request #167 from ssoudan/dependabot/cargo/tracing-0.1.40 ([`69603f9`](https://github.com/ssoudan/sapiens/commit/69603f9fe4e0099308fb6a63c4e2aa2e2b379e92))
-    - Bump tracing from 0.1.39 to 0.1.40 ([`9b0e9db`](https://github.com/ssoudan/sapiens/commit/9b0e9db7
+    - Bump tracing from 0.1.39 to 0.1.40 ([`9b0e9db`](https://github.com/ssoudan/sapiens/commit/9b0e9db723ba74bd2a5a1f3e6e06aa179179102f))
+    - Merge pull request #166 from ssoudan/dependabot/cargo/async-trait-0.1.74 ([`1d65d0c`](https://github.com/ssoudan/sapiens/commit/1d65d0cf82d9550e5de20254b41b34cf5774e126))
+    - Bump async-trait from 0.1.73 to 0.1.74 ([`bfdd7f1`](https://github.com/ssoudan/sapiens/commit/bfdd7f1e8acba3e70fbc2a4a0d4b1357b9a72b5f))
+    - Merge pull request #163 from ssoudan/dependabot/cargo/regex-1.10.2 ([`7e2bc3c`](https://github.com/ssoudan/sapiens/commit/7e2bc3cf1186f1e671ac1973af81289247681fe4))
+    - Merge pull request #164 from ssoudan/dependabot/cargo/tracing-0.1.39 ([`75abf09`](https://github.com/ssoudan/sapiens/commit/75abf09822fe609c9e307db6012cac948ff78981))
+    - Bump tracing from 0.1.37 to 0.1.39 ([`1a1664f`](https://github.com/ssoudan/sapiens/commit/1a1664fdcd3e53bb140280aeadd0e6cff266e30a))
+    - Bump regex from 1.10.0 to 1.10.2 ([`124dc7a`](https://github.com/ssoudan/sapiens/commit/124dc7a9e0b9c4b45526d667cefe9dc2f8be9166))
+    - Merge pull request #162 from ssoudan/dependabot/cargo/serde-1.0.189 ([`8f516d5`](https://g
