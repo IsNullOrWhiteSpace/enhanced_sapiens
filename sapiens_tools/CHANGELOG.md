@@ -626,4 +626,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Merge pull request #164 from ssoudan/dependabot/cargo/tracing-0.1.39 ([`75abf09`](https://github.com/ssoudan/sapiens/commit/75abf09822fe609c9e307db6012cac948ff78981))
     - Bump tracing from 0.1.37 to 0.1.39 ([`1a1664f`](https://github.com/ssoudan/sapiens/commit/1a1664fdcd3e53bb140280aeadd0e6cff266e30a))
     - Bump regex from 1.10.0 to 1.10.2 ([`124dc7a`](https://github.com/ssoudan/sapiens/commit/124dc7a9e0b9c4b45526d667cefe9dc2f8be9166))
-    - Merge pull request #162 from ssoudan/dependabot/cargo/serde-1.0.189 ([`8f516d5`](https://g
+    - Merge pull request #162 from ssoudan/dependabot/cargo/serde-1.0.189 ([`8f516d5`](https://github.com/ssoudan/sapiens/commit/8f516d5afed0740f1f315e1c581f7815905425d6))
+    - Bump serde from 1.0.188 to 1.0.189 ([`ba11b4c`](https://github.com/ssoudan/sapiens/commit/ba11b4ca9e2b218315db1e19c1699571a4b34f77))
+    - Merge pull request #159 from ssoudan/dependabot/cargo/regex-1.10.0 ([`015bccb`](https://github.com/ssoudan/sapiens/commit/015bccbb6dc398a24737b8215ff7ad78e9934c61))
+    - Merge pull request #160 from ssoudan/dependabot/cargo/insta-1.34.0 ([`2684dee`](https://github.com/ssoudan/sapiens/commit/2684dee29d09fcc7ba9b08fe792ba99f646ee9db))
+    - Bump insta from 1.33.0 to 1.34.0 ([`011f5c3`](https://github.com/ssoudan/sapiens/commit/011f5c3c0fc87e81394783002f05c08a721dc4c5))
+    - Bump regex from 1.9.6 to 1.10.0 ([`4f0a515`](https://github.com/ssoudan/sapiens/commit/4f0a515be6603252df2b22b11eebf1613ea18faa))
+    - Merge pull request #157 from ssoudan/dependabot/cargo/tokio-1.33.0 ([`a597d03`](https://github.com/ssoudan/sapiens/commit/a597d038240c6e01edc02eeba1edd38958bb8782))
+    - Bump tokio from 1.32.0 to 1.33.0 ([`ca4f980`](https://github.com/ss
