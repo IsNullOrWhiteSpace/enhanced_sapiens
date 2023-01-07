@@ -597,4 +597,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
  - 119 commits contributed to the release over the course of 145 calendar days.
  - 146 days passed between releases.
- - 61 commits were 
+ - 61 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Merge pull request #176 from ssoudan/config ([`7839cc5`](https://github.com/ssoudan/sapiens/commit/7839cc5e0d0e52af9d00b6b855b9843542a74356))
+    - Updated ([`1883f0f`](https://github.com/ssoudan/sapiens/commit/1883f0f56c247c2e9a4a21688883b73f9c9a9862))
+    - Updated to async-openai 0.16.1 ([`304215a`](https://github.com/ssoudan/sapiens/commit/304215abc34b67c5b311facd3f797739f08c0ccb))
+    - Merge pull request #174 from ssoudan/dependabot/cargo/serde_json-1.0.108 ([`1423e37`](https://github.com/ssoudan/sapiens/commit/1423e3715b6e38810ff208954dca047c3c5b6ccb))
+    - Bump serde_json from 1.0.107 to 1.0.108 ([`97c0540`](https://github.com/ssoudan/sapiens/commit/97c0540f1c845f5d3ce40860708763d0f7ff0f92))
+    - Merge pull request #173 from ssoudan/dependabot/cargo/serde_yaml-0.9.27 ([`1e5b356`](https://github.com/ssoudan/sapie
