@@ -633,4 +633,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Bump insta from 1.33.0 to 1.34.0 ([`011f5c3`](https://github.com/ssoudan/sapiens/commit/011f5c3c0fc87e81394783002f05c08a721dc4c5))
     - Bump regex from 1.9.6 to 1.10.0 ([`4f0a515`](https://github.com/ssoudan/sapiens/commit/4f0a515be6603252df2b22b11eebf1613ea18faa))
     - Merge pull request #157 from ssoudan/dependabot/cargo/tokio-1.33.0 ([`a597d03`](https://github.com/ssoudan/sapiens/commit/a597d038240c6e01edc02eeba1edd38958bb8782))
-    - Bump tokio from 1.32.0 to 1.33.0 ([`ca4f980`](https://github.com/ss
+    - Bump tokio from 1.32.0 to 1.33.0 ([`ca4f980`](https://github.com/ssoudan/sapiens/commit/ca4f9807ac32d2822d2ed3ba21604433851a2872))
+    - Merge pull request #152 from ssoudan/dependabot/cargo/regex-1.9.6 ([`be08adc`](https://github.com/ssoudan/sapiens/commit/be08adc81ae48ba186285fd9dd431ad2713d8704))
+    - Bump regex from 1.9.5 to 1.9.6 ([`d89bd04`](https://github.com/ssoudan/sapiens/commit/d89bd0419382dbf6df44bd06fb1d016d2033277f))
+    - Merge pull request #150 from ssoudan/dependabot/cargo/insta-1.33.0 ([`463fd33`](https://github.com/ssoudan/sapiens/commit/463fd33f7591188db561ce80622652ba9f302cf7))
+    - Bump insta from 1.32.0 to 1.33.0 ([`0128ce2`](https://github.com/ssoudan/sapiens/commit/0128ce26a9e0b0a57a0a236173b6a46ef28cdda0))
+    - Merge pull request #149 from ssoudan/dependabot/cargo/thiserror-1.0.49 ([`fc3884b`](https://github.com/ssoudan/sapiens/commit/fc3884b102c3206eb0e863901ba1e1b9fe7ec7b2))
+    - Bump thiserror from 1.0.48 to 1.0.49 ([`0ad5b22`](https://github.com/ssoudan/sapiens/commit/0ad5b228a9901e523f4629c2b1ff8bb499050fda))
+    - Merge pull request #147 from 
