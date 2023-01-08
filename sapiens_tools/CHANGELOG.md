@@ -646,4 +646,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Bump insta from 1.31.0 to 1.32.0 ([`5d6e571`](https://github.com/ssoudan/sapiens/commit/5d6e571ad7141d0c1a243479f7af36c34a8ab341))
     - Merge pull request #141 from ssoudan/dependabot/cargo/async-openai-0.14.2 ([`bba1b07`](https://github.com/ssoudan/sapiens/commit/bba1b07b7463c71c5cbd5a0db669f375c2bc9756))
     - Bump async-openai from 0.14.1 to 0.14.2 ([`7afffc2`](https://github.com/ssoudan/sapiens/commit/7afffc2c09344a32e1c0a38589769eb34622c8a6))
-    - Merge pull request #139 from ssoudan/dependabot/cargo/serde_json-1.0.107 ([`bcad31a`](https://github.com/ssoud
+    - Merge pull request #139 from ssoudan/dependabot/cargo/serde_json-1.0.107 ([`bcad31a`](https://github.com/ssoudan/sapiens/commit/bcad31a903ffd1474767aa4019a12662a34309b1))
+    - Bump serde_json from 1.0.106 to 1.0.107 ([`d99657b`](https://github.com/ssoudan/sapiens/commit/d99657bf4c3af17a565c07f548aa56dcbf78da23))
+    - Merge pull request #135 from ssoudan/dependabot/cargo/serde_json-1.0.106 ([`3010ef1`](https://github.com/ssoudan/sapiens/commit/3010ef119f043bb19ecf980cbde315f6ffa72c1b))
+    - Merge pull request #136 from ssoudan/dependabot/cargo/async-openai-0.14.1 ([`cb17918`](https://github.com/ssoudan/sapiens/commit/cb17918a21476b24f9197669b17bd0c5dc304abd))
+    - Bump async-openai from 0.14.0 to 0.14.1 ([`7224d73`](https://github.com/ssoudan/sapiens/commit/7224d731f569995afc72f611e53bfaf047b54a02))
+    - Bump serde_json from 1.0.105 to 1.0.106 ([`c09b402`](https://github.com/ssoudan/sapiens/commit/c09b402c27bb7237d197ad2bae982fe42b97ade6))
+    - Merge pull request #134 from ssoudan/fixes ([`702c05c`](https://github.com/ssoudan/sapiens/commit/702c05c590efcc50598935a9994
