@@ -652,4 +652,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Merge pull request #136 from ssoudan/dependabot/cargo/async-openai-0.14.1 ([`cb17918`](https://github.com/ssoudan/sapiens/commit/cb17918a21476b24f9197669b17bd0c5dc304abd))
     - Bump async-openai from 0.14.0 to 0.14.1 ([`7224d73`](https://github.com/ssoudan/sapiens/commit/7224d731f569995afc72f611e53bfaf047b54a02))
     - Bump serde_json from 1.0.105 to 1.0.106 ([`c09b402`](https://github.com/ssoudan/sapiens/commit/c09b402c27bb7237d197ad2bae982fe42b97ade6))
-    - Merge pull request #134 from ssoudan/fixes ([`702c05c`](https://github.com/ssoudan/sapiens/commit/702c05c590efcc50598935a9994
+    - Merge pull request #134 from ssoudan/fixes ([`702c05c`](https://github.com/ssoudan/sapiens/commit/702c05c590efcc50598935a99949833160f0bbbf))
+    - Updated ([`bf46b30`](https://github.com/ssoudan/sapiens/commit/bf46b302328e2647af47d5d6346a15720150ac8c))
+    - Todo!()... ([`e4dde23`](https://github.com/ssoudan/sapiens/commit/e4dde233ac5397554768eaa796c2de828830a1ad))
+    - Merge pull request #129 from ssoudan/dependabot/cargo/thiserror-1.0.48 ([`3ab0383`](https://github.com/ssoudan/sapiens/commit/3ab038370934f0d7ba87f270a0546978bd814e60))
+    - Merge pull request #130 from ssoudan/dependabot/cargo/regex-1.9.5 ([`09be29f`](https://github.com/ssoudan/sapiens/commit/09be29f2c7576a89b3dd0d1fb45494f8e7de87b9))
+    - Bump regex from 1.9.4 to 1.9.5 ([`048b526`](https://github.com/ssoudan/sapiens/commit/048b526e0a3c319c00ee85a2dedc4503a35bb7e3))
+    - Bump thiserror from 1.0.47 to 1.0.48 ([`e15bb17`](https://github.com/ssoudan/sapiens/commit/e15bb173fd7b97059e600923659c1d1792e8a1af))
+    - Merge pull request #123 from ssoudan/dependabot/cargo/regex-1.9.4 ([`963731c`](https://github.com/ssoudan/sapiens/commit/963731c03162b3ed350492023e2165c8ac6a8fbd))
+    - Merge pull request #121 fr
