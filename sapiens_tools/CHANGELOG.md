@@ -660,4 +660,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Bump regex from 1.9.4 to 1.9.5 ([`048b526`](https://github.com/ssoudan/sapiens/commit/048b526e0a3c319c00ee85a2dedc4503a35bb7e3))
     - Bump thiserror from 1.0.47 to 1.0.48 ([`e15bb17`](https://github.com/ssoudan/sapiens/commit/e15bb173fd7b97059e600923659c1d1792e8a1af))
     - Merge pull request #123 from ssoudan/dependabot/cargo/regex-1.9.4 ([`963731c`](https://github.com/ssoudan/sapiens/commit/963731c03162b3ed350492023e2165c8ac6a8fbd))
-    - Merge pull request #121 fr
+    - Merge pull request #121 from ssoudan/dependabot/cargo/serde-1.0.188 ([`03854ea`](https://github.com/ssoudan/sapiens/commit/03854ea488ef3195b1cc2e2069b38259a05aeec3))
+    - Bump regex from 1.9.3 to 1.9.4 ([`0682b51`](https://github.com/ssoudan/sapiens/commit/0682b515312db092eb5e918761467e9c1c3e1de9))
+    - Bump serde from 1.0.183 to 1.0.188 ([`cbcc4da`](https://github.com/ssoudan/sapiens/commit/cbcc4dabc86f197e6acfe8b50787cda1cc9ae1c5))
+    - Merge pull request #113 from ssoudan/dependabot/cargo/tokio-1.32.0 ([`fb9234f`](https://github.com/ssoudan/sapiens/commit/fb9234fc7781d1e82eb83769dd997684d8610ece))
+    - Bump tokio from 1.31.0 to 1.32.0 ([`78a1156`](https://github.com/ssoudan/sapiens/commit/78a1156d0427bd0b730cc48fc4f3b56b03a2b241))
+    - Merge pull request #119 from ssoudan/dependabot/cargo/mediawiki-0.2.11 ([`e2a010d`](https://github.com/ssoudan/sapiens/commit/e2a010d4bcd88f5424ebd95a0b90643ce0c68153))
+    - Bump mediawiki from 0.2.10 to 0.2.11 ([`5ba958f`](https://github.com/ssoudan/sapiens/commit/5ba9
