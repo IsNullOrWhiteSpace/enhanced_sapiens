@@ -666,4 +666,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Merge pull request #113 from ssoudan/dependabot/cargo/tokio-1.32.0 ([`fb9234f`](https://github.com/ssoudan/sapiens/commit/fb9234fc7781d1e82eb83769dd997684d8610ece))
     - Bump tokio from 1.31.0 to 1.32.0 ([`78a1156`](https://github.com/ssoudan/sapiens/commit/78a1156d0427bd0b730cc48fc4f3b56b03a2b241))
     - Merge pull request #119 from ssoudan/dependabot/cargo/mediawiki-0.2.11 ([`e2a010d`](https://github.com/ssoudan/sapiens/commit/e2a010d4bcd88f5424ebd95a0b90643ce0c68153))
-    - Bump mediawiki from 0.2.10 to 0.2.11 ([`5ba958f`](https://github.com/ssoudan/sapiens/commit/5ba9
+    - Bump mediawiki from 0.2.10 to 0.2.11 ([`5ba958f`](https://github.com/ssoudan/sapiens/commit/5ba958faf24d9302cf6bb91b5034f60577414243))
+    - Merge pull request #110 from ssoudan/dependabot/cargo/thiserror-1.0.47 ([`9bcbc44`](https://github.com/ssoudan/sapiens/commit/9bcbc44354afcfd0959b3dc507f26b5fd8fa55bd))
+    - Merge pull request #114 from ssoudan/dependabot/cargo/async-openai-0.13.1 ([`cdfb15c`](https://github.com/ssoudan/sapiens/commit/cdfb15c678009459c87ddd35effcb99507490545))
+    - Bump async-openai from 0.13.0 to 0.13.1 ([`a8ba3bb`](https://github.com/ssoudan/sapiens/commit/a8ba3bb6739282837fab1e45f96a371c13de68cc))
+    - Bump thiserror from 1.0.46 to 1.0.47 ([`3dc377f`](https://github.com/ssoudan/sapiens/commit/3dc377ff267829d9a452f3807bafdb2d3d4b9d47))
+    - Merge pull request #109 from ssoudan/updates ([`a9f5bee`](https://github.com/ssoudan/sapiens/commit/a9f5beee48b41f33ee494bcd8f65b97b56f6e31a))
+    - Update ([`8343a4d`](https://github.com/ssoudan/sapiens/commit/8343a4dd8d9dc3e6cb4c447f7f4b0b2594fb91bb))
+    - Merge pull request #104 from ssoudan/updates ([`021842f`](https://github.com/ssoudan/sapiens/c
