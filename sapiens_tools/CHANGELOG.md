@@ -715,4 +715,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Merge pull request #61 from ssoudan/dependabot/cargo/tokio-1.29.0 ([`5ef0f26`](https://github.com/ssoudan/sapiens/commit/5ef0f2628d723fd36c7840a08b294732d9f248ea))
     - Bump tokio from 1.28.2 to 1.29.0 ([`67223b1`](https://github.com/ssoudan/sapiens/commit/67223b1add580a31301d516c05a4ddfc92359647))
     - Merge pull request #59 from ssoudan/updates ([`2aabab4`](https://github.com/ssoudan/sapiens/commit/2aabab4f96631f9af86e7a19001e966666f8682b))
-    - Update ([
+    - Update ([`ed8c1aa`](https://github.com/ssoudan/sapiens/commit/ed8c1aa007496324f0d9fc5f404ed61ee833bd76))
+    - Merge pull request #58 from ssoudan/dependabot/cargo/serde_yaml-0.9.22 ([`5c98c2c`](https://github.com/ssoudan/sapiens/commit/5c98c2c74b7ec8dfadc1eaf19a065ebb2111dfbe))
+    - Bump serde_yaml from 0.9.21 to 0.9.22 ([`1386f51`](https://github.com/ssoudan/sapiens/commit/1386f511fd429e185142203a8d406534737ede46))
+    - Merge pull request #57 from ssoudan/dependabot/cargo/serde_json-1.0.99 ([`3a8a6de`](https://github.com/ssoudan/sapiens/commit/3a8a6de2040db33d42cba7658fd79a37ccd6c9f1))
+    - Bump serde_json from 1.0.97 to 1.0.99 ([`d6eba79`](https://github.com/ssoudan/sapiens/commit/d6eba796b80216df771667333065bb809f2f6c44))
+    - Merge pull request #52 from ssoudan/dependabot/cargo/insta-1.30.0 ([`74ab448`](https://github.com/ssoudan/sapiens/commit/74ab4485e47c2d45e83e4865fbce2b7ce7f0a8e8))
+    - Bump insta from 1.29.0 to 1.30.0 ([`febeb6a`](https://github.com/ssoudan/sapiens/commit/febeb6ae02da73ce3f69dfe7005acf8fbdbf0402))
+    - Merge pull request #47 from ssoudan/update ([`
