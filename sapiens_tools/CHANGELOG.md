@@ -768,4 +768,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    ---
    updated-dependencies:
    - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+ - <csr-id-c86f3a4611290797ad3f8c3cfa162fee0c5f1b79/> bump regex from 1.8.2 to 1.8.3
+   Bumps [regex](https://github.com/rust-lang/regex) from 1.8.2 to 1.8.3.
+   - [Release notes](https://github.com/rust-lang/regex/releases)
+   - [Changelog](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md)
+   - [Commits](https://github.com/rust-lang/regex/compare/1.8.2...1.8.3)
    
+   ---
+   updated-dependencies:
+   - dependency-name: regex
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+
+### New Features
+
+ - <csr-id-6d1524acbca7362b4eda081612a43005abc888cb/> gpt-3.5-turbo-0613 and more
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 11 commits contributed to the release over the course of 20 calendar days.
+ - 21 days passed between releases.
+ - 5 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Detail
