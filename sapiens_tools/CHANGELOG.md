@@ -797,4 +797,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - 5 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
-### Commit Detail
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.10.1, sapiens_derive v0.4.3, sapiens_tools v0.10.1, sapiens_cli v0.9.1, sapiens_exp v0.8.1 ([`2a30e78`](https://github.com/ssoudan/sapiens/commit/2a30e7875a2c05761dd7ffdfb158f1949b4cb58f))
+    - Merge pull request #43 from ssoudan/upd ([`c8d2e5a`](https://github.com/ssoudan/sapiens/commit/c8d2e5ad69f7bed6cbd6d64dfa62a3d0c864c885))
+    - Gpt-3.5-turbo-0613 and more ([`6d1524a`](https://github.com/ssoudan/sapiens/commit/6d1524acbca7362b4eda081612a43005abc888cb))
+    - Merge pull request #39 from ssoudan/dependabot/cargo/serde-1.0.164 ([`e17e076`](https://github.com/ssoudan/sapiens/commit/e17e0766911c0ffab4df5c8b8d7213ea05275da7))
+    - Merge pull request #33 from ssoudan/dependabot/cargo/tokio-1.28.2 ([`80ca726`](https://github.com/ssoudan/sapiens/commit/80ca726a909cc08a6ef60d1668ebecdac7693700))
+    - Bump serde from 1.0.163 to 1.0.164 ([`f4b88c4`](https://github.com/ssoudan/sapiens/commit/f4b88c4520574c8
