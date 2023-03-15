@@ -809,4 +809,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Gpt-3.5-turbo-0613 and more ([`6d1524a`](https://github.com/ssoudan/sapiens/commit/6d1524acbca7362b4eda081612a43005abc888cb))
     - Merge pull request #39 from ssoudan/dependabot/cargo/serde-1.0.164 ([`e17e076`](https://github.com/ssoudan/sapiens/commit/e17e0766911c0ffab4df5c8b8d7213ea05275da7))
     - Merge pull request #33 from ssoudan/dependabot/cargo/tokio-1.28.2 ([`80ca726`](https://github.com/ssoudan/sapiens/commit/80ca726a909cc08a6ef60d1668ebecdac7693700))
-    - Bump serde from 1.0.163 to 1.0.164 ([`f4b88c4`](https://github.com/ssoudan/sapiens/commit/f4b88c4520574c8
+    - Bump serde from 1.0.163 to 1.0.164 ([`f4b88c4`](https://github.com/ssoudan/sapiens/commit/f4b88c4520574c841b055edd71c329a8195c7173))
+    - Bump tokio from 1.28.1 to 1.28.2 ([`1f40bf5`](https://github.com/ssoudan/sapiens/commit/1f40bf57a197557d1abbde5f9885f86c56c5f153))
+    - Merge pull request #36 from ssoudan/dependabot/cargo/regex-1.8.4 ([`a045486`](https://github.com/ssoudan/sapiens/commit/a045486c2a81e13ed0f41f129dfd21dd2ade015f))
+    - Bump regex from 1.8.3 to 1.8.4 ([`a47f6e4`](https://github.com/ssoudan/sapiens/commit/a47f6e484e511cf128577cd4970edb64c677490b))
+    - Merge pull request #29 from ssoudan/dependabot/cargo/regex-1.8.3 ([`ea9864e`](https://github.com/ssoudan/sapiens/commit/ea9864e6f1cc10dc8b99d368bc0804341f92bbb9))
+    - Bump regex from 1.8.2 to 1.8.3 ([`c86f3a4`](https://github.com/ssoudan/sapiens/commit/c86f3a4611290797ad3f8c3cfa162fee0c5f1b79))
+</details>
+
+## 0.10.0 (2023-05-23)
+
+### Bug Fixes
+
+ - <csr-id-4e4a0229533a317255978b9de0cb45a69f57c4e2/> import
+
+### New Features (BREAKING)
+
+ - <csr-id-53c7d7ddf901709715543e76f780a8f39e334625/> multi-step OODA chain
+ - <csr-id-67ea659fcc5ca60a4372014ff5af8aa2b00d7dfa/> examples are pairs of entries
+
+### Commit 
