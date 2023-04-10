@@ -847,4 +847,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Release sapiens v0.10.0, sapiens_tools v0.10.0, sapiens_bot v0.8.0, sapiens_cli v0.9.0, sapiens_exp v0.8.0, safety bump 4 crates ([`02f36bb`](https://github.com/ssoudan/sapiens/commit/02f36bbc35df5138c07fd1322030bb1bfeb01eb3))
     - Merge pull request #25 from ssoudan/more_steps ([`cb9a704`](https://github.com/ssoudan/sapiens/commit/cb9a70490ced60abd5bb12d2559d40464f3a3213))
     - Multi-step OODA chain ([`53c7d7d`](https://github.com/ssoudan/sapiens/commit/53c7d7ddf901709715543e76f780a8f39e334625))
-    - Import ([`4e4a022`](https://github.com/ssoudan/s
+    - Import ([`4e4a022`](https://github.com/ssoudan/sapiens/commit/4e4a0229533a317255978b9de0cb45a69f57c4e2))
+    - Examples are pairs of entries ([`67ea659`](https://github.com/ssoudan/sapiens/commit/67ea659fcc5ca60a4372014ff5af8aa2b00d7dfa))
+</details>
+
+## 0.9.0 (2023-05-17)
+
+<csr-id-099c611a319519c44b62274627e35b01746ce37e/>
+
+### Chore
+
+ - <csr-id-099c611a319519c44b62274627e35b01746ce37e/> bump serde from 1.0.162 to 1.0.163
+   Bumps [serde](https://github.com/serde-rs/serde) from 1.0.162 to 1.0.163.
+   - [Release notes](https://github.com/serde-rs/serde/releases)
+   - [Commits](https://github.com/serde-rs/serde/compare/v1.0.162...v1.0.163)
+   
+   ---
+   updated-dependencies:
+   - dependency-name: serde
+     dependency-type: direct:production
+     update-type: version-update:semver-patch
+   ...
+
+### New Features
+
+ - <csr-id-34bf58ba79af2aaa84ab3e79ba565d73ae2f8266/> allow dependabot-triggered CI to complete successfully - take 2
+ - <csr-id-2bff729d9dc84e9d04619ea082fdbc071e2d45d9/> allow dependabot-triggered CI to complete successfully
+
+### Commit Statistics
+
+<csr-read-onl
