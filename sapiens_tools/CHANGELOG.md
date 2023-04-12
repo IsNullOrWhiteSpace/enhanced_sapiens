@@ -876,4 +876,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Commit Statistics
 
-<csr-read-onl
+<csr-read-only-do-not-edit/>
+
+ - 6 commits contributed to the release over the course of 6 calendar days.
+ - 6 days passed between releases.
+ - 3 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.9.0, sapiens_tools v0.9.0, sapiens_bot v0.7.0, sapiens_cli v0.8.0, sapiens_exp v0.7.0, safety bump 4 crates ([`a6639bd`](https://github.com/ssoudan/sapiens/commit/a6639bd1fc913081d653662be98d15672be6d140))
+    - Merge pull request #19 from ssoudan/dependabot/cargo/serde-1.0.163 ([`d6497e5`](https://github.com/ssoudan/sapiens/commit/d6497e564aa66cfa80500b8f91bc5e0b4447f689))
+    - Bump serde from 1.0.162 to 1.0.163 ([`099c611`](https://github.com/ssoudan/sapiens/commit/099c611a319519c44b62274627e35b01746ce37e))
+    - Allow dependabot-triggered CI to complete successfully - take 2 ([`34bf58b`](https://github.com/ssoudan/s
