@@ -893,4 +893,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Release sapiens v0.9.0, sapiens_tools v0.9.0, sapiens_bot v0.7.0, sapiens_cli v0.8.0, sapiens_exp v0.7.0, safety bump 4 crates ([`a6639bd`](https://github.com/ssoudan/sapiens/commit/a6639bd1fc913081d653662be98d15672be6d140))
     - Merge pull request #19 from ssoudan/dependabot/cargo/serde-1.0.163 ([`d6497e5`](https://github.com/ssoudan/sapiens/commit/d6497e564aa66cfa80500b8f91bc5e0b4447f689))
     - Bump serde from 1.0.162 to 1.0.163 ([`099c611`](https://github.com/ssoudan/sapiens/commit/099c611a319519c44b62274627e35b01746ce37e))
-    - Allow dependabot-triggered CI to complete successfully - take 2 ([`34bf58b`](https://github.com/ssoudan/s
+    - Allow dependabot-triggered CI to complete successfully - take 2 ([`34bf58b`](https://github.com/ssoudan/sapiens/commit/34bf58ba79af2aaa84ab3e79ba565d73ae2f8266))
+    - Merge pull request #20 from ssoudan/for_dependabot ([`accf76c`](https://github.com/ssoudan/sapiens/commit/accf76c3e9c154ca75fe8ac3b550387a3e11b991))
+    - Allow dependabot-triggered CI to complete successfully ([`2bff729`](https://github.com/ssoudan/sapiens/commit/2bff729d9dc84e9d04619ea082fdbc071e2d45d9))
+</details>
+
+## 0.8.0 (2023-05-11)
+
+<csr-id-37fe5c57cb17dabf56fa61e8dcad8c5585846750/>
+<csr-id-c46990fe7b630ecc1e2698da5c168508da47fe34/>
+<csr-id-25661955e8aba7f9dee4a16e046c621c5ffd3fca/>
+
+### Chore
+
+ - <csr-id-37fe5c57cb17dabf56fa61e8dcad8c5585846750/> update
+ - <csr-id-c46990fe7b630ecc1e2698da5c168508da47fe34/> renaming of fields to match the new visible names (`tool_name`, `parameters`)
+ - <csr-id-25661955e8aba7f9dee4a16e046c621c5ffd3fca/> badges, docs.rs links, ...
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 5 commits contributed to the release over the course of 5 calendar days.
+ - 5 days passed between releases.
+ - 3 commi
