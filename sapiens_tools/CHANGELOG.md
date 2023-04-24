@@ -965,3 +965,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - 2 days passed between releases.
  - 6 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.7.0, sapiens_derive v0.4.1, sapiens_tools v0.7.0, sapiens_bot v0.5.0, sapiens_cli v0.6.0, sapiens_exp v0.5.0, safety bump 4 crates ([`3b2c461`](https://github.com/ssoudan/sapiens/commit/3b2c461f7273b55660f37ed73b0a10b88e0f788b))
+    - CHANGELOG ([`8efe0a2`](https://github.com/ssoudan/sapiens/commit/8efe0a225520f14d2c3e0abc7ea8c99578146ca0))
+    - Merge pull request #15 from ssoudan/getting_better ([`936b298`](https://github.com/ssoudan/sapiens/commit/936b2986bf8cf96b1d731b6e1144b3f3fb271fbe))
+    - Updated ([`98826b1`](https://github.com/ssoudan/sapiens/commit/98826b19cd97872a032e955478ff2d3b9af8262c))
+    - Cleanup ([`acb2a6a`](https://github.com/ssoudan/sapiens/commit/acb2a6a46192a116b17cacb9301cba22a7b3e719))
+    - Change in format to improve task completion rate ([`2912f4f`](https://github.com/ssoudan/sapiens/commit/2912f4ff80a8b87c9727d3e05eaae469f7a4fd94))
+    - Cover the case with `exit` in Python code ([`45f52
