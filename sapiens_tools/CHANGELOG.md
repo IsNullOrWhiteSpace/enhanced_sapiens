@@ -930,4 +930,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Update ([`37fe5c5`](https://github.com/ssoudan/sapiens/commit/37fe5c57cb17dabf56fa61e8dcad8c5585846750))
     - Merge pull request #16 from ssoudan/decoupling ([`981d4d4`](https://github.com/ssoudan/sapiens/commit/981d4d4e1e6b625e17d7dcc2fc94e0709e11267c))
     - Renaming of fields to match the new visible names (`tool_name`, `parameters`) ([`c46990f`](https://github.com/ssoudan/sapiens/commit/c46990fe7b630ecc1e2698da5c168508da47fe34))
-    - Badges, docs.rs links, ... ([`2566195`](https://github.com/ssoudan/sapiens/commit/25661955e8aba7f9dee4a16e046c621c5ffd
+    - Badges, docs.rs links, ... ([`2566195`](https://github.com/ssoudan/sapiens/commit/25661955e8aba7f9dee4a16e046c621c5ffd3fca))
+</details>
+
+## 0.7.0 (2023-05-05)
+
+<csr-id-98826b19cd97872a032e955478ff2d3b9af8262c/>
+<csr-id-acb2a6a46192a116b17cacb9301cba22a7b3e719/>
+<csr-id-8efe0a225520f14d2c3e0abc7ea8c99578146ca0/>
+
+### Chore
+
+ - <csr-id-98826b19cd97872a032e955478ff2d3b9af8262c/> updated
+ - <csr-id-acb2a6a46192a116b17cacb9301cba22a7b3e719/> cleanup
+
+### Chore
+
+ - <csr-id-8efe0a225520f14d2c3e0abc7ea8c99578146ca0/> CHANGELOG
+
+### New Features
+
+ - <csr-id-45f5286228d2a8d42ebf89b6ea1f14a6eeb53f52/> cover the case with `exit` in Python code
+ - <csr-id-ff4d730e62c2cd4c370a83fe1ab0a74325389a84/> release GIL when doing something else
+
+### New Features (BREAKING)
+
+ - <csr-id-2912f4ff80a8b87c9727d3e05eaae469f7a4fd94/> change in format to improve task completion rate
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 8 commits contributed to the release over the course of 1 calendar day.
+ - 2 days passed between releases.
+ - 6 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
