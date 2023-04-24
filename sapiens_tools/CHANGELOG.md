@@ -979,4 +979,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Updated ([`98826b1`](https://github.com/ssoudan/sapiens/commit/98826b19cd97872a032e955478ff2d3b9af8262c))
     - Cleanup ([`acb2a6a`](https://github.com/ssoudan/sapiens/commit/acb2a6a46192a116b17cacb9301cba22a7b3e719))
     - Change in format to improve task completion rate ([`2912f4f`](https://github.com/ssoudan/sapiens/commit/2912f4ff80a8b87c9727d3e05eaae469f7a4fd94))
-    - Cover the case with `exit` in Python code ([`45f52
+    - Cover the case with `exit` in Python code ([`45f5286`](https://github.com/ssoudan/sapiens/commit/45f5286228d2a8d42ebf89b6ea1f14a6eeb53f52))
+    - Release GIL when doing something else ([`ff4d730`](https://github.com/ssoudan/sapiens/commit/ff4d730e62c2cd4c370a83fe1ab0a74325389a84))
+</details>
+
+## 0.6.0 (2023-05-02)
+
+### New Features
+
+ - <csr-id-4626deb7308ec642d0e937fc3b96af494538a027/> store the current state in Trace Events
+ - <csr-id-c6d00560865da9fff220eb0ae506a30672053a27/> added scenario_0
+ - <csr-id-404afb184a3fe0daedc3103ad9be0cefd4c4a890/> generate Python docstring so `help(tools.Something)` works.
+ - <csr-id-a35ed6028cdc335a3f2fa0159d71d334d24427c7/> refactoring of the observer for Step
+   BREAKING CHANGES: API changed.
+ - <csr-id-7c98fcb78fe6b76ce8a65a60b0f481d3d942fe52/> sapiens_exp
+
+### New Features (BREAKING)
+
+ - <csr-id-04e83c2a214212d045ef5a890a72c3dc5ab61076/> Richer errors while invoking tools
+ - <csr-id-6c30344483671b542e73e13f51228407f37da63e/> Collect information in a serializable struct with all that matters
+ - <csr-id-f93652f7c0886b47ce438a512bf2c13d978b3a6b/
