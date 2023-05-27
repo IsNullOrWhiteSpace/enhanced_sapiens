@@ -1019,4 +1019,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Release sapiens v0.6.0, sapiens_derive v0.4.0, sapiens_tools v0.6.0, sapiens_bot v0.4.0, sapiens_cli v0.5.0, sapiens_exp v0.4.1, safety bump 4 crates ([`1b9dd43`](https://github.com/ssoudan/sapiens/commit/1b9dd43e9291f0aef2a83c1610cede57c897a56c))
     - Merge pull request #13 from ssoudan/getting_methodical ([`e0d97aa`](https://github.com/ssoudan/sapiens/commit/e0d97aae47b30bd97b37520a345c84b59523de9d))
     - Store the current state in Trace Events ([`4626deb`](https://github.com/ssoudan/sapiens/commit/4626deb7308ec642d0e937fc3b96af494538a027))
-    - Richer errors while invok
+    - Richer errors while invoking tools ([`04e83c2`](https://github.com/ssoudan/sapiens/commit/04e83c2a214212d045ef5a890a72c3dc5ab61076))
+    - Added scenario_0 ([`c6d0056`](https://github.com/ssoudan/sapiens/commit/c6d00560865da9fff220eb0ae506a30672053a27))
+    - Merge remote-tracking branch 'origin/main' into getting_methodical ([`69ed1e8`](https://github.com/ssoudan/sapiens/commit/69ed1e8c1919d40c5b2362eb4fd8376ae2786e05))
+    - Collect information in a serializable struct with all that matters ([`6c30344`](https://github.com/ssoudan/sapiens/commit/6c30344483671b542e73e13f51228407f37da63e))
+    - Collect execution traces ([`f93652f`](https://github.com/ssoudan/sapiens/commit/f93652f7c0886b47ce438a512bf2c13d978b3a6b))
+    - Generate Python docstring so `help(tools.Something)` works. ([`404afb1`](https://github.com/ssoudan/sapiens/commit/404afb184a3fe0daedc3103ad9be0cefd4c4a890))
+    - Refactoring of the observer for Step ([`a35ed60`](https://github.com/ssoudan/sapiens/commit/a35ed6028cdc335a3f2fa0159d71d334d24427c7))
+    - Sapiens_exp ([`7c98fcb`](https://github.com/ssoudan/sapiens/commit/7c
