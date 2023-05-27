@@ -1026,4 +1026,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Collect execution traces ([`f93652f`](https://github.com/ssoudan/sapiens/commit/f93652f7c0886b47ce438a512bf2c13d978b3a6b))
     - Generate Python docstring so `help(tools.Something)` works. ([`404afb1`](https://github.com/ssoudan/sapiens/commit/404afb184a3fe0daedc3103ad9be0cefd4c4a890))
     - Refactoring of the observer for Step ([`a35ed60`](https://github.com/ssoudan/sapiens/commit/a35ed6028cdc335a3f2fa0159d71d334d24427c7))
-    - Sapiens_exp ([`7c98fcb`](https://github.com/ssoudan/sapiens/commit/7c
+    - Sapiens_exp ([`7c98fcb`](https://github.com/ssoudan/sapiens/commit/7c98fcb78fe6b76ce8a65a60b0f481d3d942fe52))
+</details>
+
+## 0.5.0 (2023-04-27)
+
+<csr-id-8f039921a3bed1d976fd04c3d2ca6b99b1142411/>
+
+### Chore
+
+ - <csr-id-8f039921a3bed1d976fd04c3d2ca6b99b1142411/> cleanup
+
+### New Features (BREAKING)
+
+ - <csr-id-5d785d779955f5a4c2f54b1ff60e2262e85bfa05/> more flexible parsing
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 4 commits contributed to the release.
+ - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.5.0, sapiens_tools v0.5.0, sapiens_bot v0.3.0, sapiens_cli v0.4.0, safety bump 3 crates ([`2fc037f`](https://github.com/ssoudan/sapiens/commit/2fc037fdc051a3cc68261fa89c5fd3b08c683441))
+    - Merge pull request #10 from ssoudan/parsing ([`568d536`](https://github.com/ssoudan/sapiens/commit/568d5368896f758ae16d84ba35d0a382eec6ef11))
+    - Cleanup ([`8f03992`](https://github.co
