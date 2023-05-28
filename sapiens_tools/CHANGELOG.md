@@ -1090,4 +1090,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <details><summary>view details</summary>
 
- * **Unc
+ * **Uncategorized**
+    - Release sapiens v0.4.1, sapiens_tools v0.4.1, sapiens_bot v0.2.3, sapiens_cli v0.3.1 ([`16160fc`](https://github.com/ssoudan/sapiens/commit/16160fc0d369b76a08ffcc1cd5085d7387178656))
+    - Merge pull request #9 from ssoudan/search ([`8976be2`](https://github.com/ssoudan/sapiens/commit/8976be2e7e056ed5a976a37a5723abc9f531d238))
+    - More dotenvy ([`27059b5`](https://github.com/ssoudan/sapiens/commit/27059b5520a417af8eda46880c9c9bf5e27757c9))
+    - Dotenvy in tests ([`acb725e`](https://github.com/ssoudan/sapiens/commit/acb725e1d421844815e2f2a8f8156ed4aa523849))
+    - Custom Debug ([`cd14da7`](https://github.com/ssoudan/sapiens/commit/cd14da74329603501a13ca89ca2700b6eca92af7))
+    - Search and logging/tracing ([`3c9e702`](https://github.com/ssoudan/sapiens/commit/3c9e702c2e0e1624882c83b66c42113bc99b3b5d))
+    - Search tool" ([`87ae158`](https://github.com/ssoudan/sapiens/commit/87ae158cc01d299f60a05577f9a20516cf65e6c2))
+    - Update tool calling convention description ([`f67aea1`](https://github.com/ssoudan/
