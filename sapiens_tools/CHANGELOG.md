@@ -1098,4 +1098,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Custom Debug ([`cd14da7`](https://github.com/ssoudan/sapiens/commit/cd14da74329603501a13ca89ca2700b6eca92af7))
     - Search and logging/tracing ([`3c9e702`](https://github.com/ssoudan/sapiens/commit/3c9e702c2e0e1624882c83b66c42113bc99b3b5d))
     - Search tool" ([`87ae158`](https://github.com/ssoudan/sapiens/commit/87ae158cc01d299f60a05577f9a20516cf65e6c2))
-    - Update tool calling convention description ([`f67aea1`](https://github.com/ssoudan/
+    - Update tool calling convention description ([`f67aea1`](https://github.com/ssoudan/sapiens/commit/f67aea1870f102c146005c7fd381b0299b02a84f))
+</details>
+
+## 0.4.0 (2023-04-25)
+
+<csr-id-1a6b8972bab61215ebd95f74ebc46be4e63b98e7/>
+<csr-id-6e90dcd3947a192c62da6fddf4dcde0342365081/>
+<csr-id-35a6a992c57951ebe2a325d81d60c540053bcb94/>
+
+### Chore
+
+ - <csr-id-1a6b8972bab61215ebd95f74ebc46be4e63b98e7/> CHANGELOGs
+ - <csr-id-6e90dcd3947a192c62da6fddf4dcde0342365081/> CHANGELOG
+ - <csr-id-35a6a992c57951ebe2a325d81d60c540053bcb94/> update
+
+### New Features
+
+ - <csr-id-3744b79d5b49d205842d041031a0a69ccef50330/> improved format description
+ - <csr-id-a08cd2093594b57d54ab5a85b0cd9a1ba83aac2c/> reduce initial prompt size
+ - <csr-id-23383eb67f19e8fdcff185709ca3a6d12b3000fa/> summarize tool
+
+### Bug Fixes
+
+ - <csr-id-f62eb17dff74090e0f1def6119895b571c7f4835/> eliminate `import tools` and `from tools import...`
+ - <csr-id-b1521356547d673c5695fd69558901f4dba2f8ae/> deps
+ - <csr-id-d79778b8b215e2ae5fdc9a1e40913fa3d1d711cf/> filtering of import tools and from tools import
+ - <csr-id-ee0c2df176086df1287249abc6
