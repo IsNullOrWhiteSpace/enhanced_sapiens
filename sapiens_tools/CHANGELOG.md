@@ -1148,4 +1148,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  * **Uncategorized**
     - Release sapiens v0.4.0, sapiens_derive v0.3.1, sapiens_tools v0.4.0, sapiens_bot v0.2.2, sapiens_cli v0.3.0, safety bump 3 crates ([`0da51f4`](https://github.com/ssoudan/sapiens/commit/0da51f431c56f43088c651b0428c3f2fc6be11be))
     - CHANGELOGs ([`1a6b897`](https://github.com/ssoudan/sapiens/commit/1a6b8972bab61215ebd95f74ebc46be4e63b98e7))
-    - Merge pull request #8 from ssoudan/tools ([`3b7f2b2`](https://github.com/ssoudan/sapiens/commit/3b7f2b25afb5452
+    - Merge pull request #8 from ssoudan/tools ([`3b7f2b2`](https://github.com/ssoudan/sapiens/commit/3b7f2b25afb545217e9d0c078b372e1a24981d78))
+    - CHANGELOG ([`6e90dcd`](https://github.com/ssoudan/sapiens/commit/6e90dcd3947a192c62da6fddf4dcde0342365081))
+    - Update ([`35a6a99`](https://github.com/ssoudan/sapiens/commit/35a6a992c57951ebe2a325d81d60c540053bcb94))
+    - Eliminate `import tools` and `from tools import...` ([`f62eb17`](https://github.com/ssoudan/sapiens/commit/f62eb17dff74090e0f1def6119895b571c7f4835))
+    - Improved format description ([`3744b79`](https://github.com/ssoudan/sapiens/commit/3744b79d5b49d205842d041031a0a69ccef50330))
+    - Reduce initial prompt size ([`a08cd20`](https://github.com/ssoudan/sapiens/commit/a08cd2093594b57d54ab5a85b0cd9a1ba83aac2c))
+    - Deps ([`b152135`](https://github.com/ssoudan/sapiens/commit/b1521356547d673c5695fd69558901f4dba2f8ae))
+    - Filtering of import tools and from tools import ([`d79778b`](https://github.com/ssoudan/sapiens/commit/d79778b8b215e2ae5fdc9a1e40913fa3d1d711cf))
+    - Renamed Arxiv tool ([`11de03c`](https://github.com/ssoudan/sapiens/commit/11de03cd0c11100c654eb171c1f0ac03e56
