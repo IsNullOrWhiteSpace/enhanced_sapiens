@@ -1124,4 +1124,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - <csr-id-f62eb17dff74090e0f1def6119895b571c7f4835/> eliminate `import tools` and `from tools import...`
  - <csr-id-b1521356547d673c5695fd69558901f4dba2f8ae/> deps
  - <csr-id-d79778b8b215e2ae5fdc9a1e40913fa3d1d711cf/> filtering of import tools and from tools import
- - <csr-id-ee0c2df176086df1287249abc6
+ - <csr-id-ee0c2df176086df1287249abc60f2a5003fc583e/> eliminate `import tools` from the code
+
+### Bug Fixes (BREAKING)
+
+ - <csr-id-11de03cd0c11100c654eb171c1f0ac03e561661a/> renamed Arxiv tool
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 13 commits contributed to the release over the course of 1 calendar day.
+ - 1 day passed between releases.
+ - 11 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.4.0, sapiens_derive v0.3.1, sapiens_tools v0.4.0, sapiens_bot v0.2.2, sapiens_cli v0.3.0, safety bump 3 crates ([`0da51f4`](https://github.com/ssoudan/sapiens/commit/0da51f431c56f43088c651b0428c3f2fc6be11be))
+    - CHANGELOGs ([`1a6b897`](https://github.com/ssoudan/sapiens/commit/1a6b8972bab61215ebd95f74ebc46be4e63b98e7))
+    - Merge pull request #8 from ssoudan/tools ([`3b7f2b2`](https://github.com/ssoudan/sapiens/commit/3b7f2b25afb5452
