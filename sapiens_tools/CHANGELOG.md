@@ -1156,4 +1156,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Reduce initial prompt size ([`a08cd20`](https://github.com/ssoudan/sapiens/commit/a08cd2093594b57d54ab5a85b0cd9a1ba83aac2c))
     - Deps ([`b152135`](https://github.com/ssoudan/sapiens/commit/b1521356547d673c5695fd69558901f4dba2f8ae))
     - Filtering of import tools and from tools import ([`d79778b`](https://github.com/ssoudan/sapiens/commit/d79778b8b215e2ae5fdc9a1e40913fa3d1d711cf))
-    - Renamed Arxiv tool ([`11de03c`](https://github.com/ssoudan/sapiens/commit/11de03cd0c11100c654eb171c1f0ac03e56
+    - Renamed Arxiv tool ([`11de03c`](https://github.com/ssoudan/sapiens/commit/11de03cd0c11100c654eb171c1f0ac03e561661a))
+    - Eliminate `import tools` from the code ([`ee0c2df`](https://github.com/ssoudan/sapiens/commit/ee0c2df176086df1287249abc60f2a5003fc583e))
+    - Summarize tool ([`23383eb`](https://github.com/ssoudan/sapiens/commit/23383eb67f19e8fdcff185709ca3a6d12b3000fa))
+</details>
+
+## 0.3.0 (2023-04-24)
+
+<csr-id-14529922572878248a9f6681dfa716e87326d8ff/>
+<csr-id-7ea6a11630303aefa30680b17f67d7f45ef08c15/>
+<csr-id-385aab3fb6880373a7970cd5e243e68d127dc72c/>
+<csr-id-15c52d843721fa8426573d9f6bee2c019d2bd9bb/>
+<csr-id-b11b947d3b3699807c03c4500a8dc7a0e53d41d0/>
+
+### Chore
+
+ - <csr-id-14529922572878248a9f6681dfa716e87326d8ff/> release prep
+ - <csr-id-7ea6a11630303aefa30680b17f67d7f45ef08c15/> deps updated
+ - <csr-id-385aab3fb6880373a7970cd5e243e68d127dc72c/> cleanup
+
+### New Features
+
+ - <csr-id-8be8d0f3044a1bbfb5fdbc6fb6c7c8ec682f7114/> Discord bot
+ - <csr-id-0840086e2f5da2ebcdddec960c5308ca0eacb8c5/> arXiv query api
+ - <csr-id-f416adf7af52b0a907a9db8419bcdaa5f2a77dc5/> basic integration with discord
+
+### Bug Fixes
+
+ - <csr-id-b926c83e28c3e73484ce304f217a367b565b7f93/> wikipedia input example
+ - <csr
