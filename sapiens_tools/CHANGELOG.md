@@ -1214,4 +1214,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <csr-read-only-do-not-edit/>
 
-<details><summary>view details</summa
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.3.0, sapiens_derive v0.3.0, sapiens_tools v0.3.0, sapiens_bot v0.2.2, sapiens_cli v0.3.0, safety bump 3 crates ([`12e417c`](https://github.com/ssoudan/sapiens/commit/12e417cc394cbd9b7e18366d427cdd89132ee299))
+    - Discord bot ([`8be8d0f`](https://github.com/ssoudan/sapiens/commit/8be8d0f3044a1bbfb5fdbc6fb6c7c8ec682f7114))
+    - Release prep ([`1452992`](https://github.com/ssoudan/sapiens/commit/14529922572878248a9f6681dfa716e87326d8ff))
+    - ArXiv query api ([`0840086`](https://github.com/ssoudan/sapiens/commit/0840086e2f5da2ebcdddec960c5308ca0eacb8c5))
+    - Wikipedia input example ([`b926c83`](https://github.com/ssoudan/sapiens/commit/b926c83e28c3e73484ce304f217a367b565b7f93))
+    - Tests snapshot ([`04d1762`](https://github.com/ssoudan/sapiens/commit/04d17622f7afea618b5f7693d3b6e7754f29a9c0))
+    - Linefeed in tool descriptions ([`97d7c70`](https://github.com/ssoudan/sapiens/commit/97d7c704a78aa23661fd9b24267667e7dc5f40bf))
+    - Merge remote-tracking branch 'origin/ma
