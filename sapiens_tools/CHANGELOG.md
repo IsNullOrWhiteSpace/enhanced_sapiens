@@ -1184,4 +1184,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Bug Fixes
 
  - <csr-id-b926c83e28c3e73484ce304f217a367b565b7f93/> wikipedia input example
- - <csr
+ - <csr-id-04d17622f7afea618b5f7693d3b6e7754f29a9c0/> tests snapshot
+ - <csr-id-97d7c704a78aa23661fd9b24267667e7dc5f40bf/> linefeed in tool descriptions
+ - <csr-id-56ea40e1cc483bf22ca2eaea7f333fad2b001e48/> Better definition of the format for RoomToolInput
+ - <csr-id-e1953300aac0607b8c3eabf956f06b31317a338b/> udeps config
+
+### Refactor
+
+ - <csr-id-15c52d843721fa8426573d9f6bee2c019d2bd9bb/> main loop to process model and tools outputs
+
+### New Features (BREAKING)
+
+ - <csr-id-772e8eb4184efd0b305e460a31d719c237790098/> async api for Tools and in most places actually
+
+### Refactor (BREAKING)
+
+ - <csr-id-b11b947d3b3699807c03c4500a8dc7a0e53d41d0/> main loop to process model and tools outputs (part 2)
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 16 commits contributed to the release over the course of 4 calendar days.
+ - 4 days passed between releases.
+ - 14 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summa
