@@ -1224,4 +1224,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Wikipedia input example ([`b926c83`](https://github.com/ssoudan/sapiens/commit/b926c83e28c3e73484ce304f217a367b565b7f93))
     - Tests snapshot ([`04d1762`](https://github.com/ssoudan/sapiens/commit/04d17622f7afea618b5f7693d3b6e7754f29a9c0))
     - Linefeed in tool descriptions ([`97d7c70`](https://github.com/ssoudan/sapiens/commit/97d7c704a78aa23661fd9b24267667e7dc5f40bf))
-    - Merge remote-tracking branch 'origin/ma
+    - Merge remote-tracking branch 'origin/main' into bot ([`4f17f43`](https://github.com/ssoudan/sapiens/commit/4f17f438ab2eea6a7f2f6b8cff5fdbec9fbac32e))
+    - Better definition of the format for RoomToolInput ([`56ea40e`](https://github.com/ssoudan/sapiens/commit/56ea40e1cc483bf22ca2eaea7f333fad2b001e48))
+    - Deps updated ([`7ea6a11`](https://github.com/ssoudan/sapiens/commit/7ea6a11630303aefa30680b17f67d7f45ef08c15))
+    - Basic integration with discord ([`f416adf`](https://github.com/ssoudan/sapiens/commit/f416adf7af52b0a907a9db8419bcdaa5f2a77dc5))
+    - Udeps config ([`e195330`](https://github.com/ssoudan/sapiens/commit/e1953300aac0607b8c3eabf956f06b31317a338b))
+    - Async api for Tools and in most places actually ([`772e8eb`](https://github.com/ssoudan/sapiens/commit/772e8eb4184efd0b305e460a31d719c237790098))
+    - Main loop to process model and tools outputs (part 2) ([`b11b947`](https://github.com/ssoudan/sapiens/commit/b11b947d3b3699807c03c4500a8dc7a0e53d41d0))
+    - Main loop to process model and tools outputs ([`15c52d8`](https://github.com/ssoudan/sapiens/commit/15c52d843721fa8426573
