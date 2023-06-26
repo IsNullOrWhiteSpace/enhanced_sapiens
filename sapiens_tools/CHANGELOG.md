@@ -1261,4 +1261,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Bug Fixes
 
- - <csr-id-d3ffde8c5a9fc3b3714239c645f078c53af82
+ - <csr-id-d3ffde8c5a9fc3b3714239c645f078c53af8224e/> Support multivalued parameters
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 12 commits contributed to the release.
+ - 10 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Release sapiens v0.2.2, sapiens_derive v0.2.2, sapiens_tools v0.2.2, sapiens_cli v0.2.2 ([`1d9981b`](https://github.com/ssoudan/sapiens/commit/1d9981bef2fe1b4f4441c28e11713470ff1b1f5d))
+    - Release sapiens v0.2.2, sapiens_derive v0.2.2, sapiens_tools v0.2.2, sapiens_cli v0.2.2 ([`b72b47f`](https://github.com/ssoudan/sapiens/commit/b72b47f99c52d2d88dc3e2108917103707dc13ba))
+    - Changelog ([`1844702`](https://github.com/ssoudan/sapiens/commit/1844702fb1a2ffd5bb1ce4717e19c6675527738a))
+    - Build container without Hue support by default - EXTRA_FEATURE="hue" to enable. ([`3e15ff7`](https://github.com/ssoudan/sapiens/commit/3e15ff7b615faaab87addf4aff26ae841d94b4dc))
+    - 
