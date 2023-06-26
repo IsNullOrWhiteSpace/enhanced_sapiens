@@ -1231,4 +1231,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Udeps config ([`e195330`](https://github.com/ssoudan/sapiens/commit/e1953300aac0607b8c3eabf956f06b31317a338b))
     - Async api for Tools and in most places actually ([`772e8eb`](https://github.com/ssoudan/sapiens/commit/772e8eb4184efd0b305e460a31d719c237790098))
     - Main loop to process model and tools outputs (part 2) ([`b11b947`](https://github.com/ssoudan/sapiens/commit/b11b947d3b3699807c03c4500a8dc7a0e53d41d0))
-    - Main loop to process model and tools outputs ([`15c52d8`](https://github.com/ssoudan/sapiens/commit/15c52d843721fa8426573
+    - Main loop to process model and tools outputs ([`15c52d8`](https://github.com/ssoudan/sapiens/commit/15c52d843721fa8426573d9f6bee2c019d2bd9bb))
+    - Cleanup ([`385aab3`](https://github.com/ssoudan/sapiens/commit/385aab3fb6880373a7970cd5e243e68d127dc72c))
+</details>
+
+## 0.2.2 (2023-04-20)
+
+<csr-id-41bca7d7b24a7a7c27e8358d2a1ea3c5b5f786ed/>
+
+- More tools!
+
+### Documentation
+
+ - <csr-id-1844702fb1a2ffd5bb1ce4717e19c6675527738a/> Changelog
+
+### Chore
+
+ - <csr-id-41bca7d7b24a7a7c27e8358d2a1ea3c5b5f786ed/> cleanup
+
+### New Features
+
+ - <csr-id-3e15ff7b615faaab87addf4aff26ae841d94b4dc/> build container without Hue support by default - EXTRA_FEATURE="hue" to enable.
+ - <csr-id-49e0a6ede8fb84382e9e32ccfe21a05a62818187/> format of tools.list() output.
+ - <csr-id-ed70724e4133083e44c590cf2f74d27bdef65982/> ToolName with Action result.
+ - <csr-id-90c5cbd9d8ee6d52e87522c420c1bfde849e28b9/> Added WikipediaTool
+ - <csr-id-b0400529f9bacd56466a9104549d4f6eea7f3ccf/> Added WikipediaTool
+ - <csr-id-b2902bba5640ed0802af77eff2e628d56992760b/> Added WikidataTool
+ - <csr-id-9f251be6efefca6e9219321d4cd56802b6a5ec69/> toolbox assembly conditioned on Cargo features
+
+### Bug Fixes
+
+ - <csr-id-d3ffde8c5a9fc3b3714239c645f078c53af82
