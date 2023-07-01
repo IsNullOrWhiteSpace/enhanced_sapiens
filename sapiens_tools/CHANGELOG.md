@@ -1282,4 +1282,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Release sapiens v0.2.2, sapiens_derive v0.2.2, sapiens_tools v0.2.2, sapiens_cli v0.2.2 ([`b72b47f`](https://github.com/ssoudan/sapiens/commit/b72b47f99c52d2d88dc3e2108917103707dc13ba))
     - Changelog ([`1844702`](https://github.com/ssoudan/sapiens/commit/1844702fb1a2ffd5bb1ce4717e19c6675527738a))
     - Build container without Hue support by default - EXTRA_FEATURE="hue" to enable. ([`3e15ff7`](https://github.com/ssoudan/sapiens/commit/3e15ff7b615faaab87addf4aff26ae841d94b4dc))
-    - 
+    - Format of tools.list() output. ([`49e0a6e`](https://github.com/ssoudan/sapiens/commit/49e0a6ede8fb84382e9e32ccfe21a05a62818187))
+    - ToolName with Action result. ([`ed70724`](https://github.com/ssoudan/sapiens/commit/ed70724e4133083e44c590cf2f74d27bdef65982))
+    - Support multivalued parameters ([`d3ffde8`](https://github.com/ssoudan/sapiens/commit/d3ffde8c5a9fc3b3714239c645f078c53af8224e))
+    - Added WikipediaTool ([`90c5cbd`](https://github.com/ssoudan/sapiens/commit/90c5cbd9d8ee6d52e87522c420c1bfde849e28b9))
+    - Cleanup ([`41bca7d`](https://github.com/ssoudan/sapiens/commit/41bca7d7b24a7a7c27e8358d2a1ea3c5b5f786ed))
+    - Added WikipediaTool ([`b040052`](https://github.com/ssoudan/sapiens/commit/b0400529f9bacd56466a9104549d4f6eea7f3ccf))
+    - Added WikidataTool ([`b2902bb`](https://github.com/ssoudan/sapiens/commit/b2902bba5640ed0802af77eff2e628d56992760b))
+    - Toolbox assembly conditioned on Cargo features ([`9f251be`](https://github.com/ssoudan/sapiens/commit/9f251be6efefca6e9219321d4cd56802b6a5ec69))
+</details>
