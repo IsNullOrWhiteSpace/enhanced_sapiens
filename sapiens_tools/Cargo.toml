@@ -9,4 +9,42 @@ license.workspace = true
 publish.workspace = true
 readme = "../README.md"
 keywords.workspace = true
-categories.workspace = tr
+categories.workspace = true
+documentation = "https://docs.rs/sapiens_tools"
+
+[features]
+default = ["wiki", "arxiv", "summarize", "search"]
+# Hue lights
+hue = ["dep:huelib2"]
+# MediaWiki: Wikipedia, Wikidata
+wiki = ["dep:mediawiki", "dep:serde_json"]
+# arXiv
+arxiv = ["dep:arxiv-rs"]
+# Summarization
+summarize = ["dep:async-openai"]
+# Search
+search = ["dep:reqwest", "dep:serde_json"]
+# disable tests not working with dependabot
+disable-test-dependabot = []
+
+[dependencies]
+sapiens = { path = "../sapiens", version = "^0.10.2" }
+sapiens_derive = { path = "../sapiens_derive", version = "^0.4.4" }
+
+huelib2 = { version = "0.13.3", optional = true }
+mediawiki = { version = "0.2.11", optional = true }
+
+arxiv-rs = { version = "0.1.5", optional = true }
+
+reqwest = { version = "0.11", features = ["json"], optional = true }
+
+serde = { version = "1.0.193", features = ["derive"] }
+serde_yaml = "0.9.27"
+serde_json = { version = "1.0.108", optional = true }
+
+tracing = "0.1.40"
+
+tokio = { version = "1.34.0", features = ["macros"] }
+async-trait = "0.1.74"
+
+regex = "
