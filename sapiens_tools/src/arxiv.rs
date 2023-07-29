@@ -43,4 +43,33 @@ impl Display for SortOrder {
 pub enum SortBy {
     /// Relevance
     #[serde(rename = "relevance")]
-    #[defa
+    #[default]
+    Relevance,
+    /// Last updated date
+    #[serde(rename = "lastUpdatedDate")]
+    LastUpdatedDate,
+    /// Submitted date
+    #[serde(rename = "submittedDate")]
+    SubmittedDate,
+}
+
+impl Display for SortBy {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        match self {
+            SortBy::Relevance => write!(f, "relevance"),
+            SortBy::LastUpdatedDate => write!(f, "lastUpdatedDate"),
+            SortBy::SubmittedDate => write!(f, "submittedDate"),
+        }
+    }
+}
+
+/// [`ArxivTool`] input
+///
+/// Arxiv API documentation query specification
+#[derive(Debug, Deserialize, Serialize, Describe)]
+pub struct ArxivToolInput {
+    /// search_query: Search query - see https://info.arxiv.org/help/api/user-manual.html
+    /// for details. E.g. `cs.AI` or `cat:cs.AI` or `au:John Smith`
+    /// The fields that can be searched are: `ti` (title), `au` (author), `abs`
+    /// (abstract), `co` (comment), `jr` (journal reference), `cat` (subject
+    /// category), `rn` (report
