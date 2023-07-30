@@ -72,4 +72,33 @@ pub struct ArxivToolInput {
     /// for details. E.g. `cs.AI` or `cat:cs.AI` or `au:John Smith`
     /// The fields that can be searched are: `ti` (title), `au` (author), `abs`
     /// (abstract), `co` (comment), `jr` (journal reference), `cat` (subject
-    /// category), `rn` (report
+    /// category), `rn` (report number), `id` (id (use id_list instead)),
+    /// `all` (all of the above). Operators: `AND`, `OR`, `ANDNOT`.
+    /// You cannot search on publication or last update date.
+    pub search_query: String,
+
+    /// id_list: Comma-separated list of arXiv IDs to return
+    pub id_list: Option<String>,
+
+    /// start: Result offset for pagination
+    pub start: Option<i32>,
+
+    /// max_results: Maximum number of results to return in a single response.
+    /// Default is 10. Maximum allowed value is 100.
+    pub max_results: Option<i32>,
+
+    /// Sort by. Can be either `relevance`, `lastUpdatedDate` or
+    /// `submittedDate`. Default is `relevance`.
+    pub sort_by: Option<SortBy>,
+
+    /// Sort order. Can be either `ascending` or `descending`.
+    /// Default is `descending`.
+    pub sort_order: Option<SortOrder>,
+
+    /// True to gather PDF url - default is false
+    pub show_pdf_url: Option<bool>,
+
+    /// True to gather authors - default is false
+    pub show_authors: Option<bool>,
+
+    /// True to gather comments -
