@@ -101,4 +101,33 @@ pub struct ArxivToolInput {
     /// True to gather authors - default is false
     pub show_authors: Option<bool>,
 
-    /// True to gather comments -
+    /// True to gather comments - default is false
+    pub show_comments: Option<bool>,
+
+    /// True to gather summary - default is false
+    pub show_summary: Option<bool>,
+}
+
+impl From<&ArxivToolInput> for ArxivQuery {
+    fn from(input: &ArxivToolInput) -> Self {
+        ArxivQuery {
+            base_url: "https://export.arxiv.org/api/query?".to_string(),
+            search_query: input.search_query.clone(),
+            id_list: input.id_list.clone().unwrap_or_default(),
+            start: input.start,
+            max_results: input.max_results,
+            sort_by: input.sort_by.clone().unwrap_or_default().to_string(),
+            sort_order: input.sort_order.clone().unwrap_or_default().to_string(),
+        }
+    }
+}
+
+/// [`ArxivTool`] output
+#[derive(Debug, Deserialize, Serialize, Describe)]
+pub struct ArxivToolOutput {
+    // FUTURE(ssoudan) proc_macro_derive to generate this
+    /// query result. `ArxivResult` is an object containing the following
+    /// fields:
+    /// - `id`: <str> arXiv ID
+    /// - `updated`: <str> last updated date
+    /// - `published
