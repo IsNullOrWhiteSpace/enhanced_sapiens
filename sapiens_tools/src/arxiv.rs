@@ -130,4 +130,34 @@ pub struct ArxivToolOutput {
     /// fields:
     /// - `id`: <str> arXiv ID
     /// - `updated`: <str> last updated date
-    /// - `published
+    /// - `published`: <str> published date
+    /// - `title`: <str> title
+    /// - `summary`: <Optional[str]> summary - omitted unless `show_summary` is
+    ///   true - can be quite long
+    /// - `authors`: <list[str]> authors - omitted unless `show_authors` is true
+    /// - `pdf_url`: <Optional[str]> PDF URL - omitted unless `show_pdf_url` is
+    ///   true
+    /// - `comments`: <Optional[str]> Comments - omitted unless `show_comments`
+    ///   is true
+    result: Vec<ArxivResult>,
+}
+
+/// Arxiv result
+#[derive(Debug, Deserialize, Serialize, Describe)]
+pub struct ArxivResult {
+    /// arXiv ID
+    pub id: String,
+    /// last updated date
+    pub updated: String,
+    /// published date
+    pub published: String,
+    /// title
+    pub title: String,
+    /// summary - only if `show_summary` is true - can be quite long
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub summary: Option<String>,
+    /// authors - only if `show_authors` is true
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    pub authors: Vec<String>,
+    /// PDF URL - only if `show_pdf_url` is true
+    #[serde(skip_serializing_if = "Option::is_no
