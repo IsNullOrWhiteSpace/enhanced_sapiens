@@ -238,4 +238,38 @@ mod tests {
     use super::*;
 
     #[tokio::test]
-    async fn test_arxiv()
+    async fn test_arxiv() {
+        let tool = ArxivTool::new().await;
+        let input = ArxivToolInput {
+            search_query: "cat:cs.AI".to_string(),
+            id_list: None,
+            start: None,
+            max_results: None,
+            sort_by: Some(SortBy::Relevance),
+            sort_order: Some(SortOrder::Ascending),
+            show_authors: None,
+            show_comments: None,
+            show_summary: Some(false),
+            show_pdf_url: Some(false),
+        };
+        let output = tool.invoke_typed(&input).await.unwrap();
+
+        assert!(!output.result.is_empty())
+    }
+
+    #[tokio::test]
+    async fn test_arxiv_from_yaml() {
+        let tool = ArxivTool::new().await;
+        let input = indoc! {"
+            search_query: cat:cs.AI
+            show_authors: true           
+        "};
+
+        let input: ArxivToolInput = serde_yaml::from_str(input).unwrap();
+
+        assert_yaml_snapshot!(input);
+
+        let output = tool.invoke_typed(&input).await.unwrap();
+
+        assert!(!output.result.is_empty());
+        assert!(!output.result[0].auth
