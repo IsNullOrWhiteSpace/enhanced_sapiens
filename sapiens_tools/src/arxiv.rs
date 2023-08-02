@@ -160,4 +160,40 @@ pub struct ArxivResult {
     #[serde(skip_serializing_if = "Vec::is_empty")]
     pub authors: Vec<String>,
     /// PDF URL - only if `show_pdf_url` is true
-    #[serde(skip_serializing_if = "Option::is_no
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub pdf_url: Option<String>,
+    /// Comments - only if `show_comments` is true
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub comment: Option<String>,
+}
+
+impl From<Arxiv> for ArxivResult {
+    fn from(arxiv: Arxiv) -> Self {
+        ArxivResult {
+            id: arxiv.id,
+            updated: arxiv.updated,
+            published: arxiv.published,
+            title: arxiv.title,
+            summary: Some(arxiv.summary),
+            authors: arxiv.authors,
+            pdf_url: Some(arxiv.pdf_url),
+            comment: arxiv.comment,
+        }
+    }
+}
+
+impl ArxivTool {
+    /// Create a new [`ArxivTool`]
+    pub async fn new() -> ArxivTool {
+        ArxivTool {}
+    }
+
+    #[tracing::instrument(skip(self))]
+    async fn invoke_typed(&self, input: &ArxivToolInput) -> Result<ArxivToolOutput, ToolUseError> {
+        let query = ArxivQuery::from(input);
+
+        if query.max_results.unwrap_or(0) > 100 {
+            return Err(ToolUseError::InvocationFailed(
+                "max_results cannot be greater than 100".to_string(),
+            ));
+        }
