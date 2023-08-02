@@ -197,3 +197,45 @@ impl ArxivTool {
                 "max_results cannot be greater than 100".to_string(),
             ));
         }
+
+        let result = arxiv::fetch_arxivs(query)
+            .await
+            .map_err(|e| ToolUseError::InvocationFailed(e.to_string()))?;
+
+        let vec = result
+            .into_iter()
+            .map(|x| x.into())
+            .map(|mut x: ArxivResult| {
+                if !(input.show_pdf_url.unwrap_or(false)) {
+                    x.pdf_url = None;
+                }
+
+                if !(input.show_comments.unwrap_or(false)) {
+                    x.comment = None;
+                }
+
+                if !(input.show_summary.unwrap_or(false)) {
+                    x.summary = None;
+                }
+
+                if !(input.show_authors.unwrap_or(false)) {
+                    x.authors = vec![];
+                }
+
+                x
+            })
+            .collect();
+
+        Ok(ArxivToolOutput { result: vec })
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use indoc::indoc;
+    use insta::assert_yaml_snapshot;
+
+    use super::*;
+
+    #[tokio::test]
+    async fn test_arxiv()
