@@ -272,4 +272,29 @@ mod tests {
         let output = tool.invoke_typed(&input).await.unwrap();
 
         assert!(!output.result.is_empty());
-        assert!(!output.result[0].auth
+        assert!(!output.result[0].authors.is_empty());
+    }
+
+    #[tokio::test]
+    async fn test_arxiv_from_yaml_2() {
+        let tool = ArxivTool::new().await;
+        let input = indoc! {"
+            search_query: cat:cs.DB
+            max_results: 4
+            show_authors: true
+            show_pdf_url: true  
+        "};
+
+        let input: ArxivToolInput = serde_yaml::from_str(input).unwrap();
+
+        assert_yaml_snapshot!(input);
+
+        let output = tool.invoke_typed(&input).await.unwrap();
+
+        assert_eq!(output.result.len(), 4);
+        assert!(!output.result[0].authors.is_empty());
+
+        let yaml = serde_yaml::to_value(&output).unwrap();
+        assert_yaml_snapshot!(yaml);
+    }
+}
