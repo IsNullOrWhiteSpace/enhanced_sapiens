@@ -162,3 +162,40 @@ pub mod fake {
             let input = RoomToolInput {
                 room_filter: vec!["Bedroom".to_string()],
             };
+            let input = serde_yaml::to_value(input).unwrap();
+            let output = tool.invoke(input).await.unwrap();
+            let output: RoomToolOutput = serde_yaml::from_value(output).unwrap();
+            let expected = RoomToolOutput {
+                rooms: vec![Room {
+                    name: "Bedroom".to_string(),
+                    lights: vec!["1".to_string(), "2".to_string()],
+                }],
+            };
+            assert_eq!(output, expected);
+        }
+
+        #[tokio::test]
+        async fn test_fake_room_tool_empty_filter() {
+            let tool = FakeRoomTool::default();
+            let input = RoomToolInput {
+                room_filter: vec![],
+            };
+            let input = serde_yaml::to_value(input).unwrap();
+            let output = tool.invoke(input).await.unwrap();
+            let output: RoomToolOutput = serde_yaml::from_value(output).unwrap();
+            let expected = RoomToolOutput {
+                rooms: vec![
+                    Room {
+                        name: "Bedroom".to_string(),
+                        lights: vec!["1".to_string(), "2".to_string()],
+                    },
+                    Room {
+                        name: "Living room".to_string(),
+                        lights: vec!["3".to_string()],
+                    },
+                ],
+            };
+            assert_eq!(output, expected);
+        }
+    }
+}
