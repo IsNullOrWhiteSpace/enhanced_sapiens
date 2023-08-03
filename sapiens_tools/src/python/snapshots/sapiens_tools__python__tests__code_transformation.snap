@@ -1,0 +1,17 @@
+---
+source: sapiens_tools/src/python/mod.rs
+expression: code
+---
+class Tools:
+    """Wrapper for the tools."""
+    def __init__(self, toolbox):
+        self.toolbox = toolbox
+    def conclude(self, conclusion, original_question):
+        """    A tool to conclude a task.
+        You have to use this to once you have the answer to the task with your
+        conclusion.
+        Args:
+            conclusion: <str> The final answer for this task. Plain text ONLY. No string interpolation
+                supported. MANDATORY. Call directly from `SandboxPython` Tool for long
+                answers.
+            original_question: <str> The original
