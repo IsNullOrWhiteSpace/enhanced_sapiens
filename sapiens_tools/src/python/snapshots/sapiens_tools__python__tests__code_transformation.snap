@@ -14,4 +14,23 @@ class Tools:
             conclusion: <str> The final answer for this task. Plain text ONLY. No string interpolation
                 supported. MANDATORY. Call directly from `SandboxPython` Tool for long
                 answers.
-            original_question: <str> The original
+            original_question: <str> The original question that was asked to the user. No string
+                interpolation supported, only plain text. MANDATORY.
+        """
+        return self.toolbox.invoke("Conclude", {"conclusion": conclusion, "original_question": original_question})
+    def Conclude(self, conclusion, original_question):
+        """    A tool to conclude a task.
+        You have to use this to once you have the answer to the task with your
+        conclusion.
+        Args:
+            conclusion: <str> The final answer for this task. Plain text ONLY. No string interpolation
+                supported. MANDATORY. Call directly from `SandboxPython` Tool for long
+                answers.
+            original_question: <str> The original question that was asked to the user. No string
+                interpolation supported, only plain text. MANDATORY.
+        """
+        return self.toolbox.invoke("Conclude", {"conclusion": conclusion, "original_question": original_question})
+    def list(self):
+        """List the tools."""
+        return self.toolbox.list()
+tools = Tools(to
