@@ -78,4 +78,43 @@ impl From<&SearchToolInput> for QueryParameters {
         let q = q
             .q(&value.q)
             .num(value.num.and_then(|x| x.try_into().ok()).unwrap_or(Four))
-           
+            .lr(value
+                .lr
+                .as_ref()
+                .and_then(|x| x.as_str().try_into().ok())
+                .unwrap_or(Lr::LangEn))
+            .start(value.start_index.unwrap_or(1));
+
+        if let Some(exclude_terms) = &value.exclude_terms {
+            q.exclude_terms(exclude_terms);
+        }
+
+        if let Some(exact_terms) = &value.exact_terms {
+            q.exact_terms(exact_terms);
+        }
+
+        q.build()
+    }
+}
+
+impl Default for SearchTool {
+    fn default() -> Self {
+        let api_key = std::env::var("GOOGLE_API_KEY").expect("GOOGLE_API_KEY env not set");
+        let cse_id = std::env::var("GOOGLE_CSE_ID").expect("GOOGLE_CSE_ID env not set");
+
+        SearchTool {
+            api_key,
+            cse_id,
+            client: Mutex::new(Client::builder().build().unwrap()),
+        }
+    }
+}
+
+impl SearchTool {
+    /// Create a new [`SearchTool`]
+    ///
+    /// # Arguments
+    ///
+    /// * `api_key` - API key to use
+    /// * `cse_id` - CSE ID to use
+    pub async fn new(api_key: String, cs
