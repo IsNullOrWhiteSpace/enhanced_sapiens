@@ -117,4 +117,36 @@ impl SearchTool {
     ///
     /// * `api_key` - API key to use
     /// * `cse_id` - CSE ID to use
-    pub async fn new(api_key: String, cs
+    pub async fn new(api_key: String, cse_id: String) -> SearchTool {
+        let client = Client::builder().build().unwrap();
+
+        SearchTool {
+            api_key,
+            cse_id,
+            client: Mutex::new(client),
+        }
+    }
+
+    #[tracing::instrument(skip(self))]
+    async fn invoke_typed(
+        &self,
+        input: &SearchToolInput,
+    ) -> Result<SearchToolOutput, ToolUseError> {
+        let query_params = QueryParameters::from(input);
+
+        let resp = self.do_query(query_params).await;
+
+        let resp = resp.map_err(|e| ToolUseError::InvocationFailed(e.to_string()))?;
+
+        if resp.status().is_success() {
+            let body = resp
+                .text()
+                .await
+                .map_err(|e| ToolUseError::InvocationFailed(e.to_string()))?;
+
+            let resp = match serde_json::from_str::<SearchResults>(&body) {
+                Ok(resp) => resp,
+                Err(e) => {
+                    error!(body = body, "Error parsing response: {}", e);
+
+                    return Err(ToolUseError::InvocationFailed(e.to_strin
