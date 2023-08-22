@@ -149,4 +149,38 @@ impl SearchTool {
                 Err(e) => {
                     error!(body = body, "Error parsing response: {}", e);
 
-                    return Err(ToolUseError::InvocationFailed(e.to_strin
+                    return Err(ToolUseError::InvocationFailed(e.to_string()));
+                }
+            };
+
+            // let resp = resp
+            //     .json::<SearchResults>()
+            //     .await
+            //     .map_err(|e| ToolUseError::ToolInvocationFailed(e.to_string()))?;
+
+            let next_start_index = resp.next_page().map(|x| x.start);
+
+            Ok(SearchToolOutput {
+                results: resp.items,
+                next_start_index,
+            })
+        } else {
+            let code = resp.status();
+
+            let body = resp
+                .json::<ErrorBody>()
+                .await
+                .map_err(|e| ToolUseError::InvocationFailed(e.to_string()))?;
+
+            Err(ToolUseError::InvocationFailed(format!(
+                "Error code {}: {}",
+                code, body.error.message
+            )))
+        }
+    }
+
+    async fn do_query(&self, mut query_params: QueryParameters) -> Result<Response, ToolUseError> {
+        let url =
+            Url::parse(gce::URL).map_err(|e| ToolUseError::InvocationFailed(e.to_string()))?;
+
+        let query_params = query_params.k
