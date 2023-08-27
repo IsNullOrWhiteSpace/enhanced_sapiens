@@ -183,4 +183,48 @@ impl SearchTool {
         let url =
             Url::parse(gce::URL).map_err(|e| ToolUseError::InvocationFailed(e.to_string()))?;
 
-        let query_params = query_params.k
+        let query_params = query_params.key(&self.api_key).cx(&self.cse_id);
+
+        let resp = {
+            let guard = self.client.lock().await;
+
+            guard
+                .get(url.clone())
+                .header("Accept", "application/json")
+                .query(&query_params.to_parameters())
+                .send()
+                .await
+        };
+
+        resp.map_err(|e| ToolUseError::InvocationFailed(e.to_string()))
+    }
+}
+
+#[cfg(all(test, not(feature = "disable-test-dependabot")))]
+mod tests {
+    use super::*;
+
+    #[tokio::test]
+    async fn test_search_tool() {
+        let _ = dotenvy::dotenv();
+
+        let tool = SearchTool::default();
+
+        let input = SearchToolInput {
+            q: "Best Rust programming language website".to_string(),
+            exclude_terms: None,
+            exact_terms: None,
+            num: Some(3),
+            lr: None,
+            start_index: Some(1),
+        };
+
+        let output = tool.invoke_typed(&input).await.unwrap();
+
+        // assert_yaml_snapshot!(output);
+
+        assert_eq!(output.results.len(), 3);
+    }
+
+    #[tokio::test]
+    async fn test_s
