@@ -14,4 +14,36 @@ pub async fn toolbox_from_env() -> Toolbox {
 
     #[cfg(feature = "search")]
     {
-        u
+        use crate::search::SearchTool;
+
+        toolbox.add_tool(SearchTool::default()).await;
+    }
+
+    #[cfg(feature = "hue")]
+    {
+        use std::net::IpAddr;
+        use std::str::FromStr;
+
+        use huelib2::bridge;
+
+        let bridge_ip = match std::env::var("HUE_BRIDGE_IP") {
+            Ok(ip) => IpAddr::from_str(&ip).expect("Invalid IP address"),
+            Err(_) => {
+                println!("HUE_BRIDGE_IP env not set. Trying to discover bridge.");
+                let bridge_ip = bridge::discover_nupnp().unwrap().pop().unwrap();
+                println!(
+                    "Discovered bridge at IP address: HUE_BRIDGE_IP={}",
+                    bridge_ip
+                );
+                bridge_ip
+            }
+        };
+
+        let username = match std::env::var("HUE_USERNAME") {
+            Ok(username) => username,
+            Err(_) => {
+                println!("HUE_USERNAME env not set. Trying to register a new user.");
+
+                // Register a new user.
+                let username =
+                    
