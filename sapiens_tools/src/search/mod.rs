@@ -227,4 +227,27 @@ mod tests {
     }
 
     #[tokio::test]
-    async fn test_s
+    async fn test_search_tool_2() {
+        let _ = dotenvy::dotenv();
+
+        let tool = SearchTool::default();
+
+        let input = SearchToolInput {
+            q: "Alain Prost -motorcycle".to_string(),
+            exclude_terms: None,
+            exact_terms: None,
+            num: Some(1),
+            lr: None,
+            start_index: None,
+        };
+
+        let query_params = QueryParameters::from(&input);
+
+        let resp = tool.do_query(query_params).await.unwrap();
+
+        println!("{:#?}", resp);
+
+        let body = resp.text().await.unwrap();
+        println!("{}", body);
+    }
+}
