@@ -46,4 +46,41 @@ pub async fn toolbox_from_env() -> Toolbox {
 
                 // Register a new user.
                 let username =
-                    
+                    bridge::register_user(bridge_ip, "sapiens").expect("Failed to register user");
+                println!(
+                    "Registered a new user - pass it as env: \nHUE_USERNAME={}",
+                    username
+                );
+                username
+            }
+        };
+
+        let bridge = bridge::Bridge::new(bridge_ip, username);
+
+        toolbox
+            .add_tool(crate::hue::room::RoomTool::new(bridge.clone()))
+            .await;
+        toolbox
+            .add_tool(crate::hue::status::SetStatusTool::new(bridge.clone()))
+            .await;
+        toolbox
+            .add_tool(crate::hue::status::StatusTool::new(bridge))
+            .await;
+    }
+
+    #[cfg(feature = "wiki")]
+    {
+        use crate::wiki::{wikidata, wikipedia};
+
+        toolbox.add_tool(wikidata::WikidataTool::new().await).await;
+        toolbox
+            .add_tool(wikipedia::WikipediaTool::new().await)
+            .await;
+    }
+
+    #[cfg(feature = "arxiv")]
+    {
+        toolbox.add_tool(crate::arxiv::ArxivTool::new().await).await;
+    }
+
+    #[cfg(feature = "summariz
