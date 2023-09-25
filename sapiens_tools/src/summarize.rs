@@ -56,4 +56,40 @@ pub struct SummarizeToolInput {
     pub text: String,
 }
 
-/// Summa
+/// SummarizeToolOutput not very significant
+#[derive(Serialize, Deserialize, Describe)]
+pub struct SummarizeToolOutput {
+    /// The summary
+    pub summary: String,
+}
+
+impl SummarizeTool {
+    #[tracing::instrument(skip(self))]
+    async fn invoke_typed(
+        &self,
+        input: &SummarizeToolInput,
+    ) -> Result<SummarizeToolOutput, ToolUseError> {
+        let prompt = Prompt::String(format!("{}\n\nTl;dr", input.text));
+
+        if input.text.len() < 100 {
+            return Ok(SummarizeToolOutput {
+                summary: input.text.clone(),
+            });
+        }
+
+        if input.text.len() > 2000 {
+            return Err(ToolUseError::InvocationFailed(
+                "Text too long - limit is 2000.".to_string(),
+            ));
+        }
+
+        let response = self
+            .openai_client
+            .completions()
+            .create(CreateCompletionRequest {
+                prompt,
+                model: self.model.clone(),
+                ..Default::default()
+            })
+            .await
+            .map_err(|e| Too
