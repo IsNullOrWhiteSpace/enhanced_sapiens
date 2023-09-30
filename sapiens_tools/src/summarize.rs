@@ -92,4 +92,9 @@ impl SummarizeTool {
                 ..Default::default()
             })
             .await
-            .map_err(|e| Too
+            .map_err(|e| ToolUseError::InvocationFailed(e.to_string()))?;
+
+        let summary = response.choices[0].text.clone();
+        Ok(SummarizeToolOutput { summary })
+    }
+}
