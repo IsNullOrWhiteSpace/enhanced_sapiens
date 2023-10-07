@@ -24,4 +24,35 @@ mod test {
             ?country rdfs:label ?countryLabel .
             ?capital rdfs:label ?capitalLabel .
           }
- 
+        }
+        ORDER BY ?countryLabel
+        LIMIT 10
+    "#
+          };
+
+        let api = mediawiki::api::Api::new("https://www.wikidata.org/w/api.php")
+            .await
+            .unwrap(); // Will determine the SPARQL API URL via site info data
+        let res = api.sparql_query(query).await.unwrap();
+        println!("{}", serde_json::to_string_pretty(&res).unwrap());
+    }
+
+    #[tokio::test]
+    async fn test_wikipedia_direct() {
+        let api = mediawiki::api::Api::new("https://en.wikipedia.org/w/api.php")
+            .await
+            .unwrap();
+
+        // Query parameters
+        let params = api.params_into(&[
+            ("action", "query"),
+            ("prop", "extracts|explaintext|exintro"),
+            ("titles", "Albert Einstein"),
+        ]);
+
+        let res = api.get_query_api_json_all(&params).await.unwrap();
+
+        // Print the result
+        println!("{}", serde_json::to_string_pretty(&res).unwrap());
+    }
+}
