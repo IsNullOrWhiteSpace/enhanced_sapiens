@@ -47,4 +47,25 @@ pub struct WikidataToolOutput {
 impl WikidataTool {
     /// Create a new [`WikidataTool`]
     pub async fn new() -> Self {
-       
+        let client = Api::new("https://www.wikidata.org/w/api.php")
+            .await
+            .unwrap();
+        Self { client }
+    }
+
+    #[tracing::instrument(skip(self))]
+    async fn invoke_typed(
+        &self,
+        input: &WikidataToolInput,
+    ) -> Result<WikidataToolOutput, ToolUseError> {
+        let result = self
+            .client
+            .sparql_query(&input.query)
+            .await
+            .map_err(|e| ToolUseError::InvocationFailed(e.to_string()))?;
+
+        Ok(WikidataToolOutput {
+            result: serde_json::to_string(&result).unwrap(),
+        })
+    }
+}
