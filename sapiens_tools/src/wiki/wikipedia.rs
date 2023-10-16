@@ -46,4 +46,40 @@ pub struct WikipediaToolInput {
     parameters: HashMap<String, Value>,
     /// maximum number of results to return - if not specified, all results are
     /// returned.
-    limit:
+    limit: Option<usize>,
+}
+
+/// [`WikipediaTool`] output
+#[derive(Debug, Deserialize, Serialize, Describe)]
+pub struct WikipediaToolOutput {
+    /// query result - in JSON.
+    result: String,
+}
+
+impl WikipediaTool {
+    /// Create a new [`WikipediaTool`]
+    pub async fn new() -> WikipediaTool {
+        let client = Api::new("https://en.wikipedia.org/w/api.php")
+            .await
+            .unwrap();
+
+        WikipediaTool { client }
+    }
+
+    #[tracing::instrument(skip(self))]
+    async fn invoke_typed(
+        &self,
+        input: &WikipediaToolInput,
+    ) -> Result<WikipediaToolOutput, ToolUseError> {
+        let query: HashMap<String, String> = input
+            .parameters
+            .clone()
+            .into_iter()
+            .map(|(k, v)| match v {
+                Value::Sequence(s) => Ok((
+                    k.clone(),
+                    s.into_iter()
+                        .map(|v| match v {
+                            Value::String(s) => Ok(s),
+                            Value::Number(n) => Ok(n.to_string()),
+     
