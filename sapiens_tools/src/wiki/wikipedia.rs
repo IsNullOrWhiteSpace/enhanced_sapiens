@@ -144,3 +144,35 @@ mod tests {
                             Value::Sequence(vec![
                                 Value::String("extracts".to_string()),
                                 Value::String("exintro".to_string()),
+                                Value::String("explaintext".to_string()),
+                            ]),
+                        ),
+                        (
+                            "titles".to_string(),
+                            Value::String("Albert Einstein".to_string()),
+                        ),
+                    ]
+                    .into_iter()
+                    .collect(),
+                    limit: None,
+                };
+                let input = serde_yaml::to_string(&input).unwrap();
+                let input = serde_yaml::from_str::<WikipediaToolInput>(&input).unwrap();
+
+                assert_yaml_snapshot!(input);
+
+                let _output = tool.invoke_typed(&input).await.unwrap();
+            })
+            .await;
+    }
+
+    #[tokio::test]
+    async fn test_wikipedia_tool_from_yaml() {
+        let tool = WikipediaTool::new().await;
+
+        let input = indoc! {
+            r#"
+               parameters:
+                 action: query
+                 prop:
+              
