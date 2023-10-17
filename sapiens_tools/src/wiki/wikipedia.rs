@@ -108,4 +108,39 @@ impl WikipediaTool {
             .map_err(|e| ToolUseError::InvocationFailed(e.to_string()))?;
 
         Ok(WikipediaToolOutput {
-            result: se
+            result: serde_json::to_string(&result).unwrap(),
+        })
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use indoc::indoc;
+    use insta::assert_yaml_snapshot;
+
+    use super::*;
+
+    #[tokio::test]
+    async fn test_wikipedia_tool_description() {
+        let tool = WikipediaTool::new().await;
+
+        let description = tool.description();
+
+        assert_yaml_snapshot!(description);
+    }
+
+    #[tokio::test]
+    async fn test_wikipedia_tool() {
+        let mut settings = insta::Settings::clone_current();
+        settings.set_sort_maps(true);
+        settings
+            .bind_async(async {
+                let tool = WikipediaTool::new().await;
+                let input = WikipediaToolInput {
+                    parameters: vec![
+                        ("action".to_string(), Value::String("query".to_string())),
+                        (
+                            "prop".to_string(),
+                            Value::Sequence(vec![
+                                Value::String("extracts".to_string()),
+                                Value::String("exintro".to_string()),
