@@ -175,4 +175,31 @@ mod tests {
                parameters:
                  action: query
                  prop:
-              
+                   - extracts
+                   - exintro
+                   - explaintext
+                 titles: Albert Einstein
+            "#
+        };
+        let input = serde_yaml::from_str::<WikipediaToolInput>(input).unwrap();
+
+        let _output = tool.invoke_typed(&input).await.unwrap();
+    }
+
+    #[tokio::test]
+    async fn test_wikipedia_parameters() {
+        let mut settings = insta::Settings::clone_current();
+        settings.set_sort_maps(true);
+        settings
+            .bind_async(async {
+                let input = WikipediaToolInput {
+                    parameters: vec![
+                        ("action".to_string(), Value::String("query".to_string())),
+                        (
+                            "prop".to_string(),
+                            Value::Sequence(vec![
+                                Value::String("extracts".to_string()),
+                                Value::String("exintro".to_string()),
+                                Value::String("explaintext".to_string()),
+                            ]),
+                
