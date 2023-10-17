@@ -82,4 +82,30 @@ impl WikipediaTool {
                         .map(|v| match v {
                             Value::String(s) => Ok(s),
                             Value::Number(n) => Ok(n.to_string()),
-     
+                            _ => Err(ToolUseError::InvocationFailed(format!(
+                                "Unsupported value type for parameter: {:?}. Only <str> or <number>
+        and list of them supported.",
+                                k
+                            ))),
+                        })
+                        .collect::<Result<Vec<_>, _>>()?
+                        .join("|"),
+                )),
+                Value::String(s) => Ok((k, s)),
+                Value::Number(n) => Ok((k, n.to_string())),
+                _ => Err(ToolUseError::InvocationFailed(format!(
+                    "Unsupported value type for parameter: {:?}. Only <str>
+        or <number> and list of them supported.",
+                    k
+                ))),
+            })
+            .collect::<Result<_, _>>()?;
+
+        let result = self
+            .client
+            .get_query_api_json_limit(&query, input.limit)
+            .await
+            .map_err(|e| ToolUseError::InvocationFailed(e.to_string()))?;
+
+        Ok(WikipediaToolOutput {
+            result: se
