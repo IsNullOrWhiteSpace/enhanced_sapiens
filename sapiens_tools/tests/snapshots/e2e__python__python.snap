@@ -1,0 +1,8 @@
+---
+source: sapiens_tools/tests/python.rs
+expression: output
+---
+stdout: |
+  And the result is: hello and something else
+stderr: ''
+
